@@ -368,11 +368,8 @@
     "frames": [
       [
         "Your Addiction:",
-        "What It Costs You:"
-      ],
-      [
-        "The High:",
-        "The Comedown:"
+        "Your Craving:",
+        "Your Obsession:"
       ]
     ],
     "hooks": {
@@ -383,7 +380,88 @@
       "her": [
         "What {her} heart keeps going back to, based on {her} {singular}"
       ]
-    }
+    },
+    "pattern": "THREE sections. Each opens with a bare gerund or noun phrase and a full stop - Being adored. Fixing what's broken. Perfection in everything. Section 1 then stacks \"You're addicted to X, to Y, to Z\" with the preposition repeated, and closes on a reframe that denies the obvious reading. Section 2 names what they crave as a thing or a person, unpacks it with \"You crave\", and closes on the specific relief it would bring. Section 3 stacks \"You're obsessed with X, with Y, with Z\", preposition repeated, and closes on one flat sentence stating the fear underneath.",
+    "patternNote": "The repeated preposition in the stacks is the signature - \"to compliments, to attention, to walking into rooms and feeling the energy shift\" - and dropping it into a plain comma list kills the rhythm. Addiction, craving and obsession must be three different angles on the same hunger, not three restatements: the addiction is the behaviour, the craving is what they want given to them, the obsession is what they are protecting against. Section 1's closing reframe is where the post earns its save: \"It's not vanity, it's oxygen.\" Never resolve section 3. Written for the you voice; mirror every pronoun for her.",
+    "examples": [
+      "Your Addiction: Being adored. You're addicted to compliments, to attention, to walking into rooms and feeling the energy shift toward you. You need to be seen, celebrated, wanted. It's not vanity, it's oxygen.",
+      "Your Addiction: Making everyone happy. You're addicted to keeping the peace, to smoothing over conflict, to being liked by absolutely everyone. You'll sacrifice your own needs if it means nobody's upset with you.",
+      "Your Craving: Someone who sees your effort. You crave appreciation for all the invisible labor you do, for every small thing you remember, for how hard you try to make everything perfect. Being noticed would heal something in you.",
+      "Your Craving: Complete honesty and absolute loyalty. You crave someone who tells you everything, hides nothing, chooses you ferociously. Someone who's as ride-or-die for you as you are for them.",
+      "Your Obsession: Being useful enough to keep. You're obsessed with proving your worth through action, with being so helpful that people can't leave you. You think love is earned, not given.",
+      "Your Obsession: Control over your own heart. You're obsessed with never being vulnerable first, with testing people before you trust them, with keeping your true feelings locked away where nobody can use them against you."
+    ]
+  },
+  "your-pain": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The way they are quietly suffering right now, renamed honestly, and then the capability that same suffering built. No comfort in the first half.",
+    "frames": [
+      [
+        "Your pain:",
+        "Your power:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your pain",
+        "The pain each {singular} lives with quietly",
+        "What hurts you and what it made you, by your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens with a FULL sentence diagnosing the present-tense suffering, then 3-4 sentences of how it operates day to day, then closes by renaming what they call it - usually \"It's not X, it's Y\" or a single flat verdict. Section 2 opens \"You\" plus a verb claiming the strength, then 3-4 sentences of proof, then closes on a short claim about what that makes them to other people.",
+    "patternNote": "Distinct from deepest-fear, which shares the second frame label: that angle opens section 1 on a bare noun FRAGMENT (\"Being underestimated.\") and names a fear. This one opens on a full diagnostic sentence and names a present-tense pain they are living inside right now. Section 1 offers no comfort and no silver lining - the renaming at the end is the only mercy, and it is a hard one: isolation you're calling independence, rotting in safety. Section 2 must be the same trait the pain produced, never an unrelated virtue.",
+    "examples": [
+      "Your pain: You stopped asking for anything because asking felt like weakness and you'd rather suffer in silence. Now you don't even know what you need anymore. You built a life where you handle everything alone and convinced yourself that's strength. It's not strength, it's isolation you're calling independence.",
+      "Your pain: You're dying inside the safe life you built. Same routine, same faces, same everything until you forgot what feeling alive even means. You want to burn it all down but you're paralyzed by fear of the unknown. So you stay comfortable and miserable, choosing slow death over uncertain life. You're rotting in safety.",
+      "Your power: Your mind sees what everyone else misses. You read people like they're written in a language only you speak. When you finally let your heart have a voice as loud as your head, you become dangerously perceptive. You understand the human condition in ways that make people feel seen for the first time.",
+      "Your power: You create home in human form. Your love makes people feel safe in a world that makes them feel disposable. When you finally stop protecting your heart from the right person, your devotion becomes the kind that heals. You don't just love, you make people believe they're worth loving."
+    ]
+  },
+  "safe-or-dangerous": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Why people feel safe with them, the exact form their harm takes when it comes, and the one thing that disarms them. Three readings of the same temperament.",
+    "frames": [
+      [
+        "Your Safe Side:",
+        "Your Danger:",
+        "Your Soft Spot:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Is your {singular} safe or dangerous",
+        "Your {singular}, safe or dangerous",
+        "What each {singular} is like at their best and their worst"
+      ]
+    },
+    "itemTitle": "People born in {item}",
+    "pattern": "THREE sections. Section 1 opens \"You\" plus what makes people trust them, 2-3 sentences, then closes on why people come close - often beginning \"That\". Section 2 opens on the exact mechanism of their harm, not a mood, then closes on what the other person experiences when it lands. Section 3 opens with a noun phrase or \"Someone who\" naming the one thing that disarms them, then closes on a sentence beginning \"That's\" or \"That kind of\" that points back at it.",
+    "patternNote": "The danger in section 2 must be the SAME quality as the safety in section 1 with the warmth withdrawn - the one who makes you feel at home is the one who can act like you never existed, the one who reads you can also choose the words that wound deepest. If section 2 introduces an unrelated flaw the post has failed. The danger is always a withdrawal or a precision, never a tantrum. Section 3 is the only warm ending and must close by pointing back with That - \"That's the only place you fully put your guard down.\"",
+    "examples": [
+      "Your Safe Side: You make people feel like home. You stay when everyone else runs, you never rush anyone, and being near you feels like a safe place to land after a long day.",
+      "Your Safe Side: You can talk anyone off any edge. You see people no one else bothers to see, and you make them feel understood in a way they didn't expect. That gift pulls people close fast.",
+      "Your Danger: You know exactly which words wound deepest, and your charm can turn into ice without warning. You can become a stranger overnight. The person who felt closest to you suddenly can't reach you at all.",
+      "Your Danger: You hold grudges in places no one can reach. You feel everything, then you weaponize it, and you can withdraw your warmth completely. That sudden cold tells them more than any argument ever could.",
+      "Your Soft Spot: Slow love that doesn't ask you to perform. Someone who lets you take your time and never makes you prove you're worth staying for. That's the only place you fully put your guard down.",
+      "Your Soft Spot: Someone protecting your softness instead of using it. Someone who sees how much you feel and treats it like something worth guarding. That's what finally lets you stop bracing for hurt."
+    ]
   },
   "self-sabotage": {
     "moods": [
@@ -3870,6 +3948,9 @@
       "When They Lose You: They do not cry in front of you. They go silent, disappear into work, turn the pain into something productive. But years from now they will still remember exactly where they messed up. Still wonder. Still carry it. Just never out loud.",
       "When They Want You: They watch before they move. You will feel their eyes on you before you feel their hand. They want the parts of you no one else notices.",
       "When They Have You: They love you and keep a room locked at the same time. Close but never fully close, yours but never fully yours. You will spend the whole relationship trying to reach the part of them they protect from everyone. And still never find it.",
+      "When They Want You: They talk you into falling. Endless texts, late night calls, inside jokes that feel like a secret language invented just for you. You'll feel pulled in by their mind before anything else touches. Being wanted by them feels like suddenly being the most interesting person alive.",
+      "When They Have You: They make love feel like home. Routines, inside jokes, small rituals, the kind of steady devotion that doesn't need announcing. You become the person they don't worry about losing. Safe, seen, held. The kind of love most people only read about.",
+      "When They Lose You: They replace the feeling fast. New face, new distraction, someone new to charm into the same game. They look like they moved on overnight. But every time they tell the new person the same story they told you, something inside them knows it was realer with you.",
       "When They Lose You: They detach like it did not matter, rewrite the whole thing in their head until they barely feel it. But somewhere late at night, they still think about you. They just made sure no one would ever know."
     ],
     "frames": [
