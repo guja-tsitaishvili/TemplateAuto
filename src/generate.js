@@ -32,7 +32,15 @@ const { generateLocal, available: localAvailableRaw } = require('./local');
 // for the measured reason. Wrapping it here means both call sites stay
 // unchanged and the local path is one env var away from coming back.
 const localAvailable = async () => config.useLocalModel && (await localAvailableRaw());
-const { checkItems, filterHooks, hookNamesAxis, BANNED, LIMITS } = require('./quality');
+const {
+  checkItems,
+  filterHooks,
+  hookNamesAxis,
+  checkHookCoverage,
+  hookPayoffTerms,
+  BANNED,
+  LIMITS
+} = require('./quality');
 const config = require('./config');
 
 // Only one hook is ever used and the axis filter culls some before scoring.
@@ -288,6 +296,61 @@ async function scoreHooks(seed, hooks) {
   return { hook: hooks[index], score: result.score, reason: result.reason, via };
 }
 
+/**
+ * Rewrites the COVER to fit slides that already exist.
+ *
+ * Every other repair in this pipeline regenerates body copy. This one does the
+ * opposite, and it is the cheap direction: when a hook promised something the
+ * slides did not all deliver, the slides are usually fine and the cover is the
+ * single line that is wrong. Rewriting one line costs a fraction of rewriting
+ * twelve items, and unlike the hook-generation step this call can actually SEE
+ * the finished copy instead of predicting it.
+ */
+async function rewriteHook(seed, items, axis, problem) {
+  const digest = items
+    .map((it) => {
+      const text = it.bullets
+        ? it.bullets.join(' ')
+        : (it.sections || []).map((s) => s.text).join(' ');
+      return `  ${it.title}: ${text.slice(0, 240)}`;
+    })
+    .join('\n');
+
+  const prompt = [
+    'You are writing the cover line for an astrology carousel that is ALREADY WRITTEN.',
+    '',
+    `The previous cover failed: ${problem}`,
+    '',
+    'THE SLIDES, as written:',
+    digest,
+    '',
+    `MANDATORY: the hook must contain the words "${axis}" (or "${axis}s").`,
+    'House shapes — use one:',
+    `  A)  Your ${axis}, your <noun phrase>`,
+    `  B)  <claim about the reader>, based on your ${axis}`,
+    `  C)  What each ${axis} <verb phrase>`,
+    '',
+    'THE ONE RULE: every promise in the hook must be kept by EVERY slide above.',
+    'Read all of them before writing. If they land on different specifics, name',
+    'what they have in common rather than picking one slide\'s version — that is',
+    'the mistake being corrected. Do not name a particular feeling, outcome or',
+    'situation unless every single slide delivers it.',
+    '',
+    `Under ${LIMITS.hook} characters. Plain words. Specific about what they SHARE.`
+  ].join('\n');
+
+  const result = await generate({
+    prompt,
+    temperature: 0.6,
+    schema: {
+      type: 'object',
+      properties: { hook: { type: 'string' } },
+      required: ['hook']
+    }
+  });
+  return (result.hook || '').trim();
+}
+
 /* ---------------------------------------------------------------- step 3 */
 
 /**
@@ -342,13 +405,33 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     // scenario hook ("when they quiet down") was honoured on two items and
     // quietly dropped on the third, which wrote about fighting instead. Each
     // slide is read alone, so one drifting item breaks the post for that reader.
-    'THE HOOK IS A CONTRACT. If it names a situation, a moment or a condition',
-    '("when they go quiet", "after a fight", "the first time you say no"), then',
-    'EVERY item must be written inside that same situation. An item that answers',
-    'a different question has failed even if the lines are strong on their own.',
-    'Before writing each item, re-read the hook and ask what it promised. If an',
-    'item cannot honestly be written inside it, write the closest thing that can',
-    'be — never substitute a different scenario.',
+    'THE HOOK IS A CONTRACT. If it names a situation, a moment, a condition, a',
+    'feeling or an outcome ("when they go quiet", "after a fight", "as passion",',
+    '"into silence"), then EVERY item must be written inside that same thing. An',
+    'item that answers a different question has failed even if the lines are',
+    'strong on their own. Before writing each item, re-read the hook and ask what',
+    'it promised. If an item cannot honestly be written inside it, write the',
+    'closest thing that can be — never substitute a different one.',
+    // A narrow hook is not a problem to route around: it is the strongest kind
+    // of cover, and the reference account uses them constantly. The failure mode
+    // is a narrow hook the body then ignores. So when the hook names a payoff,
+    // that naming is made BINDING here rather than treated as decoration --
+    // "misreads as passion" over slides that landed on passion, safety and
+    // connection shipped a cover that was wrong for two readers in three.
+    ...(() => {
+      const terms = hookPayoffTerms(hook, subjects[seed.subject].singular);
+      if (!terms.length) return [];
+      return [
+        '',
+        `THE HOOK NAMES A SPECIFIC PAYOFF: "${terms[0]}".`,
+        `Every single item must land on "${terms[0]}" — not a cousin of it, not a`,
+        'different word that feels adjacent. Each item may reach it from its own',
+        `direction, but the thing being named must be "${terms[0]}" in all of them.`,
+        'This is the hardest requirement in the brief and the one most often',
+        'missed: writing three items that each land somewhere slightly different',
+        'breaks the cover for most of the audience.'
+      ];
+    })(),
     '',
     seed.pattern
       ? [
@@ -665,7 +748,7 @@ async function generatePost(opts = {}) {
   if (!hooks.length) throw new Error('every generated hook was filtered out');
 
   // 2 — select
-  const chosen = await scoreHooks(seed, hooks);
+  let chosen = await scoreHooks(seed, hooks);
   log(`chosen  : "${chosen.hook}"  (${chosen.score}/10 via ${chosen.via} — ${chosen.reason})`);
 
   // 3 + 4 — write, check, retry once against the specific failures
@@ -743,6 +826,37 @@ async function generatePost(opts = {}) {
       : `qa      : still ${allProblems().length} problem(s) — review before posting`
   );
 
+  // 4b — does the cover actually describe the slides that got written?
+  //
+  // Runs LAST, on the final copy, because it is the only check here that can be
+  // measured rather than predicted. The hook is written in step 1 and judged in
+  // step 2, both before a single slide exists, so neither can verify its own
+  // promise — two rounds of prompt instructions telling them to try did not
+  // hold. When this fails the SLIDES are almost always fine and the one wrong
+  // line is the cover, so the repair rewrites the cover, not the carousel.
+  let hookNote = null;
+  const coverage = checkHookCoverage(chosen.hook, items, axis);
+  if (!coverage.ok) {
+    log(`cover   : ${coverage.problem}`);
+    const replacement = await rewriteHook(seed, items, axis, coverage.problem);
+    if (replacement && hookNamesAxis(replacement, axis)) {
+      const recheck = checkHookCoverage(replacement, items, axis);
+      if (recheck.ok) {
+        log(`cover   : rewritten -> "${replacement}"`);
+        hookNote = `original hook "${chosen.hook}" replaced: ${coverage.problem}`;
+        chosen = { ...chosen, hook: replacement };
+      } else {
+        // Keeping a hook that is known-wrong beats swapping it for another one
+        // that is wrong in the same way; the note carries the problem forward.
+        log(`cover   : rewrite still fails (${recheck.term}) — keeping original, flagged`);
+        hookNote = coverage.problem;
+      }
+    } else {
+      log('cover   : rewrite unusable — keeping original, flagged');
+      hookNote = coverage.problem;
+    }
+  }
+
   // Whatever shipped becomes the thing future generations are forbidden from
   // repeating. Recorded even when QA has open issues — a repeated idea is a
   // failure mode of its own, independent of length/banned-phrase checks.
@@ -777,7 +891,7 @@ async function generatePost(opts = {}) {
     // Must report BOTH check sets. Reading only `check` marked posts "passed"
     // while the run log showed unresolved semantic problems — the saved record
     // disagreed with what actually happened.
-    qa: allProblems().length === 0 ? 'passed' : allProblems(),
+    qa: allProblems().length === 0 && !hookNote ? 'passed' : [...allProblems(), ...(hookNote ? [hookNote] : [])],
     _seed: seed
   };
 }

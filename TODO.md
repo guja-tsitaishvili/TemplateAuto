@@ -66,9 +66,28 @@ improvements with a known reason to wait.
 
   Verified by re-running the failing seed: the hook moved to "The exact words
   to say to each zodiac sign tonight" (still specific, now universally
-  honourable) and all three items delivered on it. Watch for Bug B recurring on
-  scenario hooks specifically — it is the harder of the two to see, because each
-  slide reads fine alone and only the cover-plus-slide pair exposes it.
+  honourable) and all three items delivered on it.
+
+  **Bug A came back anyway (2026-08-26), and prompt fixes are now considered
+  insufficient for it.** Live case: hook "What each zodiac sign misreads as
+  passion" over slides closing "you call constant conflict PASSION" /
+  "you call your isolation SAFETY" / "you call chaos CONNECTION" — 1 item in 3
+  kept the promise, and the judge scored it 9.2 while asserting it fit all
+  three. Root cause, stated properly this time: **the hook named a VALUE of a
+  slot the pattern leaves free per item.** Patterns fix shapes ("And you call
+  X Y"), not values, so any hook naming a value promises something the body was
+  never constrained to deliver. Compounding it, the scoring rubric penalises
+  generic phrasing heavily and rewards specificity, so an over-narrow hook
+  outscores the safe reference hook — which IS in the candidate pool and lost.
+
+  Both previous attempts were prompt-only and both failed for the same
+  structural reason: the hook writer and the hook judge both run BEFORE any
+  slide exists, so neither can verify its own promise. Now fixed three ways:
+  `checkHookCoverage` measures it on the finished copy (free, no API call);
+  a failure rewrites the COVER rather than the carousel; and a hook that names
+  a payoff makes that payoff binding on every item instead of decorative.
+  Known limit: only payoffs after "as"/"for"/"into" are detected — "your quiet
+  storm" names a value with no preposition and is not caught.
 - **Nothing checks grammar.** "She plan every detail" shipped in a generated
   post. QA covers length, banned phrases, repetition and idea-similarity, but
   no agreement or tense checking. Rare enough to leave to a human eye for now.

@@ -277,3 +277,97 @@ function hookNamesAxis(hook, axis) {
 }
 
 module.exports.hookNamesAxis = hookNamesAxis;
+
+/**
+ * Words that carry no promise, so naming them in a hook constrains nothing.
+ * The axis words are added per call — "sign" and "month" are in every hook by
+ * design and must never be treated as a theme.
+ */
+const HOOK_STOP = new Set(
+  ('a an the and or but of to in on for as into about with without your you yours' +
+    ' her his their they them each every what why how who when it its is are was' +
+    ' be been being do does did not no never always still just only really that' +
+    ' this these those based one ones thing things most more less than then so' +
+    ' if because keeps keep always actually really side sides way ways').split(/\s+/)
+);
+
+/**
+ * The PAYOFF of a hook: the thing after "as", "for" or "into". "What each
+ * zodiac sign misreads as passion" promises passion specifically. That is the
+ * position where a hook stops describing the angle and starts naming one
+ * value — which is exactly where over-promising happens.
+ *
+ * @returns {string[]} candidate payoff terms, most significant first
+ */
+function hookPayoffTerms(hook, axis) {
+  const h = norm(hook);
+  const axisWords = new Set(norm(axis).split(' '));
+  const usable = (w) => w.length >= 5 && !HOOK_STOP.has(w) && !axisWords.has(w);
+
+  // ONLY the naming-preposition position. A first version also scanned every
+  // long word in the hook, which flagged "Her birth month, her private world"
+  // and "The exact words to say to each zodiac sign tonight" purely because one
+  // slide happened to contain a matching word. False positives are expensive
+  // here: each one spends a hook-rewrite call and can replace a good hook with
+  // a duller one. Hooks that name a value without a preposition ("your quiet
+  // storm") are not caught, and that is the accepted limit of this check.
+  const m = h.match(/\b(?:as|into|for)\s+(.+)$/);
+  return m ? m[1].split(' ').filter(usable) : [];
+}
+
+/** Loose match so "passion" finds "passions" and "passionate". */
+function mentions(text, term) {
+  const stem = term.replace(/(ing|ed|es|s)$/, '');
+  return stem.length >= 4 && new RegExp(`\\b${escapeRe(stem)}`).test(text);
+}
+
+/**
+ * Does the hook's promise actually appear across the slides?
+ *
+ * The failure this catches, seen live: hook "What each zodiac sign misreads as
+ * passion" over slides ending "you call constant conflict PASSION" (Aries),
+ * "you call your isolation SAFETY" (Taurus), "you call chaos CONNECTION"
+ * (Gemini). One item in three delivered the promise, and the cover is simply
+ * wrong for the other two — each reader only ever sees the cover plus their
+ * own slide, so a hook kept on a third of items is broken for most of them.
+ *
+ * Prompt instructions could not fix this because both the hook writer and the
+ * hook judge run BEFORE any slide exists; asking either to predict coverage is
+ * guesswork, and it was wrong twice. This measures it after the fact instead.
+ *
+ * A term appearing in NO item is not flagged — the slides may be delivering it
+ * in synonyms. The signature of the bug is a term landing on SOME items but not
+ * most, which is a promise kept for a minority.
+ *
+ * @returns {{ok: boolean, problem?: string, term?: string, hits?: number}}
+ */
+function checkHookCoverage(hook, items, axis) {
+  if (!items || items.length < 3) return { ok: true };
+
+  const bodies = items.map((it) =>
+    norm(
+      (it.bullets || []).join(' ') +
+        ' ' +
+        (it.sections || []).map((s) => stripLabel(s.text || '')).join(' ')
+    )
+  );
+
+  const half = Math.ceil(items.length / 2);
+  for (const term of hookPayoffTerms(hook, axis)) {
+    const hits = bodies.filter((b) => mentions(b, term)).length;
+    if (hits > 0 && hits < half) {
+      return {
+        ok: false,
+        term,
+        hits,
+        problem:
+          `hook promises "${term}" but only ${hits}/${items.length} items deliver it — ` +
+          `the cover is wrong for the rest`
+      };
+    }
+  }
+  return { ok: true };
+}
+
+module.exports.checkHookCoverage = checkHookCoverage;
+module.exports.hookPayoffTerms = hookPayoffTerms;
