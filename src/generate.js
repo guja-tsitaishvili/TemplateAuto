@@ -559,6 +559,17 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
           ' sentence reads like a stuck record.'
         : '- Do not mention the sign or month name inside the copy — the title says it.',
     '- Do not write a call to action. That is added separately.',
+    seed.secondPerson === 'forbidden'
+      ? '- NO SECOND PERSON. Not one line may contain "you" or "your". These are' +
+        ' about the speaker alone — what they notice, carry, hide and admit to' +
+        ' themselves. The moment a line is aimed at somebody ("I know how long' +
+        ' you took to reply") it stops being this angle and becomes a message to' +
+        ' an ex, which is a different angle entirely.'
+      : '',
+    seed.secondPerson === 'required'
+      ? '- EVERY line must speak directly TO the person, using "you". These are' +
+        ' said to somebody, not about them.'
+      : '',
     '- For each item also return "idea": a 3-6 word label of that item\'s core' +
       ' thought, e.g. "pre-empts abandonment by leaving first". It is never shown' +
       ' to readers — it is how future posts avoid repeating this idea.',
@@ -820,7 +831,7 @@ async function generatePost(opts = {}) {
   const priorVecs = opts.fresh ? {} : priorVectors(seed.angle, seed.subject, seed.items);
 
   let items = await writeBodies(seed, chosen.hook, undefined, prior);
-  let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples });
+  let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples, secondPerson: seed.secondPerson });
   let semantic = await checkSemantic(seed, items, priorVecs, log);
 
   const allProblems = () => [...check.problems, ...semantic.problems];
@@ -879,7 +890,7 @@ async function generatePost(opts = {}) {
       items = rewritten;
     }
 
-    check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples });
+    check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples, secondPerson: seed.secondPerson });
     semantic = await checkSemantic(seed, items, priorVecs, log);
   }
   log(

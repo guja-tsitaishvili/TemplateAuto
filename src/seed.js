@@ -293,6 +293,14 @@ function roll(opts = {}) {
       // 'allow' = the pattern says where; used by 4-section prose profiles that
       //           sign off a section with "Virgo doesn't flirt. Virgo helps."
       nameItemInCopy: angle.nameItemInCopy || false,
+      // 'forbidden' | 'required' | undefined. Some angles are a self-portrait
+      // and some are spoken AT someone, and the reference lines are unanimous
+      // either way — i-dont-care-but has no "you" in any of its 12, while
+      // apology-you-never-got has one in all 20. Drifting across that line does
+      // not read as a worse post, it reads as a DIFFERENT angle, which is how a
+      // run of i-dont-care-but came back as never-say-out-loud wearing an
+      // anaphora. Checked in code because the model ignores it silently.
+      secondPerson: angle.secondPerson || null,
       // Index into cta.json. The reference set inflects the promo line per
       // format — "Secret Love Match:" on the secret-desire carousels, "Her
       // Best Matches:" on the her-voice ones — so an angle can pin its own.

@@ -62,7 +62,7 @@ function opening(line) {
  *   rewrite only those. `globalProblem` means the fault is with the SET (wrong
  *   count, too many shared openings) and a partial rewrite cannot fix it.
  */
-function checkItems(items, { expectedCount, anaphora, bulletLabels, examples } = {}) {
+function checkItems(items, { expectedCount, anaphora, bulletLabels, examples, secondPerson } = {}) {
   const problems = [];
   // Titles of items that individually failed. A retry can regenerate only
   // these instead of all twelve — the full rewrite was costing as much as the
@@ -200,6 +200,29 @@ function checkItems(items, { expectedCount, anaphora, bulletLabels, examples } =
       if (hit) {
         problems.push(
           `"${title}" reuses a reference example almost verbatim: "${line.slice(0, 60)}..."`
+        );
+        failed.add(title);
+      }
+    }
+  }
+
+  // Self-portrait angles drifting into lines addressed at an ex, or vice versa.
+  // This is not a style nit: it silently converts one angle into another. A run
+  // of i-dont-care-but came back with 23 of 28 lines aimed at a "you" when all
+  // 12 reference lines have none, which made it never-say-out-loud with an
+  // anaphora on top — and it dragged the cover along with it, because the copy
+  // was suddenly about one relationship rather than about themselves.
+  if (secondPerson === 'forbidden' || secondPerson === 'required') {
+    for (const { title, line } of allLines) {
+      const has = /\b(you|your|yours|you're|youre)\b/i.test(norm(line));
+      if (secondPerson === 'forbidden' && has) {
+        problems.push(
+          `"${title}" speaks to someone ("you") — this angle is a self-portrait: "${line.slice(0, 60)}"`
+        );
+        failed.add(title);
+      } else if (secondPerson === 'required' && !has) {
+        problems.push(
+          `"${title}" does not address anyone — this angle is spoken to a person: "${line.slice(0, 60)}"`
         );
         failed.add(title);
       }

@@ -4358,7 +4358,7 @@
     "anaphora": "I am sorry you",
     "bulletCount": 5,
     "pattern": "I am sorry you [gave/did X generously] for people who [withheld exactly that X].",
-    "patternNote": "The second half must MIRROR the first using the same verb or idea. fight/never fought. too much/too little. protected/never protected. listened/never heard. That mirror is the whole line - a bullet without it has failed.",
+    "patternNote": "The second half must MIRROR the first using the same verb or idea. fight/never fought. too much/too little. protected/never protected. listened/never heard. That mirror is the whole line - a bullet without it has failed. SECOND PERSON REQUIRED: all 20 reference lines speak directly to the person owed the apology.",
     "examples": [
       "I am sorry you had to fight for people who never fought for you.",
       "I am sorry you got called too much by people who gave too little.",
@@ -4393,7 +4393,8 @@
         "The apology you never got, based on your {singular}",
         "The apology you are still owed, based on your {singular}"
       ]
-    }
+    },
+    "secondPerson": "required"
   },
   "your-truth": {
     "moods": [
@@ -4680,7 +4681,7 @@
     "anaphora": "I am fine, but",
     "brief": "The gap between the two words everyone says and everything sitting behind them. Each line is one thing they have never said out loud, delivered calmly. No self-pity - the calm is what makes it land.",
     "pattern": "Every bullet opens \"I am fine, but\" then names ONE specific unmet need or self-deception, as a full sentence ending in a full stop.",
-    "patternNote": "What follows the comma is either a need they will not ask for, or a lie they tell themselves with the lie named. The naming is the device - the line says the true thing AND the story told over it.",
+    "patternNote": "What follows the comma is either a need they will not ask for, or a lie they tell themselves with the lie named. The naming is the device - the line says the true thing AND the story told over it. NO SECOND PERSON: all 36 reference lines are self-portrait with no \"you\". Addressing someone turns this into a different angle.",
     "examples": [
       "I carry everyone's weight and call it being reliable.",
       "I wish being needed felt the same as being loved.",
@@ -4730,7 +4731,8 @@
         "Your {singular}, your \"I am fine\"",
         "Your {singular} and the thing behind \"I am fine\""
       ]
-    }
+    },
+    "secondPerson": "forbidden"
   },
   "i-dont-care-but": {
     "moods": [
@@ -4749,7 +4751,7 @@
     "anaphora": "I do not care, but",
     "brief": "The defensive claim of numbness, undercut every time by what follows. A sibling to im-fine-but, but the lie is DENIAL OF FEELING rather than exhaustion from over-giving - this is someone insisting nothing gets to them while listing exactly what does.",
     "pattern": "Every bullet opens \"I do not care, but\" then names something that proves they very much do - noticing, absorbing, hoping, being scared by their own depth of feeling.",
-    "patternNote": "Distinct from im-fine-but: im-fine-but is about carrying too much FOR OTHERS and being tired. i-dont-care-but is about refusing to admit feeling ANYTHING and being caught in the act. The tell is always noticing, absorbing, or being scared by how deeply they feel, not fatigue from giving.",
+    "patternNote": "Distinct from im-fine-but: im-fine-but is about carrying too much FOR OTHERS and being tired. i-dont-care-but is about refusing to admit feeling ANYTHING and being caught in the act. The tell is always noticing, absorbing, or being scared by how deeply they feel, not fatigue from giving. NO SECOND PERSON: every reference line is a self-portrait with no \"you\" in it at all (0 of 12). A generated run drifted to lines addressed at an ex -- \"I do not care, but I know exactly how long you took to reply\" -- which is functionally never-say-out-loud with an anaphora bolted on, and it changes the claim from \"I refuse to admit I feel anything\" to \"I do not care about YOU\". Write about themselves only.",
     "examples": [
       "I cry about it in the shower where no one asks questions.",
       "I feel things so deeply it scares me sometimes.",
@@ -4775,7 +4777,8 @@
         "Your {singular}, your \"I do not care\"",
         "Your {singular} and the thing behind \"I do not care\""
       ]
-    }
+    },
+    "secondPerson": "forbidden"
   },
   "gift-or-curse": {
     "moods": [
