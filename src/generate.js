@@ -183,7 +183,12 @@ async function generateHooks(seed, axis) {
     // claims is fine" over 28 lines that all begin "I do not care, but" —
     // adjacent denials, but not the same one. "I don't care" denies investment,
     // "I'm fine" denies distress, and no slide said fine.
-    seed.anaphora
+    // Gated on bullets because writeBodies only applies the anaphora in its
+    // bullets branch. All seven anaphora angles are bullets-only today, so this
+    // is unreachable — but without the gate, adding "prose" to any one of them
+    // would have the hook step build a cover around a phrase the prose body
+    // never writes.
+    seed.anaphora && seed.format === 'bullets'
       ? [
           '',
           `EVERY LINE OF EVERY SLIDE BEGINS WITH THESE EXACT WORDS: "${seed.anaphora.replace('{item}', seed.items[0])}"`,
@@ -299,7 +304,7 @@ async function scoreHooks(seed, hooks) {
     // Same enforcement for the repeated phrase. The judge crowned "claims is
     // fine" at 9.5 over lines that all read "I do not care, but" — it had no
     // way to know, so it scored the hook on sound alone.
-    seed.anaphora
+    seed.anaphora && seed.format === 'bullets'
       ? `\nHARD RULE: every line of every slide begins "${seed.anaphora.replace('{item}', seed.items[0])}". A hook that restates that claim as a DIFFERENT claim cannot score above 5 — not caring, being fine, and being over it are three different denials, and the cover has to make the same one the lines make.`
       : '',
     seed.bulletLabels && seed.bulletLabels.length
