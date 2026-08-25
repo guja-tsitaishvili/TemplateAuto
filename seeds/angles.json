@@ -418,6 +418,106 @@
       "Your Truth: You want someone who earns your walls coming down. Slowly. Carefully. Without rushing you or punishing you for being guarded. You don't need perfect. You need loyal. Someone who sees your darkness and doesn't flinch. Someone who proves that letting them in won't destroy you."
     ]
   },
+  "why-people-fear-you": {
+    "moods": [
+      "toxic",
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Both halves of how they land on other people - what makes them frightening and what makes them loved. Entirely from the outside; never how they feel about themselves.",
+    "frames": [
+      [
+        "Why people fear you:",
+        "Why people love you:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The reason people fear you, based on your {singular}",
+        "Your {singular}, why people fear you",
+        "Why each {singular} is feared and loved for the same thing"
+      ]
+    },
+    "pattern": "Section 1 opens with a flat statement of a capability, then breaks into clipped fragments for rhythm (\"You watch. You calculate.\" / \"No warning. No fight. No second chance.\"), then closes on what makes it frightening - usually a sentence beginning \"Because\" or a \"People are afraid of\" statement. Section 2 opens with the warm counterpart capability, gives evidence, and closes on the effect that OUTLASTS them - what people never forget, or still miss.",
+    "patternNote": "Both sections are written from other people's point of view - what they observe and conclude - never the reader's inner life. That is what separates this from your-danger, whose second section turns inward to \"Your truth\". The fear is never violence or temper; it is control, detachment or accuracy - patience that means they have been planning, silence louder than anything they said, words that land exactly where aimed. Section 2 must close on something lasting: \"they never forget how steady you were when the world wasn't\", \"you're the person they miss without knowing why\".",
+    "examples": [
+      "Why people fear you: You never lose control. Not visibly. You watch. You calculate. You let people think they have the upper hand while you already know every possible outcome. You don't threaten. You don't warn. You just act. And by the time they realize what happened, it's already done. Your patience is the scariest thing about you. Because it means you've been planning longer than anyone knows.",
+      "Why people fear you: You can erase someone from your life like they never existed. No warning. No fight. No second chance. One day you're the most loving person in the room. The next you're gone. And the silence you leave behind is louder than anything you ever said. People are afraid of how completely you can detach.",
+      "Why people love you: You feel other people's pain like it's happening to you. Not as a concept. As a physical ache. You show up for people who never asked. You stay for people who don't deserve it. You carry a kind of warmth that doesn't perform. It just exists. Quietly. Consistently. And people feel it long after you've left the room. You're the person they miss without knowing why."
+    ]
+  },
+  "love-curse": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The pattern in love they cannot seem to break, traced back to what caused it, and then who they become on the day it stops. The curse is self-fulfilling and the blessing is conditional on one specific change.",
+    "frames": [
+      [
+        "Your Love Curse:",
+        "Your Love Blessing:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "If {each} had a love curse",
+        "Your {singular}, your love curse",
+        "The love curse each {singular} lives with"
+      ]
+    },
+    "pattern": "Section 1 states the pattern, traces the history that built it in 2-3 sentences, then closes by showing how they CAUSE the very thing they fear - a self-fulfilling loop, often opening \"But the truth is\". Section 2 MUST open \"When you finally\" plus the one change that lifts it, then describes who they become on the other side, then closes on what the right person does or does not need from them.",
+    "patternNote": "\"When you finally\" is the mandatory hinge of section 2 and the whole angle depends on it: the blessing is not automatic, it is conditional on one specific act - staying, stopping the performance, letting someone have all of it. Section 1 must land on the loop, not just the flaw: they are terrified of being fully seen and chosen anyway, so they make sure it never gets that far. Distinct from your-dark-gift, which opens section 2 on the word But and reframes the same trait as already valuable; here the good version does not exist yet and has to be unlocked.",
+    "examples": [
+      "Your Love Curse: You love hard but leave harder. The moment things get too real, too close, too good, you find a reason to burn it down before they can. You pick fights when things are going well and create distance when someone gets too close. But the truth is you are terrified of being fully seen and chosen anyway, so you make sure it never gets that far.",
+      "Your Love Blessing: When you finally stop performing and start being honest about what you feel and what you will no longer accept, the love that finds you will fit in a way nothing before it ever did. Not the kind you had to shrink for or carefully maintain. The kind that makes you feel like yourself for the first time in longer than you can remember. The kind you never once have to manage.",
+      "Your Love Blessing: When you finally let someone have all of it, the intensity and the loyalty and the parts you have never shown another person, that love becomes something neither of you ever fully recovers from. In the best way. The right person will not flinch at your darkness. They'll hold it and you'll never regret letting them in."
+    ]
+  },
+  "your-sad-truth": {
+    "moods": [
+      "negative",
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The quiet weight they are carrying that nobody has named for them, and then permission to put it down. No strength claimed, no lesson taught - only release.",
+    "frames": [
+      [
+        "Your sad truth:",
+        "Your peace:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your sad truth",
+        "The sad truth about each {singular}",
+        "What nobody notices about you, based on your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens on the burden in clipped fragments (\"You carry everyone. Quietly. Without complaint.\"), gives the history in one sentence, stacks three short noun phrases, then closes on the wish nobody has granted or the resignation they settled for. Section 2 opens with a plain permission or denial (\"You don't need to earn rest.\" / \"Not every thought is the truth.\"), then MUST include a sentence about \"The people who truly love you\" and what they actually want, then closes on one short promise.",
+    "patternNote": "The \"people who truly love you\" sentence is mandatory and is what makes the second half land - it moves the standard from what the reader demands of themselves to what the people who love them actually want, which is always less. Section 2 offers PEACE, not power: distinct from your-pain, whose second section claims a strength, and from your-love-note, which is three sections and ends on what they are owed. Nothing here is earned or achieved; it is only permitted. Keep the closing promise to one or two short sentences.",
+    "examples": [
+      "Your sad truth: You carry everyone. Quietly. Without complaint. You became the strong one so early you forgot you had a choice. People bring you their problems. Their fears. Their chaos. And you hold it all. But nobody asks what you're holding. Nobody notices the weight. You wish someone would see you cracking before you have to say it out loud.",
+      "Your sad truth: You replay every conversation. Did you sound wrong. Say too much. Say too little. Your mind loops at night. Analyzing. Dissecting. Finding flaws that nobody else noticed. You overthink until you can't sleep. Can't rest. Can't just be. Your brain never gives you a day off.",
+      "Your peace: You're allowed to break. You're allowed to need. Being strong doesn't mean being endless. The people who truly love you want to see you whole, not just useful. Put the weight down. Just for a moment. The world doesn't collapse when you rest. It waits for you.",
+      "Your peace: You don't need to water down your depth for shallow people. The right ones won't flinch at the intensity. They'll meet it. Match it. Thank you for it. Your love is not too much. It's just been given to the wrong hands. The right hands are coming."
+    ]
+  },
   "your-karma": {
     "moods": [
       "negative",
@@ -2900,7 +3000,11 @@
       "What it costs you: You keep choosing people who make you prove yourself. You burn out trying to win someone who was never going to fully show up. And you call exhaustion passion.",
       "What it costs you: You hand over your voice to keep the peace. You shrink until your own opinions disappear. And you call being controlled being loved.",
       "What you need: Someone who wants your opinion, not your obedience. Real love doesn't need to own you to keep you. The right one holds you close without holding you down.",
-      "What you need: Someone steady enough to never make you doubt them. No decoding, no bracing, no waiting for the mood to turn. The right one makes calm feel like closeness instead of boredom."
+      "What you need: Someone steady enough to never make you doubt them. No decoding, no bracing, no waiting for the mood to turn. The right one makes calm feel like closeness instead of boredom.",
+      "The red flag you fall for: The one who promises stability they never actually build. Big words. Future plans. A vision they sell you instead of a life they live.",
+      "Why you fall for it: Being wanted that badly feels like proof you're worth staying for. You mistake their grip for depth.",
+      "What it costs you: You trade your freedom for their reassurance. You stop exploring, stop seeing people, stop being yourself, just to keep them calm. And you call your shrinking world commitment.",
+      "What you need: Someone whose actions already match their words before you ever have to ask. Stop loving the blueprint. Choose the person who's already building the life, not just describing it."
     ]
   },
   "your-attachment-style": {
@@ -4198,6 +4302,8 @@
       "Your trap: They cannot leave because you made hesitation feel unbearable. You taught them what passion looks like when it is not watered down. After you, cautious love feels empty. You did not just enter their life. You set it on fire.",
       "Your magnetism: You make people feel safe without making life feel boring. Your presence is warm. Grounded. Sensual. A quiet dinner. A slow morning. A hand held at exactly the right time.",
       "Your trap: They cannot leave because you became their peace. Their routine. Their favorite place to return to. After you, uncertainty feels exhausting. You did not just love them. You gave their nervous system a home.",
+      "Your magnetism: You pay attention in a world that barely listens. You notice the details. Remember the small things. Fix problems before anyone else sees them coming. Your love is precise. Thoughtful. Intentional. You do not always make a dramatic entrance, but your presence slowly becomes essential. People realize that life works better with you in it.",
+      "Your trap: They cannot leave because you became their escape from everything heavy. You turned ordinary days into adventures and mistakes into stories worth keeping. You made them laugh at themselves. Dream bigger. Take chances. After you, routine feels suffocating. Seriousness feels exhausting. You did not just make them happy. You made them feel free.",
       "Your trap: They cannot leave because no one else makes connection feel this alive. You made their mind race and their heart follow. After you, silence feels heavier. You did not just entertain them. You became the thought they cannot stop returning to."
     ],
     "frames": [
