@@ -64,6 +64,7 @@ function compose(content) {
   const slides = [cover];
   for (const item of content.items) {
     const slide = { type: 'content', theme: themeName, title: item.title };
+    if (item.quote) slide.quote = item.quote;
     if (item.bullets) slide.bullets = item.bullets;
     else if (item.sections) slide.sections = item.sections;
     else throw new Error(`item "${item.title}" has neither bullets nor sections`);

@@ -81,6 +81,17 @@ function pickAngle(rng, ids, table) {
   return ids[ids.length - 1];
 }
 
+/**
+ * Resolves `anaphora`, which can be a bare string, a {subject: value} map, or
+ * have an array at either level to roll a phrasing from.
+ */
+function resolveAnaphora(raw, subjectId, rng) {
+  let value = raw;
+  if (value && typeof value === 'object' && !Array.isArray(value)) value = value[subjectId];
+  if (Array.isArray(value)) value = pick(rng, value);
+  return value || null;
+}
+
 /** Picks a subject id honouring its `weight` (default 1). */
 function pickWeighted(rng, table) {
   const names = Object.keys(table).filter((n) => !table[n].disabled);
@@ -159,6 +170,9 @@ function roll(opts = {}) {
   if (opts.mood) candidates = candidates.filter((a) => angles[a].moods.includes(opts.mood));
   if (opts.voice) candidates = candidates.filter((a) => angles[a].voices.includes(opts.voice));
   if (opts.format) candidates = candidates.filter((a) => angles[a].formats.includes(opts.format));
+  if (opts.subject) {
+    candidates = candidates.filter((a) => !angles[a].subjects || angles[a].subjects.includes(opts.subject));
+  }
 
   if (!candidates.length) {
     throw new Error(`no angle matches those constraints (${JSON.stringify(opts)})`);
@@ -202,7 +216,14 @@ function roll(opts = {}) {
     // Weighted, not uniform: the 12-item subjects are the staple and the
     // 4-5 item ones are variety. Uniform picking produced a whole batch of
     // short carousels and no staple format at all.
-    const subjectId = opts.subject || pickWeighted(rng, subjects);
+    //
+    // Some angles only make grammatical sense on one subject — "I'm an Aries
+    // so..." works, "I'm a January so..." does not. angle.subjects restricts
+    // the pool before picking rather than the copy silently reading wrong.
+    const subjectTable = angle.subjects
+      ? Object.fromEntries(angle.subjects.map((s) => [s, subjects[s]]))
+      : subjects;
+    const subjectId = opts.subject || pickWeighted(rng, subjectTable);
     const subject = subjects[subjectId];
     const format = opts.format || pick(rng, angle.formats);
 
@@ -245,10 +266,12 @@ function roll(opts = {}) {
       pattern: angle.pattern || null,
       patternNote: angle.patternNote || null,
       examples: angle.examples || null,
-      anaphora:
-        angle.anaphora && typeof angle.anaphora === 'object'
-          ? angle.anaphora[subjectId] || null
-          : angle.anaphora || null,
+      // Can be a string, a {subject: ...} map, or either level can hold an
+      // ARRAY of phrasings to roll from — the same account rotates catchphrase
+      // wording ("that is why" vs "of course") over the same self-contradiction
+      // content rule, and forcing one fixed phrase per subject was less true to
+      // the source than the reference posts actually are.
+      anaphora: resolveAnaphora(angle.anaphora, subjectId, rng),
       // Accepts a number or a list to roll from. The reference posts vary
       // within a single format - Girlfriend runs 6,6,6,7 and I-deserve runs
       // 7,5,6 - so a fixed count is less true to the source than a range.
@@ -256,6 +279,11 @@ function roll(opts = {}) {
         ? pick(rng, angle.bulletCount)
         : angle.bulletCount || 5,
       nameItemInCopy: angle.nameItemInCopy === true,
+      // Opts each item into a generated first-person quote line under the
+      // title — "I don't have an attitude, I have a personality you can't
+      // handle." Off by default; only angles that declare it pay the cost.
+      quote: angle.quote === true,
+      quoteExamples: angle.quoteExamples || null,
       // A fixed sequence of bold labels, identical on every slide. Resolved
       // through the same placeholders as frames, so one angle can serve both
       // voices — "What She Hides:" for her, "What He Hides:" for him.

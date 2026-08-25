@@ -3472,7 +3472,10 @@
       6
     ],
     "anaphora": {
-      "birth-month": "I was born in {item}, that is why",
+      "birth-month": [
+        "I was born in {item}, that is why",
+        "Born in {item}, of course"
+      ],
       "zodiac-sign": "I am a/an {item}, that is why"
     },
     "brief": "The reader claiming their own contradictions out loud, using their birth month as the reason. Defiant rather than apologetic - this is not a confession, it is an explanation given to someone who did not ask.",
@@ -3501,7 +3504,17 @@
       "slow people test my patience",
       "I love loud and fight louder",
       "I would burn down the world for my people",
-      "I turn heads without lifting a finger"
+      "I turn heads without lifting a finger",
+      "I have a 5-year plan but wing it anyway",
+      "I say \"I'm fine\" while having a mental breakdown",
+      "I give great advice and ignore all of it",
+      "I'm the responsible one who forgot to eat today",
+      "I act unbothered but overthink everything",
+      "I'm independent but clingy with the right person",
+      "I forgive but never forget",
+      "I'm clingy and distant at the same time",
+      "I'm shy in public and wild in private",
+      "I pull up receipts from 10 years ago"
     ],
     "frames": [
       [
@@ -3552,7 +3565,25 @@
       "I hold everyone's feelings until I lose track of my own.",
       "I keep excusing people who never tried to understand me.",
       "I want someone to stay without me shrinking to fit them.",
-      "I want a love that lets me take up space."
+      "I want a love that lets me take up space.",
+      "I'm exhausted from always being the one who holds it together.",
+      "I wish someone noticed how much effort it takes for me to seem okay.",
+      "I keep pretending I don't need help because needing people has disappointed me before.",
+      "sometimes I want to fall apart without feeling like I'm failing.",
+      "I am tired of being strong in rooms where I needed to be held.",
+      "I want someone to choose me before I have to prove I deserve it.",
+      "I feel lonely even when people are right beside me.",
+      "I don't always know how to ask for comfort without feeling like a burden.",
+      "I miss the version of me that didn't expect people to leave.",
+      "sometimes I disappear emotionally just to see if anyone comes looking.",
+      "I want to be understood without having to translate my pain perfectly.",
+      "I carry too much quietly and call it being easy to love.",
+      "I absorb everyone else's emotions until I forget what mine feel like.",
+      "I keep forgiving people who never learned how to be gentle with me.",
+      "I want someone to stay without me having to become smaller.",
+      "sometimes I confuse being needed with being loved.",
+      "I am tired of making pain look beautiful so nobody gets uncomfortable.",
+      "I want love that doesn't ask me to vanish to keep the peace."
     ],
     "frames": [
       [
@@ -3798,6 +3829,310 @@
       "her": [
         "Girls born in these {singular}s",
         "The type she is, based on her {singular}"
+      ]
+    }
+  },
+  "what-you-never-say": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      6,
+      7
+    ],
+    "anaphora": "That you",
+    "brief": "The unspoken fear or exhaustion behind a trait everyone praises. Every line follows the same confession structure - a private truth the reader would never say to anyone's face. Often lands on a wish to be cared for rather than to keep proving something.",
+    "pattern": "Every bullet opens \"That you\" then completes ONE private admission - a fear, a reversal of the visible trait, or a wish. At least one line should be a wish for someone else to take over, phrased as a quoted or near-quoted line.",
+    "patternNote": "Distinct from never-say-out-loud, which is first-person with no fixed opening. Here the anaphora is the whole device. Content should trace one throughline per sign - being the one who fights, who goes first, who chases - and reveal the fear or cost underneath it. A strong closer names what they wish someone else would say or do.",
+    "examples": [
+      "That you are tired of being the one who fights for everything.",
+      "That you go first because you are scared no one would come for you.",
+      "That your anger is easier to show than your hurt.",
+      "That you want to be chased for once. Not always the one chasing.",
+      "That losing terrifies you more than you will ever admit.",
+      "That sometimes you wish someone would just say \"rest, I've got this.\"",
+      "That you are scared everyone you love will eventually choose someone else.",
+      "That you stay too long because leaving feels like dying.",
+      "That you give comfort all day and come home to none.",
+      "That your jealousy is not control. It is terror of being replaced.",
+      "That you move slow because you have been broken fast before.",
+      "That you would give anything to feel as safe as you make others feel."
+    ],
+    "frames": [
+      [
+        "What You Never Say:",
+        "What It Costs You:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, what you never say out loud",
+        "What you never admit, based on your {singular}"
+      ]
+    }
+  },
+  "your-romantic-superpower": {
+    "moods": [
+      "love",
+      "toxic"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "itemTitle": "{item} Born",
+    "bulletLabels": [
+      "Superpower:",
+      "Draws You In:",
+      "Loves Like:",
+      "Power Move:",
+      "Can't Resist:",
+      "Weak Spot:",
+      "Makes You Stay By:"
+    ],
+    "brief": "The mechanics of attraction laid out as a spec sheet - what makes them magnetic, how they love, their signature move, and the one thing that keeps someone hooked despite it all. Reads like a dating profile written by someone who knows too much.",
+    "pattern": "Seven FIXED labels in order, each a SHORT PHRASE (2-6 words), never a full sentence. Superpower and Draws You In are the surface. Loves Like and Power Move are the mechanics. Can't Resist, Weak Spot and Makes You Stay By explain why people get hooked despite the cost.",
+    "patternNote": "Phrases only - \"cold at first, obsessed underneath\" not \"they are cold at first but obsessed underneath\". Power Move should be an action, often withdrawal-based (\"walking away first\", \"giving less the more you chase\"). Weak Spot is always an emotional gap, not a flaw people would notice. The whole sequence should describe ONE coherent romantic archetype, each label a different facet of it.",
+    "examples": [
+      "Superpower: making you earn it",
+      "Draws You In: cold at first, obsessed underneath",
+      "Loves Like: slow, tested, permanent",
+      "Power Move: walking away first",
+      "Can't Resist: someone who stays anyway",
+      "Weak Spot: never admits they need you",
+      "Makes You Stay By: becoming the one no one replaces",
+      "Superpower: reading you before you speak",
+      "Draws You In: here, then suddenly far away",
+      "Loves Like: deep water, no bottom",
+      "Power Move: giving less the more you chase",
+      "Can't Resist: a mind that keeps up",
+      "Weak Spot: feels everything, shows nothing",
+      "Superpower: making you feel like the only one",
+      "Draws You In: soft eyes, softer voice",
+      "Loves Like: all in, no map back",
+      "Power Move: disappearing into a daydream",
+      "Can't Resist: being someone's safe place",
+      "Weak Spot: loves the fantasy more than the person"
+    ],
+    "frames": [
+      [
+        "Superpower:",
+        "Makes You Stay By:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your romantic superpower",
+        "Your romantic superpower, based on your {singular}"
+      ]
+    }
+  },
+  "the-hidden-side": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": 5,
+    "itemTitle": "The Version Of {item} Nobody Gets To See",
+    "brief": "The private, vulnerable self behind the public persona - written in the third person, about the sign rather than to the reader. Distinct from what-they-hide (no explicit outside/inside contrast) and never-say-out-loud (no anaphora, third person not first).",
+    "pattern": "Five lines, subject dropped or replaced with \"the one who\" - vary the opener, do not repeat it every line. Each line names something they carry privately: a fear, a private grief, a mismatch between how they are seen and how they feel. A GOOD but not mandatory closer: a wish for something to be given freely, phrased with \"without having to ask/earn/perform for it\".",
+    "patternNote": "Openers should vary - some start \"The one who...\", others start with an adjective (\"Soft in a way that...\"), others with \"Tired of...\" or \"Wants...\". Do not use the same opener twice in one slide. The closing line often but not always lands on an unearned desire - checked across three reference signs, two closed that way and one closed on a frustration statement instead, so do not force it every time.",
+    "examples": [
+      "The one who lies awake at 3am wondering if they were too much. Or not enough. Again.",
+      "The one who needs reassurance just as badly as everyone else and would rather die than ask for it.",
+      "Soft in a way that would genuinely shock the people who only know their bold side.",
+      "Tired of being the brave one. Tired of always going first.",
+      "Wants someone to hold them without having to ask for it.",
+      "Feels everything as deeply as the most sensitive signs. They just built a better poker face.",
+      "The one who rehearses conversations they are never going to have.",
+      "Wishes someone would notice without them having to say a single word.",
+      "Quietly grieves the version of themselves they never got to become.",
+      "Wants to be chosen. Out loud. By someone who does not make them work for it.",
+      "Loyal in a way that embarrasses them because it contradicts their own story about themselves.",
+      "Grieves privately and deeply and then comes back laughing and nobody knows.",
+      "The one who has been the funny friend in rooms where they were quietly falling apart.",
+      "Wants to be known completely. Without performing for it. Without earning it.",
+      "Tired of being mistaken for shallow when they are the deepest person in the room."
+    ],
+    "frames": [
+      [
+        "What Shows:",
+        "What They Carry:"
+      ]
+    ],
+    "hooks": {
+      "they": [
+        "The version of {each} nobody gets to see",
+        "What each {singular} never lets anyone see"
+      ]
+    }
+  },
+  "the-defining-quote": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "subjects": [
+      "zodiac-sign"
+    ],
+    "quote": true,
+    "itemTitle": "I'm a/an {item}",
+    "bulletCount": [
+      6,
+      7
+    ],
+    "brief": "One punchy first-person line that could be their motto, followed by a third-person read on the sign - confident, a little combative, occasionally revealing a contradiction. The quote sets the tone; the bullets prove it.",
+    "pattern": "A one-line first-person QUOTE (returned separately, not a bullet) followed by 6-7 third-person bullets about the sign. Bullets vary in shape - direct statements, \"you can try to X, but...\" warnings, \"if [sign] does X, they will Y\" conditionals.",
+    "patternNote": "The quote should sound like something the sign would actually say about themselves, confident and slightly defensive - \"I don't have an attitude, I have a personality you can't handle.\" Bullets name the sign directly in third person (not dropped-subject like the-type-he-is). Mix sentence shapes rather than repeating one structure across all lines.",
+    "examples": [
+      "Aries will never beg for attention - they naturally become the center of it.",
+      "They are fearless when it comes to chasing their dreams.",
+      "You can try to control an Aries, but good luck - they only follow their own rules.",
+      "Aries will fight for you, but the moment they feel unappreciated, they are gone.",
+      "They have zero patience for fake people.",
+      "If an Aries loves you, they will protect you like a warrior.",
+      "Taurus is stubborn, but only because they stand on what they believe.",
+      "If a Taurus lets you into their life, consider yourself special.",
+      "They love deeply but will not chase - if you walk away, they will not stop you.",
+      "A Taurus is strong, but their heart is softer than they show.",
+      "If a Taurus gets a bad vibe from you, trust that they will not ignore it.",
+      "Gemini can be surrounded by people and still feel completely alone.",
+      "They talk so much because silence lets the sad thoughts in.",
+      "Gemini is scared the real them is boring."
+    ],
+    "quoteExamples": [
+      "I don't have an attitude, I have a personality you can't handle",
+      "Loyal to the bone, stubborn to the soul"
+    ],
+    "frames": [
+      [
+        "Their Truth:",
+        "What It Costs Them:"
+      ]
+    ],
+    "hooks": {
+      "they": [
+        "The truth about your sign:",
+        "Your zodiac sign, your truth"
+      ]
+    }
+  },
+  "why-you-pull-away": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": 6,
+    "brief": "The mechanics of withdrawal traced through a fixed six-beat arc - trigger, realization, contradiction, core hurt, deepest fear, and finally a permission/standard to close on. Every line matters in this exact order.",
+    "pattern": "SIX bullets, each a fixed ROLE in order, phrasing may vary: 1) \"You pull away when [trigger].\" 2) \"When you realize [pattern].\" 3) \"When [feeling], even though [contradicting effort].\" 4) \"What hurts most is [specific pain].\" 5) \"Your deepest fear is [core fear].\" 6) \"But you deserve a partner who [standard].\" - line 6 always starts with \"But\" and is the only line offering something positive.",
+    "patternNote": "Lines 1-5 build downward into the wound; line 6 is the required turn upward - do not let the arc end on pain. Line 3 always contains a contradiction word (\"even though\", \"but\"). Keep each line to one sentence, no elaboration after the colon-less structure shown in the examples.",
+    "examples": [
+      "You pull away when being brave starts to feel like being alone.",
+      "When you realize you are always the first to fight, reach, try, and forgive.",
+      "When needing someone makes you feel weak, even though you are exhausted from being strong.",
+      "What hurts most is feeling like people only love your fire when it warms them, not when it burns.",
+      "Your deepest fear is that if you stop chasing, no one will come after you.",
+      "But you deserve a partner who makes you feel safe enough to stop proving you are worth staying for.",
+      "You pull away when your peace starts feeling threatened.",
+      "When someone makes you question the loyalty you were quietly building your whole heart around.",
+      "When you feel taken for granted because you were steady, patient, and easy to rely on.",
+      "What hurts most is realizing someone enjoyed your softness but never protected it.",
+      "Your deepest fear is being replaced after giving someone the safest version of you.",
+      "But you deserve a partner who chooses you gently, clearly, and repeatedly, even when life gets complicated."
+    ],
+    "frames": [
+      [
+        "Why You Pull Away:",
+        "What You Deserve Instead:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, why you pull away",
+        "Why you pull away, based on your {singular}"
+      ]
+    }
+  },
+  "im-a-sign-so": {
+    "moods": [
+      "love",
+      "toxic"
+    ],
+    "voices": [
+      "i"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      6,
+      7
+    ],
+    "subjects": [
+      "zodiac-sign"
+    ],
+    "anaphora": "I'm a/an {item} so",
+    "itemTitle": "I'm a/an {item}",
+    "brief": "Confident, slightly combative trait-ownership - claiming a behaviour as simply who they are, no apology. Distinct from thats-why: that angle requires an internal self-contradiction on every line; here plain confident admissions are fine, contradiction is common but not required.",
+    "pattern": "Every bullet opens \"I'm a/an {item} so\" then a plain trait admission - a behaviour, preference, or contradiction stated flatly, owned rather than confessed.",
+    "patternNote": "Tone is confident/defiant, not vulnerable - contrast with thats-why (defiant explanation) and im-fine-but (quiet exhaustion). A mix of single traits (\"I hate being rushed\") and contradictions (\"I'm independent but also clingy\") both work; do not force contradiction into every line.",
+    "examples": [
+      "I speak my mind whether you like it or not",
+      "I roast my friends out of love",
+      "I'm not afraid to put people in their place",
+      "I'm independent but also clingy",
+      "I do the opposite of what I'm told",
+      "I hide my emotions with jokes",
+      "I have 0 filter and 100% confidence",
+      "I hate being rushed",
+      "I ask for advice and ignore it",
+      "I'm super stubborn but loyal",
+      "I mind my own business",
+      "I'm relatively gentle until you piss me off",
+      "I don't trust easily, but once I do, I'm incredibly loyal",
+      "I simply won't entertain your presence if I don't like you",
+      "I say \"bro\" and mean \"I love you\"",
+      "I disappear without explanation",
+      "I laugh in serious situations",
+      "I sleep to avoid my problems",
+      "I have a sad soul but a happy personality",
+      "I can go from feeling insecure to incredibly confident",
+      "I'm outgoing but prefer to be alone"
+    ],
+    "frames": [
+      [
+        "Who I Am:",
+        "Why I Am Like This:"
+      ]
+    ],
+    "hooks": {
+      "i": [
+        "I'm a/an {item}",
+        "That's just how {item}s are"
       ]
     }
   }

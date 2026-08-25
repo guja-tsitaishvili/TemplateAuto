@@ -333,6 +333,17 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     '- For each item also return "idea": a 3-6 word label of that item\'s core' +
       ' thought, e.g. "pre-empts abandonment by leaving first". It is never shown' +
       ' to readers — it is how future posts avoid repeating this idea.',
+    seed.quote
+      ? [
+          '- For each item also return "quote": one short punchy line in first' +
+            ' person, as if the sign itself is speaking — under the title, above' +
+            ' the bullets, in the sign\'s own defiant/confident voice. Under 60' +
+            ' characters.',
+          seed.quoteExamples && seed.quoteExamples.length
+            ? '  Reference quotes: ' + seed.quoteExamples.map((q) => `"${q}"`).join('  /  ')
+            : ''
+        ].filter(Boolean).join('\n')
+      : '',
     // Wording variety alone does not stop repetition — "I run ahead so no one
     // can leave me behind" and "I sprint forward so no one can see how tired I
     // am" are different sentences and the SAME idea. Each sign has one
@@ -355,6 +366,11 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
   // precise (it targets the IDEA, not one sentence) and cheaper to feed back
   // in than storing whole lines.
   const ideaField = { idea: { type: 'string' } };
+  // Only requested by angles that use it (angle.quote === true) — an italic
+  // first-person line under the title, between the sign name and the
+  // third-person bullets. Optional so every other angle stays at the same
+  // token cost it already had.
+  const quoteField = seed.quote ? { quote: { type: 'string' } } : {};
 
   const itemSchema = isBullets
     ? {
@@ -362,9 +378,10 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
         properties: {
           title: { type: 'string' },
           ...ideaField,
+          ...quoteField,
           bullets: { type: 'array', items: { type: 'string' } }
         },
-        required: ['title', 'idea', 'bullets']
+        required: ['title', 'idea', ...(seed.quote ? ['quote'] : []), 'bullets']
       }
     : {
         type: 'object',

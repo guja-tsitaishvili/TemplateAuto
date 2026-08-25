@@ -348,6 +348,13 @@ ${
        </div>`
     : `<div class="content">
          <h1 class="title">${inline(slide.title)}</h1>
+         ${
+           // A short italic first-person line under the title — "I don't have
+           // an attitude, I have a personality you can't handle" — sitting
+           // between the sign name and the third-person bullets below it.
+           // Reuses the cover's .subtitle rule; nothing else needed it before.
+           slide.quote ? `<p class="subtitle" style="font-style:italic;">"${inline(slide.quote)}"</p>` : ''
+         }
          <div class="body">${body}</div>
        </div>`
 }
