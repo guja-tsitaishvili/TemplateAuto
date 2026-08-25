@@ -304,14 +304,19 @@ function hookPayoffTerms(hook, axis) {
   const axisWords = new Set(norm(axis).split(' '));
   const usable = (w) => w.length >= 5 && !HOOK_STOP.has(w) && !axisWords.has(w);
 
-  // ONLY the naming-preposition position. A first version also scanned every
-  // long word in the hook, which flagged "Her birth month, her private world"
-  // and "The exact words to say to each zodiac sign tonight" purely because one
-  // slide happened to contain a matching word. False positives are expensive
-  // here: each one spends a hook-rewrite call and can replace a good hook with
-  // a duller one. Hooks that name a value without a preposition ("your quiet
-  // storm") are not caught, and that is the accepted limit of this check.
-  const m = h.match(/\b(?:as|into|for)\s+(.+)$/);
+  // Detected by NAMING CONSTRUCTION, not by position. Two earlier versions got
+  // this wrong in opposite directions: scanning every long word flagged "Her
+  // birth month, her private world" on a coincidental match, while checking
+  // only "as|into|for" missed the live failure "What each zodiac sign calls a
+  // spark" over slides landing on passion, devotion, connection and intimacy —
+  // "calls a" is not a preposition, and that shape turned out to be the common
+  // one rather than an edge case.
+  //
+  // These verbs all mean "the reader gives this thing a name", which is exactly
+  // where a hook stops describing the angle and commits to one value.
+  const m = h.match(
+    /\b(?:as|into|for|calls?|calling|called|misreads?|misread|mistakes?|mistook|reads?|confuses?)\s+(?:it\s+|a\s+|an\s+|the\s+)?(.+)$/
+  );
   return m ? m[1].split(' ').filter(usable) : [];
 }
 
@@ -335,9 +340,14 @@ function mentions(text, term) {
  * hook judge run BEFORE any slide exists; asking either to predict coverage is
  * guesswork, and it was wrong twice. This measures it after the fact instead.
  *
- * A term appearing in NO item is not flagged — the slides may be delivering it
- * in synonyms. The signature of the bug is a term landing on SOME items but not
- * most, which is a promise kept for a minority.
+ * Zero coverage IS a failure here, which an earlier version got wrong. The
+ * reasoning then was that the slides might be delivering the promise in
+ * synonyms; the live case that followed was "calls a spark" over four items
+ * that named passion, devotion, connection and intimacy, where zero mentions
+ * of "spark" meant the hook was simply wrong rather than paraphrased. Because
+ * the term is only extracted from an explicit naming construction — the hook
+ * asserting the reader calls it X — an X that appears nowhere is the strongest
+ * signal available, not the weakest.
  *
  * @returns {{ok: boolean, problem?: string, term?: string, hits?: number}}
  */
@@ -355,7 +365,7 @@ function checkHookCoverage(hook, items, axis) {
   const half = Math.ceil(items.length / 2);
   for (const term of hookPayoffTerms(hook, axis)) {
     const hits = bodies.filter((b) => mentions(b, term)).length;
-    if (hits > 0 && hits < half) {
+    if (hits < half) {
       return {
         ok: false,
         term,
