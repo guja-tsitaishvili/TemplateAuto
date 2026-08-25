@@ -37,20 +37,38 @@ improvements with a known reason to wait.
 
 ## Quality
 
-- **Hooks can promise a narrower theme than the pattern actually delivers on
-  every slide.** Found on `thats-why`: hook read "your impossible standards
-  for **yourself**", and the pattern (self-contradiction) is broad enough that
-  only 1/5 Aries lines were actually self-directed — the rest were about
-  demands on others. Taurus, same post, same hook, landed 4/5. Root cause: the
-  hook is written in step 1, before any of the 12 slides exist, so it only has
-  the pattern + 3 reference examples to go on and can pick a specific-sounding
-  slice that is not universal across items. Already fixed hook-vs-pattern
-  alignment (don't promise a loss the pattern never delivers); this is the same
-  bug one level deeper — don't promise a narrow theme *inside* the pattern that
-  is not guaranteed for every item. Fix direction: tell the hook generator to
-  stay at the pattern's actual level of generality rather than latching onto
-  one example's specific angle. Expected to show up on other patterned angles
-  too — check for it as more get built.
+- **FIXED (2026-08-25): hook/bullet mismatch.** Was two separate bugs sharing
+  one symptom, and the original fix direction written here was aimed at the
+  wrong one. Both are now addressed in `generate.js`.
+
+  *Bug A — hook promises a slice only some items can honour.* Found on
+  `thats-why`: hook read "your impossible standards for **yourself**", and the
+  pattern (self-contradiction) is broad enough that only 1/5 Aries lines were
+  self-directed; Taurus landed 4/5 on the same hook. Cause: the hook is written
+  in step 1, before any slide exists, so it can latch onto a specific-sounding
+  slice that is not universal. Fixed with a **12-item test** in `generateHooks`
+  plus a matching coverage rule in `scoreHooks` so the judge enforces it.
+  NOTE the original entry here proposed "tell the hook generator to stay at the
+  pattern's level of generality" — that was rejected on implementation. Making
+  hooks *general* makes them weaker, and specific hooks are what stop a scroll.
+  The rule that shipped is "as narrow as you like, provided all 12 items can
+  honour it", which keeps the sharpness and drops only the unkeepable promise.
+
+  *Bug B — the body ignores the hook on some items.* Caught in testing on
+  `how-to-love-them` (an unpatterned angle, so Bug A's machinery did not even
+  apply): hook was "what each sign needs you to say **when they quiet down**",
+  Taurus honoured it exactly, and Aries wrote about de-escalating a *fight* —
+  the opposite behaviour. The body step already received the hook and was told
+  to "write to it", which was too passive to bind. Fixed by making the hook an
+  explicit contract in `writeBodies`: if the hook names a situation, every item
+  must be written inside that situation, and an item that answers a different
+  question has failed however good its lines are.
+
+  Verified by re-running the failing seed: the hook moved to "The exact words
+  to say to each zodiac sign tonight" (still specific, now universally
+  honourable) and all three items delivered on it. Watch for Bug B recurring on
+  scenario hooks specifically — it is the harder of the two to see, because each
+  slide reads fine alone and only the cover-plus-slide pair exposes it.
 - **Nothing checks grammar.** "She plan every detail" shipped in a generated
   post. QA covers length, banned phrases, repetition and idea-similarity, but
   no agreement or tense checking. Rare enough to leave to a human eye for now.

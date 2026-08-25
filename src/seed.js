@@ -161,7 +161,11 @@ function roll(opts = {}) {
         : Math.random;
 
   let candidates = Object.keys(angles);
-  if (opts.angle) candidates = candidates.filter((a) => a === opts.angle);
+  if (opts.angle) {
+    candidates = candidates.filter((a) => a === opts.angle);
+  } else {
+    candidates = candidates.filter((a) => !angles[a].disabled);
+  }
   // Angles already used in THIS run. The cooldown reads the recorded log, so a
   // batch that is not being recorded would otherwise repeat itself.
   if (opts.exclude && opts.exclude.length && candidates.length > opts.exclude.length) {
@@ -319,6 +323,7 @@ function stats() {
   const subjectCount = Object.keys(subjects).filter((n) => !subjects[n].disabled).length;
 
   for (const [id, a] of Object.entries(angles)) {
+    if (a.disabled) continue;
     const voicesWithHooks = a.voices.filter((v) => a.hooks[v]);
     const n = voicesWithHooks.length * subjectCount * a.formats.length;
     combos += n;

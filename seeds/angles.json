@@ -804,12 +804,113 @@
       "She needs a man who notices she is tired before she admits it.",
       "She is not cold, she is just been her own safe place too long.",
       "She is not too sensitive, you are just used to women who gave up on feeling.",
-      "She is not difficult, she just refuses to shrink."
+      "She is not difficult, she just refuses to shrink.",
+      "She'll know you're lying before you finish the sentence.",
+      "She'll leave you on read while thinking about you all day.",
+      "She needs a man who's interesting enough to keep her present.",
+      "He'd rather fix it than talk about it.",
+      "He remembers things you forgot you told him.",
+      "He needs a woman who's patient with his walls.",
+      "He's not distant, he's just careful with what's his."
     ],
     "bulletCount": [
       6,
       6,
       7
+    ]
+  },
+  "born-on-dates-trait-portrait": {
+    "disabled": true,
+    "note": "Inert until the birthdate feature is built (roll() has no day-of-month input). See birth-date-group in subjects.json.",
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "subjects": [
+      "birth-date-group"
+    ],
+    "brief": "A pure-virtue portrait for people born on a specific date cluster. No relationship framing, no cost, no contrast — just quiet strengths, the kind that show up in how they treat other people.",
+    "frames": [
+      [
+        "Their Vibe:",
+        "Their Gift:"
+      ]
+    ],
+    "hooks": {
+      "they": [
+        "People born on these dates",
+        "Your birth date, your hidden gift"
+      ]
+    },
+    "itemTitle": "People Born On {item}",
+    "pattern": "[A quiet, specific virtue about how they treat other people, stated as a bare fact with no subject pronoun.]",
+    "patternNote": "Every line drops the subject entirely - it starts on the verb (\"feels\", \"heals\", \"makes\"), never \"they\" or \"you\". No contrast, no cost, no closing turn - this angle is unbroken warmth throughout, unlike every other positive/love angle in this bank which pairs a trait with a price. Keep it about generosity toward OTHERS (safety, healing, noticing pain) rather than personal achievement or confidence.",
+    "examples": [
+      "feels everything deeply but keeps it inside",
+      "has the softest heart behind their poker face",
+      "makes everyone feel weirdly safe",
+      "sees the light in the darkest souls",
+      "heals others through their presence"
+    ],
+    "bulletCount": [
+      6,
+      7
+    ]
+  },
+  "born-on-dates-partner": {
+    "disabled": true,
+    "note": "Inert until the birthdate feature is built (roll() has no day-of-month input). See birth-date-group in subjects.json.",
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "subjects": [
+      "birth-date-group"
+    ],
+    "brief": "A partner-trait list for people born on a specific date cluster. Same free-line contrast style as the-archetype, but with no fixed closing pair - it just ends on a trait, unresolved.",
+    "frames": [
+      [
+        "His Vibe:",
+        "What That Means for You:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Girlfriends born on these dates",
+        "If she was born on {item}"
+      ],
+      "him": [
+        "Boyfriends born on these dates",
+        "If he was born on {item}"
+      ]
+    },
+    "itemTitle": {
+      "her": "If She Was Born On: {item}",
+      "him": "If He Was Born On: {item}"
+    },
+    "pattern": "He [does a specific behaviour], [often paired with why it matters to a partner]. No fixed closing line - the last bullet is just another trait, not a defence or a partner-instruction.",
+    "patternNote": "Distinct from the-archetype: that angle MUST end on the needs-a-partner-who / not-X-just-Y pair. This one never does - every line is a standalone trait of equal weight, and the set can end on any of them. Do not smuggle in a defensive closer here; if the material wants one, it belongs in the-archetype instead.",
+    "examples": [
+      "He protects you in ways you'll never know about",
+      "He needs a woman who sees the softness under the discipline",
+      "He's not distant, he's just careful with what's his",
+      "She'll know you're lying before you finish the sentence",
+      "She needs a man who doesn't panic when she goes quiet"
+    ],
+    "bulletCount": [
+      7,
+      8
     ]
   },
   "one-that-got-away": {
@@ -3733,6 +3834,57 @@
       ],
       "him": [
         "The warning label {subj} should come with, by his {singular}"
+      ]
+    }
+  },
+  "the-monthly-profile": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "subjects": [
+      "birth-month"
+    ],
+    "itemTitle": "{item} girl",
+    "bulletLabels": [
+      "Her vibe:",
+      "Superpower:",
+      "Downfall:",
+      "In public:",
+      "In private:",
+      "Dating her:",
+      "Mood:",
+      "Her mantra:"
+    ],
+    "brief": "A full eight-beat personality dossier for one birth month, moving from surface charm to the private exception underneath, then closing on a quoted line in her own voice. Denser than the-archetype - a profile, not a list of loose recognitions.",
+    "pattern": "Eight FIXED labels in order, each a SHORT PHRASE (2-6 words), except Her mantra which is a first-person line in quotation marks. Her vibe and Superpower are the surface charm. Downfall names the specific cost of that same charm. In public and In private are an explicit contrast pair - composed, then not. Dating her is an instruction, stated as a short condition. Mood is two states joined by a comma, not a single word. Her mantra is what she would actually say out loud, never a description of her.",
+    "patternNote": "Downfall must trace back to the trait named in Her vibe/Superpower, not introduce a new flaw. In public and In private must contradict each other sharply - if they read as the same mood, the beat has failed. Her mantra is quoted speech, not a summary (\"I'll figure it out alone\" not \"she prefers independence\"). Distinct from the-warning-label: labels are fixed at eight not five, most beats are short phrases not two-sentence beats, and it ends on a spoken line rather than a stated need.",
+    "examples": [
+      "Her vibe: too young to be this serious",
+      "Superpower: has a plan for everything",
+      "Downfall: doesn't know how to relax",
+      "In public: calm, sharp, a little intimidating",
+      "In private: crying, then back to the to-do list",
+      "Dating her: prove you're worth her",
+      "Mood: locked in, then completely shut off",
+      "Her mantra: \"I'll figure it out alone\""
+    ],
+    "frames": [
+      [
+        "Her vibe:",
+        "Her mantra:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "The girl behind every birth month",
+        "Her {singular}, her whole personality"
       ]
     }
   },

@@ -117,6 +117,21 @@ async function generateHooks(seed, axis) {
     '',
     'Spread them across all four. Vary the IDEA, not the structure.',
     '',
+    // The earlier fix stopped hooks promising content OUTSIDE the pattern. This
+    // is the same bug one level in: a hook can promise a narrow slice INSIDE the
+    // angle that only some items can honour ("your impossible standards for
+    // yourself" — true of 1/5 signs, the rest were standards for other people).
+    // The rule is NOT "be general" — specific hooks are the strong ones. The
+    // rule is that the specificity has to survive all 12 items.
+    `THE 12-ITEM TEST — apply it to every hook before you return it:`,
+    `could EVERY one of the ${seed.items.length} items honestly deliver on this`,
+    'hook, or only some of them? A hook may be as specific and as narrow as you',
+    'like — narrow is what makes a reader stop — but if it names a situation, a',
+    'target or a condition that only a few items can plausibly answer, it is a',
+    'failed hook. Each reader only ever sees the cover plus THEIR item, so a',
+    'promise kept on eight items and broken on four is broken for a third of',
+    'them. Discard those and write one whose specificity holds everywhere.',
+    '',
     // Without this the hook was written blind to the slide titles, producing
     // covers that did not match the carousel — a "the side of you they never
     // earned the right to see" hook over slides titled "January Girlfriend".
@@ -174,6 +189,16 @@ async function scoreHooks(seed, hooks) {
     'Penalise heavily: generic phrasing that could describe anyone, therapy-speak,',
     'trying too hard to sound clever, abstract nouns, anything that reads like a',
     'greeting card or a self-help caption.',
+    // The generator is now told to apply the 12-item test; the judge has to
+    // enforce it or the best-sounding narrow hook still wins. Deliberately does
+    // NOT reward generality — a vague hook must not beat a specific one here.
+    '',
+    `COVERAGE RULE: this carousel has ${seed.items.length} items (${seed.items.join(', ')}).`,
+    'Score 4 or lower any hook naming a situation, a target or a condition that',
+    'only SOME of those items could plausibly deliver on — a promise kept on most',
+    'items and broken on the rest is broken, because each reader sees only the',
+    'cover and their own item. This is not a reason to prefer vague hooks: a',
+    'specific hook that holds for every item beats a general one every time.',
     'Reward: plainness, natural speech, an uncomfortable truth the reader can',
     'stand inside. A hook naming one person\'s private props (a landlord, a',
     'particular object) is worse than one naming a feeling everybody has had.',
@@ -280,6 +305,18 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     seedContext(seed),
     '',
     `COVER HOOK (already chosen — write to it): "${hook}"`,
+    // "write to it" was too passive. The hook is the only thing the reader has
+    // agreed to before they swipe, and a narrow hook is the GOOD kind — but a
+    // scenario hook ("when they quiet down") was honoured on two items and
+    // quietly dropped on the third, which wrote about fighting instead. Each
+    // slide is read alone, so one drifting item breaks the post for that reader.
+    'THE HOOK IS A CONTRACT. If it names a situation, a moment or a condition',
+    '("when they go quiet", "after a fight", "the first time you say no"), then',
+    'EVERY item must be written inside that same situation. An item that answers',
+    'a different question has failed even if the lines are strong on their own.',
+    'Before writing each item, re-read the hook and ask what it promised. If an',
+    'item cannot honestly be written inside it, write the closest thing that can',
+    'be — never substitute a different scenario.',
     '',
     seed.pattern
       ? [

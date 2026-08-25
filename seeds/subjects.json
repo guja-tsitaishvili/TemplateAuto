@@ -37,6 +37,24 @@
     ],
     "weight": 5
   },
+  "birth-date-group": {
+    "singular": "birth date group",
+    "each": "each birth date group",
+    "items": [
+      "1, 10, 19, 28",
+      "2, 11, 20, 29",
+      "3, 12, 21, 30",
+      "4, 13, 22, 31",
+      "5, 14, 23",
+      "6, 15, 24",
+      "7, 16, 25",
+      "8, 17, 26",
+      "9, 18, 27"
+    ],
+    "note": "Disabled - deliberately kept off for now (birthdate scope is deferred). The list itself is complete: each group is every day 1-31 sharing the same numerology digital root (1+0=1, 2+9=1+1=2, etc), so every possible birth date maps to one of these 9 groups with no gaps. Verified against 3 reference examples (1/10/19/28, 6/15/24, 7/16/25) which each reduce to a single root - confirmed, not guessed. A second reference family (\"your birth date, your hidden gift\") uses a DIFFERENT grouping that does not reduce to any single digital root across its examples - that scheme is unresolved and NOT represented here; do not assume it matches this list. Flip disabled to false when ready to activate.",
+    "weight": 1,
+    "disabled": true
+  },
   "attachment-style": {
     "singular": "attachment style",
     "each": "each attachment style",
