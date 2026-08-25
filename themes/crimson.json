@@ -1,0 +1,37 @@
+{
+  "label": "Red / white",
+  "moods": [
+    "toxic",
+    "negative"
+  ],
+  "allowArt": true,
+  "googleFonts": [
+    "Playfair Display:ital,wght@1,700;1,800;0,700",
+    "Lora:ital,wght@0,400;0,700;1,400"
+  ],
+  "bg": "#8E1210",
+  "ink": "#F7EDE3",
+  "titleColor": "#FFFFFF",
+  "accent": "#F7EDE3",
+  "titleFont": "'Playfair Display', Georgia, serif",
+  "titleWeight": 700,
+  "titleStyle": "italic",
+  "titleSize": 104,
+  "titleTransform": "none",
+  "titleLetterSpacing": "0",
+  "titleAlign": "left",
+  "bodyFont": "'Lora', Georgia, serif",
+  "bodyWeight": 400,
+  "bodySize": 38,
+  "bodyLineHeight": 1.36,
+  "bodyAlign": "justify",
+  "bulletChar": "•",
+  "coverTitleSize": 104,
+  "coverAlign": "right",
+  "padding": 86,
+  "texture": {
+    "type": "paper",
+    "strength": 0.45,
+    "vignette": 0.34
+  }
+}

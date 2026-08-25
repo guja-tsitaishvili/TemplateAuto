@@ -1,0 +1,118 @@
+{
+  "prefix": "demo",
+  "slides": [
+    {
+      "type": "content",
+      "theme": "pink",
+      "title": "March Girlfriend",
+      "bullets": [
+        "She remembers exactly what you said three weeks ago at 2am",
+        "She forgives you faster than she should and knows it",
+        "She gives everyone the love she's still waiting to receive",
+        "She'll romanticize you so hard you'll start believing her version",
+        "She needs a man who's gentle with her even when she's not asking",
+        "She's not too sensitive, you're just used to women who gave up on feeling"
+      ]
+    },
+    {
+      "type": "cover",
+      "theme": "mustard",
+      "titleTop": "Your birth month,",
+      "titleBottom": "your fear:",
+      "titleTransform": "uppercase",
+      "decorations": [
+        {
+          "src": "snake",
+          "at": "top-left",
+          "size": 26,
+          "bleed": 22,
+          "flip": true
+        },
+        {
+          "src": "skull",
+          "at": "bottom-left",
+          "size": 24,
+          "bleed": 10,
+          "rotate": -6
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "theme": "mustard",
+      "title": "January",
+      "sections": [
+        {
+          "label": "Your fear:",
+          "text": "Being ordinary. You dream big but deep down you're scared you'll never live up to what you know you're capable of. You set impossible standards because mediocrity feels like death, but the pressure is crushing you. You're terrified that one day you'll wake up and realize you played it safe, that all those big plans stayed plans."
+        },
+        {
+          "label": "Your power:",
+          "text": "You don't just dream, you build empires from nothing. When everyone else is waiting for permission or the perfect moment, you're already three steps ahead making it happen. Your ambition isn't just about success, it's about proving to yourself that you're capable of everything you said you'd be. The fire in you doesn't burn out, it only burns brighter when people doubt you."
+        }
+      ]
+    },
+    {
+      "type": "cover",
+      "theme": "sage",
+      "title": "What each zodiac sign secretly needs to hear",
+      "decorations": [
+        {
+          "src": "grapes",
+          "at": "top-left",
+          "size": 30,
+          "bleed": 18
+        },
+        {
+          "src": "grapes",
+          "at": "bottom-right",
+          "size": 22,
+          "bleed": 22,
+          "flip": true,
+          "rotate": 12
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "theme": "sage",
+      "title": "Aries",
+      "bullets": [
+        "You don't have to earn the rest. You're allowed to stop.",
+        "It wasn't too much. You just asked the wrong people for it.",
+        "You can put the armor down here. Nothing is going to hit you.",
+        "You brace for people to go. Stay, and let one person prove you wrong.",
+        "You were never hard to love. You were just never truly held."
+      ]
+    },
+    {
+      "type": "cover",
+      "theme": "crimson",
+      "titleTop": "Your birth month,",
+      "titleBottom": "your toxic attraction",
+      "decorations": [
+        {
+          "src": "amphora",
+          "at": "bottom-right",
+          "size": 28,
+          "bleed": 10
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "theme": "crimson",
+      "title": "November",
+      "sections": [
+        {
+          "label": "Your Toxic Attraction:",
+          "text": "You attract people who flirt like it is therapy and disappear the moment things get real. They are fascinated by your depth right up until it asks something of them. You want a connection that matches your intensity. The world keeps sending you puddles and calling them oceans. They love the mystery of you. They run the second the mystery turns into intimacy."
+        },
+        {
+          "label": "What You Really Need:",
+          "text": "Someone who can handle the full weight of who you are without flinching. A partner who goes beneath the surface willingly and stays there. You need a bond that feels built for you specifically. Private, powerful, and completely real. You do not need someone fascinated by your depth. You need someone brave enough to live in it."
+        }
+      ]
+    }
+  ]
+}

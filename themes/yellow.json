@@ -1,0 +1,39 @@
+{
+  "label": "Yellow / black",
+  "aliases": [
+    "mustard"
+  ],
+  "moods": [
+    "negative",
+    "toxic"
+  ],
+  "allowArt": true,
+  "googleFonts": [
+    "Zilla Slab:wght@600;700",
+    "Source Serif 4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400"
+  ],
+  "bg": "#E8A317",
+  "ink": "#141008",
+  "titleColor": "#100C05",
+  "accent": "#100C05",
+  "titleFont": "'Zilla Slab', Georgia, serif",
+  "titleWeight": 700,
+  "titleSize": 104,
+  "titleTransform": "none",
+  "titleLetterSpacing": "0.01em",
+  "titleAlign": "left",
+  "bodyFont": "'Source Serif 4', Georgia, serif",
+  "bodyWeight": 400,
+  "bodySize": 40,
+  "bodyLineHeight": 1.34,
+  "bodyAlign": "justify",
+  "bulletChar": "•",
+  "coverTitleSize": 116,
+  "coverAlign": "right",
+  "padding": 88,
+  "texture": {
+    "type": "paper",
+    "strength": 0.32,
+    "vignette": 0.16
+  }
+}

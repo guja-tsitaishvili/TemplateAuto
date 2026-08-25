@@ -1,0 +1,18 @@
+{
+  "default": 0,
+  "variants": [
+    {
+      "label": "{Poss} Best Matches:",
+      "text": "Check your compatibility on astraten.com (link in profile)"
+    },
+    {
+      "label": "{Poss} Best Matches:",
+      "text": "Find out who you actually belong with on astraten.com (link in profile)"
+    },
+    {
+      "label": "Want the full reading?",
+      "text": "Get yours free on astraten.com (link in profile)"
+    }
+  ],
+  "note": "Labels may use {Poss}, which compose.js resolves from the post voice: Your / Her / His / Their. The reference set inflects this per carousel."
+}

@@ -1,0 +1,47 @@
+{
+  "you": {
+    "label": "Direct — second person",
+    "guidance": "Address the reader as 'you'. Accusatory-intimate, like someone who knows them too well. Never soften with 'maybe' or 'sometimes'. State it as fact and let it land.",
+    "pronouns": {
+      "subject": "you",
+      "object": "you",
+      "possessive": "your"
+    }
+  },
+  "her": {
+    "label": "About a woman — third person",
+    "guidance": "Describe her to someone who is about to lose her, or already did. The reader is either the woman recognising herself, or the man realising what he had. Both must feel seen by the same sentence.",
+    "pronouns": {
+      "subject": "she",
+      "object": "her",
+      "possessive": "her"
+    }
+  },
+  "him": {
+    "label": "About a man — third person",
+    "guidance": "Describe him without excusing him. The reader is a woman deciding whether the pattern she is seeing is the one she thinks it is. Be exact, not bitter.",
+    "pronouns": {
+      "subject": "he",
+      "object": "him",
+      "possessive": "his"
+    }
+  },
+  "they": {
+    "label": "Neutral — third person",
+    "guidance": "Describe the type in the abstract. Useful when the angle is about behaviour rather than relationship dynamics. Least emotionally charged of the four — use sparingly.",
+    "pronouns": {
+      "subject": "they",
+      "object": "them",
+      "possessive": "their"
+    }
+  },
+  "i": {
+    "label": "First person confession",
+    "guidance": "The reader speaks about themselves in first person, as if finally being honest. The COVER stays addressed to the reader as \"you\" (constant, not pronoun-driven) — only the body switches to \"I\". This mismatch is deliberate: the hook invites them in, the body is their own voice.",
+    "pronouns": {
+      "subject": "I",
+      "object": "me",
+      "possessive": "my"
+    }
+  }
+}

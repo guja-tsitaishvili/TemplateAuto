@@ -1,0 +1,35 @@
+{
+  "label": "Sage / olive (vintage, framed covers)",
+  "moods": ["positive", "love"],
+  "allowArt": true,
+
+  "googleFonts": [
+    "Playfair Display:wght@600;700;800",
+    "Cormorant Garamond:wght@500;600;700"
+  ],
+
+  "bg": "#E4EACD",
+  "ink": "#4A6B1F",
+  "titleColor": "#4F6E22",
+  "accent": "#4F6E22",
+
+  "titleFont": "'Playfair Display', Georgia, serif",
+  "titleWeight": 700,
+  "titleSize": 120,
+  "titleTransform": "uppercase",
+  "titleLetterSpacing": "0.01em",
+  "titleAlign": "center",
+
+  "bodyFont": "'Cormorant Garamond', Georgia, serif",
+  "bodyWeight": 600,
+  "bodySize": 50,
+  "bodyLineHeight": 1.3,
+  "bodyAlign": "left",
+
+  "bulletChar": "\u2022",
+  "coverTitleSize": 132,
+  "coverAlign": "center",
+  "padding": 96,
+  "coverFrame": "ornate",
+  "texture": { "type": "paper", "strength": 0.2, "vignette": 0 }
+}

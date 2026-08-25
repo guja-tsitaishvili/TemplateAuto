@@ -1,0 +1,67 @@
+{
+  "birth-month": {
+    "singular": "birth month",
+    "each": "each birth month",
+    "items": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "weight": 5
+  },
+  "zodiac-sign": {
+    "singular": "zodiac sign",
+    "each": "each zodiac sign",
+    "items": [
+      "Aries",
+      "Taurus",
+      "Gemini",
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra",
+      "Scorpio",
+      "Sagittarius",
+      "Capricorn",
+      "Aquarius",
+      "Pisces"
+    ],
+    "weight": 5
+  },
+  "attachment-style": {
+    "singular": "attachment style",
+    "each": "each attachment style",
+    "items": [
+      "Anxious",
+      "Avoidant",
+      "Secure",
+      "Disorganised"
+    ],
+    "note": "Disabled - off-brand for now. Flip disabled to false to bring back.",
+    "weight": 1,
+    "disabled": true
+  },
+  "love-language": {
+    "singular": "love language",
+    "each": "each love language",
+    "items": [
+      "Words of Affirmation",
+      "Quality Time",
+      "Physical Touch",
+      "Acts of Service",
+      "Receiving Gifts"
+    ],
+    "weight": 1,
+    "disabled": true,
+    "note": "Disabled - off-brand for now. Flip disabled to false to bring back."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "note": "Hashtags are picked in code from the seed, not written by AI. They are not creative writing — consistency helps reach, and a model has no way to know which tags actually perform. Edit these lists as you learn what works. Instagram now favours a small number of relevant tags, so `max` is 5.",
+  "max": 5,
+
+  "core": [
+    "astrology",
+    "zodiac",
+    "horoscope",
+    "zodiacsigns",
+    "astrologypost",
+    "zodiacfacts",
+    "astrologylovers"
+  ],
+
+  "bySubject": {
+    "zodiac-sign": ["zodiacsign", "starsign", "sunsign", "zodiaccommunity"],
+    "birth-month": ["birthmonth", "bornin", "birthchart", "zodiacbaby"]
+  },
+
+  "byMood": {
+    "love": ["lovequotes", "relationships", "zodiaclove", "couplegoals", "soulmate"],
+    "positive": ["selflove", "healing", "growth", "affirmations", "selfworth"],
+    "negative": ["relatable", "deepthoughts", "feelings", "heartbreak", "overthinking"],
+    "toxic": ["toxicrelationships", "redflags", "situationship", "heartbreak", "toxiclove"]
+  }
+}

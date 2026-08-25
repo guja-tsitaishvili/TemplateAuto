@@ -1,0 +1,17 @@
+{
+  "name": "poster-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "HTML/CSS -> PNG Instagram carousel poster renderer",
+  "main": "src/renderer.js",
+  "scripts": {
+    "gen": "node src/cli.js",
+    "serve": "node src/server.js",
+    "demo": "node src/cli.js samples/demo.json out"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "playwright": "^1.47.0"
+  }
+}

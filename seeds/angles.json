@@ -1,0 +1,3804 @@
+{
+  "toxic-attraction": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The type they are magnetically drawn to that always ends the same way. Name the pattern, never a person. The reader should feel caught, not insulted.",
+    "frames": [
+      [
+        "Your Toxic Attraction:",
+        "What You Really Need:"
+      ],
+      [
+        "The Pattern:",
+        "The Way Out:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your toxic attraction",
+        "The type you keep choosing, based on {your} {singular}"
+      ],
+      "her": [
+        "Why {her} taste keeps breaking {her} heart, based on {her} {singular}"
+      ],
+      "him": [
+        "The woman he keeps choosing and the one he actually needs"
+      ]
+    }
+  },
+  "addiction": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What they are addicted to inside a relationship — the chase, being needed, the almost, the reassurance. Not substances. The high and the cost.",
+    "frames": [
+      [
+        "Your Addiction:",
+        "What It Costs You:"
+      ],
+      [
+        "The High:",
+        "The Comedown:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your addiction",
+        "What you are actually addicted to in love"
+      ],
+      "her": [
+        "What {her} heart keeps going back to, based on {her} {singular}"
+      ]
+    }
+  },
+  "self-sabotage": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "prose",
+      "bullets"
+    ],
+    "brief": "The precise moment they wreck something good, and the story they tell themselves while doing it. It should read as a confession, not an accusation.",
+    "frames": [
+      [
+        "How You Sabotage It:",
+        "What You Are Protecting:"
+      ],
+      [
+        "The Moment It Breaks:",
+        "The Real Reason:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you ruin it right before it gets good",
+        "Your {singular}, your self-sabotage"
+      ],
+      "they": [
+        "How each {singular} destroys a good thing"
+      ]
+    }
+  },
+  "own-red-flag": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets",
+      "prose"
+    ],
+    "brief": "Their OWN red flag, not the ones they spot in others. This is the whole hook — the reversal. Make it uncomfortable and fair.",
+    "frames": [
+      [
+        "Your Red Flag:",
+        "In Your Defence:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your red flag, based on {your} {singular}",
+        "You are somebody's red flag. Here is which one."
+      ]
+    }
+  },
+  "the-loop": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The relationship pattern they have repeated three times without noticing. Describe the loop as a sequence so the recognition is undeniable.",
+    "frames": [
+      [
+        "Your Loop:",
+        "Where It Breaks:"
+      ],
+      [
+        "The Cycle:",
+        "The Exit:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The same relationship you keep having, based on {your} {singular}"
+      ],
+      "her": [
+        "Why it always ends the same way for {her}"
+      ]
+    }
+  },
+  "how-they-test": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The small tests they set without admitting they are tests — going quiet, waiting to be chased, saying they are fine. And what passing actually looks like.",
+    "frames": [
+      [
+        "How You Test People:",
+        "What Passing Looks Like:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you test people without telling them",
+        "The test each {singular} sets and never announces"
+      ],
+      "her": [
+        "The test {her} silence is really running"
+      ],
+      "him": [
+        "How he tests her and calls it nothing"
+      ]
+    }
+  },
+  "going-cold": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "him",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The mechanics of emotional withdrawal — how the temperature drops, in what order, and what it is actually defending against.",
+    "frames": [
+      [
+        "How You Go Cold:",
+        "What It Is Protecting:"
+      ],
+      [
+        "The Shutdown:",
+        "The Reason:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you go cold, based on {your} {singular}"
+      ],
+      "him": [
+        "How he pulls away, based on {his} {singular}"
+      ],
+      "her": [
+        "What {her} silence actually means"
+      ]
+    }
+  },
+  "what-you-tolerate": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What they accept that they should not, and the reason they call it patience. Land on the cost, not the scolding.",
+    "frames": [
+      [
+        "What You Tolerate:",
+        "What You Should Not:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you put up with that you should not",
+        "Your {singular}, your blind spot in love"
+      ],
+      "her": [
+        "What {she} calls patience and everyone else calls settling"
+      ]
+    }
+  },
+  "how-they-lose-interest": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "him",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The fade. Not the dramatic ending — the quiet one. What stops first, what they keep doing out of guilt, and the moment they knew.",
+    "frames": [
+      [
+        "How You Lose Interest:",
+        "What You Owe Them:"
+      ],
+      [
+        "The Fade:",
+        "The Moment You Knew:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you lose interest, based on {your} {singular}"
+      ],
+      "him": [
+        "How he checks out before he leaves"
+      ],
+      "her": [
+        "How {she} leaves months before {she} goes"
+      ]
+    }
+  },
+  "deepest-fear": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The fear underneath the personality — the one that explains the behaviour. Pair it with the strength that grew out of the same root.",
+    "frames": [
+      [
+        "Your fear:",
+        "Your power:"
+      ],
+      [
+        "What Scares You:",
+        "What It Made You:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your fear",
+        "The fear you never say out loud"
+      ]
+    }
+  },
+  "core-wound": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The original injury, described through its symptoms rather than its story. Then the specific thing that heals it. Tender, not clinical.",
+    "frames": [
+      [
+        "The wound:",
+        "The healing:"
+      ],
+      [
+        "Where It Started:",
+        "Where It Ends:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your wound",
+        "Who you become after heartbreak, based on {your} {singular}"
+      ],
+      "her": [
+        "What happened to {her} before you met {her}"
+      ]
+    }
+  },
+  "blind-spot": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The thing everyone around them can see that they cannot. Deliver it kindly enough that they keep reading.",
+    "frames": [
+      [
+        "Your Blind Spot:",
+        "What Everyone Else Sees:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What everyone sees in you except you",
+        "Your blind spot, based on {your} {singular}"
+      ],
+      "they": [
+        "The thing each {singular} cannot see about themselves"
+      ]
+    }
+  },
+  "never-say-out-loud": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Sentences they have thought and never said. Write them as the actual unspoken line, first person, so each bullet reads like something overheard.",
+    "frames": [
+      [
+        "What You Never Say:",
+        "What You Mean:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you never say out loud, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} never says out loud",
+        "The things {she} has never told you"
+      ],
+      "him": [
+        "What he will never say to your face"
+      ]
+    },
+    "pattern": "[A single admission, first person, that costs them pride to say.]",
+    "patternNote": "One sentence, no second clause explaining it. This is the raw confession alone - the restraint is the device. If a line needs a because-clause to land, it is the wrong line. Distinct from your-truth, which pairs armor with truth; here there is no armor, only the admission.",
+    "examples": [
+      "I check if you are typing more often than I will ever admit.",
+      "I have rehearsed this conversation forty times.",
+      "I noticed the exact day you stopped trying.",
+      "I would come back if you asked properly.",
+      "I am not over it and I have stopped pretending to myself."
+    ]
+  },
+  "how-they-grieve": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What the weeks after look like from the inside. Specific behaviours, not feelings — what they do at 2am, what they reorganise, who they do not text.",
+    "frames": [
+      [
+        "How You Grieve:",
+        "When It Lifts:"
+      ],
+      [
+        "The First Month:",
+        "The Turn:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you grieve a person, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} does after {she} loses someone"
+      ],
+      "him": [
+        "What he does instead of falling apart"
+      ]
+    }
+  },
+  "what-exhausts-them": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The invisible labour that drains them — the emotional job nobody thanked them for. End on permission to stop.",
+    "frames": [
+      [
+        "What Exhausts You:",
+        "What You Can Put Down:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What is actually tiring you out, based on {your} {singular}"
+      ],
+      "her": [
+        "The job nobody gave {her} that {she} does anyway"
+      ]
+    }
+  },
+  "why-underestimated": {
+    "moods": [
+      "negative",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The trait that gets read as weakness and is not. Name the misreading precisely, then flip it without gloating.",
+    "frames": [
+      [
+        "Why They Underestimate You:",
+        "What They Miss:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Why people underestimate you, based on {your} {singular}"
+      ],
+      "her": [
+        "Why they always underestimate {her}"
+      ]
+    }
+  },
+  "what-they-hide": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The gap between how they present and what is actually happening. One line for the surface, one for underneath.",
+    "frames": [
+      [
+        "On the outside:",
+        "On the inside:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you hide well, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} is hiding behind being fine"
+      ],
+      "him": [
+        "What he is hiding behind being calm"
+      ]
+    },
+    "pattern": "On the outside [what everyone sees]. Underneath [what is actually happening].",
+    "patternNote": "Explicit two-part contrast every line. The outside must be genuinely convincing - a persona people believe, not a thin disguise. The underneath must be plain and undramatic. If the outside is obviously fake, there is nothing hidden and no line.",
+    "examples": [
+      "On the outside the most organised person you know. Underneath one cancelled plan from falling apart.",
+      "On the outside endlessly patient. Underneath keeping a list they will never read out.",
+      "On the outside the one who checks on everyone. Underneath nobody has asked them in months.",
+      "On the outside completely over it. Underneath still checking if you looked.",
+      "On the outside the calm one. Underneath the only one who never got to panic."
+    ]
+  },
+  "how-they-love": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose",
+      "bullets"
+    ],
+    "brief": "How love actually shows up in their behaviour, not their words. Concrete acts: what they remember, what they carry, what they check.",
+    "frames": [
+      [
+        "How You Love:",
+        "What You Need Back:"
+      ],
+      [
+        "The Way They Love:",
+        "What They Need Back:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you love, based on {your} {singular}"
+      ],
+      "her": [
+        "How {she} loves, based on {her} {singular}"
+      ],
+      "him": [
+        "How he loves when he actually means it"
+      ],
+      "they": [
+        "How {each} loves without saying it"
+      ]
+    }
+  },
+  "falling-in-love": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The tells. What changes in them the moment it becomes real — outwardly, then what is happening underneath at the same time.",
+    "frames": [
+      [
+        "On the outside:",
+        "On the inside:"
+      ],
+      [
+        "The Tell:",
+        "The Truth:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you act when you are falling, based on {your} {singular}"
+      ],
+      "her": [
+        "How {she} acts when {she} is falling for you"
+      ],
+      "him": [
+        "How he acts when he is actually falling"
+      ],
+      "they": [
+        "How {each} acts when they are falling in love"
+      ]
+    }
+  },
+  "needs-to-hear": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "One sentence each, written as if spoken directly to them by someone who finally understood. This is the highest-saving format — every line must be able to stand alone.",
+    "frames": [
+      [
+        "What You Need to Hear:",
+        "Say It Back:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you secretly need to hear, based on {your} {singular}"
+      ],
+      "they": [
+        "What {each} secretly needs to hear",
+        "The sentence {each} has been waiting for"
+      ]
+    },
+    "pattern": "[Correct a false belief they hold about themselves]. [The permission or reframe that follows from it.]",
+    "patternNote": "TWO sentences, and the second one turns. The first denies the thing they secretly believe (that they must earn rest, that they were too much). The second gives them the permission that belief was blocking. Never one long sentence - the break between them is where it lands.",
+    "examples": [
+      "You don't have to earn the rest. You're allowed to stop.",
+      "It wasn't too much. You just asked the wrong people for it.",
+      "You can put the armor down here. Nothing is going to hit you.",
+      "You were never hard to love. You were just never truly held.",
+      "You brace for people to go. Stay, and let one person prove you wrong."
+    ]
+  },
+  "how-to-love-them": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets",
+      "prose"
+    ],
+    "brief": "Practical instructions for their partner. Specific enough to act on tonight — not 'communicate', but what to actually say and do.",
+    "frames": [
+      [
+        "How to Love Them:",
+        "What Not to Do:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How to love {her} properly, based on {her} {singular}"
+      ],
+      "him": [
+        "How to love him without losing yourself"
+      ],
+      "they": [
+        "How to love {each} the way they need"
+      ]
+    }
+  },
+  "who-gets-the-soft-side": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Who they drop the guard for, and what the guard-down version looks like. The contrast between public and private is the whole point.",
+    "frames": [
+      [
+        "Who Gets It:",
+        "What It Looks Like:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Who gets to see {her} soft, based on {her} {singular}"
+      ],
+      "him": [
+        "The version of him almost nobody meets"
+      ]
+    }
+  },
+  "what-makes-them-stay": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Not what attracts them — what keeps them. The unglamorous thing that decides it. Should surprise slightly.",
+    "frames": [
+      [
+        "What Makes You Stay:",
+        "What Makes You Go:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What actually makes you stay, based on {your} {singular}"
+      ],
+      "her": [
+        "What makes {her} stay when {she} could go"
+      ],
+      "him": [
+        "What makes him stay, and it is not what you think"
+      ]
+    }
+  },
+  "the-archetype": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Portrait of the type as a whole person — habits, contradictions, the thing she does that she would deny. Every bullet is a separate small recognition.",
+    "frames": [
+      [
+        "The Type:",
+        "What That Means for You:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Girlfriends born in these {singular}s",
+        "What dating {obj} is actually like, based on {poss} {singular}",
+        "The girlfriend {subj} becomes, based on {poss} {singular}"
+      ],
+      "him": [
+        "Boyfriends born in these {singular}s",
+        "What loving {obj} is actually like, based on {poss} {singular}",
+        "The boyfriend {subj} becomes, based on {poss} {singular}"
+      ]
+    },
+    "itemTitle": {
+      "her": "{item} Girlfriend",
+      "him": "{item} Boyfriend"
+    },
+    "pattern": "She [does a specific behaviour], [but/until/so a turn reveals what it costs or hides]. The final TWO lines are fixed: second-to-last is \"She needs a man who [does the right thing] before she [asks/admits/breaks]\", and the last is a defence: \"She is not [the label people use], she is just [the real reason]\".",
+    "patternNote": "Only the closing pair is fixed - every line before it is free, and must be a contrast between an outward behaviour and the private cost or motive behind it. The last line always rebuts a specific unfair label (cold, difficult, too sensitive) and supplies the truer reading. Do not put the partner-instruction last; it sets up the defence, it does not close.",
+    "examples": [
+      "She'll fix her own problems and then yours.",
+      "She acts fine so well that even she believes it.",
+      "She says \"whatever\" when she means \"fight for me\".",
+      "She remembers exactly what you said three weeks ago at 2am.",
+      "She tests if you can handle her distance before she gives you her closeness.",
+      "She needs a man who notices she is tired before she admits it.",
+      "She is not cold, she is just been her own safe place too long.",
+      "She is not too sensitive, you are just used to women who gave up on feeling.",
+      "She is not difficult, she just refuses to shrink."
+    ],
+    "bulletCount": [
+      6,
+      6,
+      7
+    ]
+  },
+  "one-that-got-away": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Written to the person who lost them. What they did daily that went unnoticed, and what it cost to keep doing it. Regret, delivered quietly.",
+    "frames": [
+      [
+        "Why They Got Away:",
+        "What They Deserved:"
+      ],
+      [
+        "What You Had:",
+        "What You Did With It:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Why {she} is the one that got away, based on {her} {singular}"
+      ],
+      "him": [
+        "Why he was the one, and you found out too late"
+      ]
+    }
+  },
+  "what-they-deserve": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Standards written as permission. EVERY line begins \"You deserve\" - the repetition is the format. Each one names something specific they have been accepting less than.",
+    "frames": [
+      [
+        "What You Deserve:",
+        "Stop Accepting:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your \"I deserve better\"",
+        "What you deserve, based on your {singular}"
+      ]
+    },
+    "anaphora": "You deserve",
+    "bulletCount": [
+      5,
+      6,
+      7
+    ],
+    "pattern": "You deserve to [something costly or vulnerable] and still [be treated well]. OR: You deserve someone who [does not do the specific bad thing].",
+    "patternNote": "Two shapes, ALTERNATING. Shape A pairs a cost with a kept good outcome using \"and still\": \"lose and still be loved\", \"be wrong and still be wanted\". Shape B names an absence in a person: \"someone who does not make you fight to be loved\". Run mostly A with B appearing around the fourth line and again at the end - the reference posts close on Shape B two times in three. A trailing correction is a strong variant: \"Not just when you are impressive.\" / \"Not the place someone rests between something better.\" A bare \"You deserve to be happy\" has neither shape and fails.",
+    "examples": [
+      "You deserve to lose and still be loved.",
+      "You deserve to be soft and still be respected. Still be wanted. Still be enough.",
+      "You deserve to come second sometimes and not be left for it.",
+      "You deserve someone who isn't intimidated by how much you are.",
+      "You deserve to want without it being too much want.",
+      "You deserve to be wrong and still be wanted.",
+      "You deserve someone who doesn't make you fight to be loved."
+    ]
+  },
+  "stay-single-until": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets",
+      "prose"
+    ],
+    "brief": "The specific person worth waiting for, described by behaviour. Concrete and high-standard without being a fantasy.",
+    "frames": [
+      [
+        "Don't settle for:",
+        "Wait for:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Stay single until you meet someone like this, based on {your} {singular}"
+      ]
+    }
+  },
+  "superpower": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The genuine strength, stated without flattery. Earn it by naming the cost that came with it first.",
+    "frames": [
+      [
+        "Your Power:",
+        "What It Cost:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your power",
+        "The thing you are quietly the best at"
+      ],
+      "they": [
+        "What {each} is quietly unbeatable at"
+      ]
+    }
+  },
+  "after-the-healing": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Who they become on the other side. Write the change as observable behaviour — what they stop doing, what they say now, what no longer works on them.",
+    "frames": [
+      [
+        "Before:",
+        "After:"
+      ],
+      [
+        "The healing:",
+        "The proof:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you become after you heal, based on {your} {singular}"
+      ],
+      "her": [
+        "The version of {her} that comes back stronger"
+      ]
+    }
+  },
+  "permission": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What they are allowed to stop doing. Each line lifts a specific obligation they have been carrying. Warm, direct, no conditions attached.",
+    "frames": [
+      [
+        "You Can Stop:",
+        "You Are Allowed:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you are allowed to stop doing, based on {your} {singular}"
+      ]
+    },
+    "pattern": "You can stop [specific obligation they carry]. OR: You are allowed to [thing they think they must earn].",
+    "patternNote": "One clean imperative or permission per line. Name the SPECIFIC duty being lifted, not a mood. \"You can stop apologising for taking up room\" not \"you can stop being hard on yourself\". No conditions attached, no \"once you\" or \"when you feel ready\".",
+    "examples": [
+      "You can stop apologising for taking up room.",
+      "You are allowed to need things without earning them first.",
+      "You can stop explaining why you left.",
+      "You are allowed to rest before the work is finished.",
+      "You can stop being the reliable one for one day."
+    ]
+  },
+  "why-remembered": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Why people still think about them years later. Specific sensory detail beats abstract praise — what people remember is rarely the obvious thing.",
+    "frames": [
+      [
+        "Why They Remember You:",
+        "What They Never Say:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Why people still think about you, based on {your} {singular}"
+      ],
+      "her": [
+        "Why {she} is impossible to get over"
+      ]
+    }
+  },
+  "what-they-teach-you": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What loving this person permanently changes about you. Written to the partner, past tense, like something learned the hard way.",
+    "frames": [
+      [
+        "What {She} Teaches You:",
+        "What It Costs You:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What loving {her} teaches you, based on {her} {singular}"
+      ],
+      "him": [
+        "What loving him will teach you"
+      ],
+      "they": [
+        "What {each} teaches the people who love them"
+      ]
+    }
+  },
+  "how-they-argue": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose",
+      "bullets"
+    ],
+    "brief": "Their fighting style — whether they go loud, go cold, go logical, or go for the throat. Name the move they make when they are losing.",
+    "frames": [
+      [
+        "How You Fight:",
+        "What Would End It Faster:"
+      ],
+      [
+        "Your Move:",
+        "What It Costs:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you fight, based on {your} {singular}",
+        "The move you make when you are losing an argument"
+      ],
+      "her": [
+        "How {she} argues, and what {she} is really saying"
+      ],
+      "him": [
+        "How he fights when he knows he is wrong"
+      ]
+    }
+  },
+  "how-they-apologise": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Whether their apology names the thing or works around it. Most apologies here are about ending the discomfort, not repairing the harm — say so.",
+    "frames": [
+      [
+        "How You Apologise:",
+        "What Would Actually Land:"
+      ],
+      [
+        "The Apology:",
+        "The Repair:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you apologise, based on {your} {singular}"
+      ],
+      "her": [
+        "What {her} apology actually means"
+      ],
+      "him": [
+        "Why his apology never lands"
+      ]
+    }
+  },
+  "the-unsent-message": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The message they typed and deleted. Write each bullet as the actual message, first person, in the voice of someone who will never send it.",
+    "frames": [
+      [
+        "What You Typed:",
+        "What You Sent Instead:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The message you never sent, based on {your} {singular}"
+      ],
+      "her": [
+        "The message {she} typed and deleted"
+      ],
+      "him": [
+        "The message he will never send you"
+      ]
+    },
+    "pattern": "[The actual message, first person, addressed to someone specific but unnamed.]",
+    "patternNote": "Written AS the message, not about it. Second person \"you\" refers to the person it was never sent to. No narration, no framing. The universality rule matters double here - name the feeling, never props from one life (no landlords, no specific objects).",
+    "examples": [
+      "I stayed up waiting for a reply you were never going to send.",
+      "You only reach for me when everyone else is busy.",
+      "I know exactly when you decided I was not worth it.",
+      "I would have waited if you had asked me to.",
+      "You made me feel like too much for wanting the bare minimum."
+    ]
+  },
+  "what-they-do-when-they-miss-you": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The indirect behaviour — the story watched, the playlist, the drive past, the message to someone else. Never the direct admission.",
+    "frames": [
+      [
+        "What They Do:",
+        "What They Will Not Do:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} does when {she} misses you and will not say it"
+      ],
+      "him": [
+        "What he does when he misses you"
+      ],
+      "they": [
+        "How {each} handles missing someone"
+      ]
+    }
+  },
+  "their-dealbreaker": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The one thing that ends it instantly, no discussion. Distinguish it from the things they will tolerate forever — the contrast is the content.",
+    "frames": [
+      [
+        "Your Dealbreaker:",
+        "What You Will Tolerate Forever:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your actual dealbreaker, based on {your} {singular}"
+      ],
+      "her": [
+        "The one thing {she} will never forgive"
+      ],
+      "him": [
+        "What ends it for him, instantly"
+      ]
+    }
+  },
+  "what-they-never-forgive": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Not the dramatic betrayal — the small thing that permanently changed how they saw someone. Specific and slightly petty is more true than noble.",
+    "frames": [
+      [
+        "What You Never Forgave:",
+        "What You Did With It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you have never actually forgiven, based on {your} {singular}"
+      ],
+      "her": [
+        "The small thing {she} never got over"
+      ],
+      "him": [
+        "What he is still holding, quietly"
+      ]
+    }
+  },
+  "their-jealousy": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "How jealousy actually surfaces — rarely as an accusation, usually as a mood shift, a joke, or sudden generosity. Name the disguise.",
+    "frames": [
+      [
+        "How It Shows:",
+        "What It Is Really About:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How your jealousy actually shows, based on {your} {singular}"
+      ],
+      "her": [
+        "How {she} gets jealous without ever saying it"
+      ],
+      "him": [
+        "How he shows jealousy and calls it something else"
+      ]
+    }
+  },
+  "the-delusion": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose",
+      "bullets"
+    ],
+    "brief": "The story they tell themselves that is not true and keeps them stuck. Be direct — this angle only works if it stings.",
+    "frames": [
+      [
+        "Your Delusion:",
+        "The Actual Truth:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The lie you keep telling yourself, based on {your} {singular}",
+        "Your {singular}, your delusion"
+      ]
+    }
+  },
+  "how-they-chase": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What they do when someone pulls away — the escalation, the over-explaining, the sudden reinvention. And the moment they should have stopped.",
+    "frames": [
+      [
+        "How You Chase:",
+        "When to Stop:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you chase people who are already gone"
+      ],
+      "her": [
+        "What {she} does when he goes quiet"
+      ],
+      "him": [
+        "How he chases, and why it pushes her further"
+      ]
+    }
+  },
+  "their-type-on-paper": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The gap between who they say they want and who they actually pick. The contradiction is the whole post.",
+    "frames": [
+      [
+        "Who You Say You Want:",
+        "Who You Actually Choose:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your type on paper versus who you actually date"
+      ],
+      "her": [
+        "Who {she} says {she} wants and who {she} keeps picking"
+      ],
+      "him": [
+        "The gap between his type and his history"
+      ]
+    }
+  },
+  "how-they-handle-rejection": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The private aftermath of being turned down. What they do that same night, and the conclusion they draw that is not warranted.",
+    "frames": [
+      [
+        "How You Take It:",
+        "What You Wrongly Conclude:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you handle rejection, based on {your} {singular}"
+      ],
+      "her": [
+        "What rejection does to {her}"
+      ],
+      "him": [
+        "What he does after being turned down"
+      ]
+    }
+  },
+  "the-parent-wound": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What their childhood taught them about love, and how it shows up in adult relationships. Never blame the parent — describe the lesson learned.",
+    "frames": [
+      [
+        "What You Learned:",
+        "What You Are Unlearning:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What your childhood taught you about love"
+      ],
+      "her": [
+        "What {she} learned about love before {she} met you"
+      ]
+    }
+  },
+  "what-they-do-with-anger": {
+    "moods": [
+      "negative",
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Where the anger goes when it is not expressed — into cleaning, silence, work, the gym, sudden kindness. Anger that has nowhere to go still goes somewhere.",
+    "frames": [
+      [
+        "Where It Goes:",
+        "Where It Should Go:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you do with anger you cannot say, based on {your} {singular}"
+      ],
+      "her": [
+        "Where {her} anger actually goes"
+      ],
+      "him": [
+        "What he does with anger instead of saying it"
+      ]
+    }
+  },
+  "at-2am": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Who they become at 2am when nobody is watching. Concrete: what they reread, who they nearly text, what they admit only in the dark.",
+    "frames": [
+      [
+        "At 2am:",
+        "By Morning:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you become at 2am, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} thinks about at 2am"
+      ],
+      "him": [
+        "Who he is at 2am"
+      ]
+    }
+  },
+  "how-they-self-soothe": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The private ritual that makes it bearable — the specific, slightly odd habit. Non-judgemental. This one should feel like being known, not caught.",
+    "frames": [
+      [
+        "How You Cope:",
+        "What Actually Helps:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you comfort yourself, based on {your} {singular}"
+      ],
+      "they": [
+        "The private ritual {each} has for bad days"
+      ]
+    }
+  },
+  "what-they-lost": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The part of themselves a relationship cost them — a hobby, a confidence, a friendship, a way of speaking. And whether it came back.",
+    "frames": [
+      [
+        "What It Cost You:",
+        "What Came Back:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What loving the wrong person cost you"
+      ],
+      "her": [
+        "The part of {her} that did not survive him"
+      ]
+    }
+  },
+  "the-version-they-perform": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The self they present early on, and how long they can hold it. Not dishonesty — exhaustion. Say what slips first.",
+    "frames": [
+      [
+        "The Version You Perform:",
+        "What Slips First:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The version of you that you perform, based on {your} {singular}"
+      ],
+      "her": [
+        "The version of {her} you met first"
+      ],
+      "him": [
+        "How long he can keep it up"
+      ]
+    }
+  },
+  "how-they-handle-being-chosen": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What happens when someone actually picks them, clearly and without games. Many people handle wanting better than being wanted — say why.",
+    "frames": [
+      [
+        "When Someone Picks You:",
+        "What You Do With It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you do when someone actually chooses you"
+      ],
+      "her": [
+        "Why being wanted makes {her} nervous"
+      ],
+      "him": [
+        "What he does when it finally gets easy"
+      ]
+    }
+  },
+  "what-they-romanticise": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The thing they turn into a story that was not one — the potential, the difficulty, the almost. Name the specific fantasy.",
+    "frames": [
+      [
+        "What You Romanticise:",
+        "What It Actually Was:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you romanticise that you should not"
+      ],
+      "her": [
+        "The story {she} tells about someone who did not deserve it"
+      ]
+    }
+  },
+  "still-waiting-for": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The thing they are still, quietly, waiting to receive — an apology, a text, an acknowledgement. And permission to stop waiting.",
+    "frames": [
+      [
+        "What You Are Waiting For:",
+        "Why It Is Not Coming:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you are still waiting for, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} is still waiting to hear"
+      ],
+      "him": [
+        "What he is waiting for and will not admit"
+      ]
+    }
+  },
+  "what-breaks-their-heart": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Not the breakup — the specific small moment inside it that did the damage. Precision matters more than drama here.",
+    "frames": [
+      [
+        "What Actually Broke You:",
+        "What You Told People:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What actually breaks your heart, based on {your} {singular}"
+      ],
+      "her": [
+        "The moment that actually broke {her}"
+      ],
+      "him": [
+        "What broke him, and it was not the ending"
+      ]
+    }
+  },
+  "how-they-handle-silence": {
+    "moods": [
+      "negative",
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What an unanswered message does to them over an hour, a day, a week. The escalation of interpretation is the content.",
+    "frames": [
+      [
+        "Hour One:",
+        "Day Three:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What silence does to you, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} is thinking while you take your time replying"
+      ],
+      "him": [
+        "What your silence actually does to him"
+      ]
+    }
+  },
+  "who-they-were-before": {
+    "moods": [
+      "negative",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Who they were before the relationship that changed them. Written with affection for that earlier person, not pity.",
+    "frames": [
+      [
+        "Before:",
+        "What Is Left:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you were before all of it, based on {your} {singular}"
+      ],
+      "her": [
+        "Who {she} was before he got to {her}"
+      ]
+    }
+  },
+  "their-comfort-person": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Who they call when it goes wrong, and what that choice reveals. Often not the partner — that is the interesting part.",
+    "frames": [
+      [
+        "Who You Call:",
+        "What That Says:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you actually call when it falls apart"
+      ],
+      "her": [
+        "Who {she} calls first, and it is not you"
+      ],
+      "him": [
+        "Who he tells the truth to"
+      ]
+    }
+  },
+  "how-they-hold-a-grudge": {
+    "moods": [
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The mechanics of the grudge — filed, dated, never mentioned, produced at the worst moment. Slightly funny, mostly accurate.",
+    "frames": [
+      [
+        "How You Hold It:",
+        "How It Gets Out:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you hold a grudge, based on {your} {singular}"
+      ],
+      "her": [
+        "Why {she} remembers everything"
+      ],
+      "him": [
+        "What he is still keeping score of"
+      ]
+    }
+  },
+  "the-thing-they-cannot-say-sober": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The admission that only surfaces late, tired, or emotional. Write each as the actual sentence. Keep it emotional, never about substances.",
+    "frames": [
+      [
+        "What Comes Out:",
+        "What You Deny Next Day:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you only admit when it is late"
+      ],
+      "her": [
+        "What {she} only says when {she} is tired"
+      ],
+      "him": [
+        "What he admits at 3am and denies by morning"
+      ]
+    }
+  },
+  "how-they-leave": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The mechanics of their exit — sudden, staged, or already-gone-for-months. And what they take with them that is not theirs.",
+    "frames": [
+      [
+        "How You Leave:",
+        "What You Take With You:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you end things, based on {your} {singular}"
+      ],
+      "her": [
+        "How {she} leaves, and why you did not see it"
+      ],
+      "him": [
+        "How he ends it without ending it"
+      ]
+    }
+  },
+  "would-they-take-you-back": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The honest answer, and the condition attached. Most answers here are yes-but — the but is the post.",
+    "frames": [
+      [
+        "Would They:",
+        "What It Would Take:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Would {she} take you back, based on {her} {singular}"
+      ],
+      "him": [
+        "Would he come back, and should you let him"
+      ]
+    }
+  },
+  "what-they-need-after-a-fight": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Practical repair instructions — space or contact, words or quiet, and how long. Specific enough to use tonight.",
+    "frames": [
+      [
+        "What They Need:",
+        "What Makes It Worse:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} actually needs after a fight"
+      ],
+      "him": [
+        "What he needs after an argument and will not ask for"
+      ],
+      "they": [
+        "How to repair it with {each}"
+      ]
+    }
+  },
+  "what-they-are-really-asking": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The translation post. One line of what they say, one line of what it means. The gap between the two is the whole value.",
+    "frames": [
+      [
+        "What They Say:",
+        "What They Mean:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} is really asking when {she} says that"
+      ],
+      "him": [
+        "What he actually means, translated"
+      ],
+      "they": [
+        "What {each} really means when they go quiet"
+      ]
+    },
+    "pattern": "They say \"[the actual thing said]\". They mean [the real request underneath].",
+    "patternNote": "The first half must be a real sentence people actually say, in quotes. The second half names the request they could not make directly. The gap between the two IS the content - if the meaning is obvious from the words, the line has failed.",
+    "examples": [
+      "She says \"I am fine\". She means notice that I am not.",
+      "She says \"do whatever you want\". She means choose me on purpose.",
+      "She says \"I am used to it\". She means nobody has ever tried harder.",
+      "She says \"it is not a big deal\". She means it has been a big deal for months.",
+      "She says \"you never asked\". She means she was waiting to be wanted."
+    ]
+  },
+  "their-pattern-with-friends": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "How they show up in friendship versus love — usually more generous and less afraid. The inconsistency is the insight.",
+    "frames": [
+      [
+        "As a Friend:",
+        "As a Partner:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Why you are a better friend than partner"
+      ],
+      "they": [
+        "How {each} loves their friends differently"
+      ]
+    }
+  },
+  "what-they-carry": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The emotional weight they took on that was never theirs — a family role, someone else's stability. Land on setting it down.",
+    "frames": [
+      [
+        "What You Carry:",
+        "What Is Not Yours:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you are carrying that was never yours"
+      ],
+      "her": [
+        "What {she} has been holding up alone"
+      ]
+    }
+  },
+  "the-friend-they-become": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Who they turn into when a friend is heartbroken — the specific mobilisation. Reveals character sideways rather than head-on.",
+    "frames": [
+      [
+        "When You Are Hurting:",
+        "When They Are:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Who {she} becomes when {her} friend gets hurt"
+      ],
+      "him": [
+        "What he does when someone he loves is breaking"
+      ]
+    }
+  },
+  "how-they-flirt": {
+    "moods": [
+      "love",
+      "toxic"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Their actual tell — usually not obvious. Teasing, sudden formality, remembering a detail. Include the version they do not realise they do.",
+    "frames": [
+      [
+        "The Tell:",
+        "What They Think They Are Doing:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How {she} flirts without realising it"
+      ],
+      "him": [
+        "How he flirts, based on {his} {singular}"
+      ],
+      "they": [
+        "How {each} flirts and never admits it"
+      ]
+    }
+  },
+  "how-you-know-they-like-you": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Evidence-based, not vibes. The small behavioural changes that are reliable signals. Every line should be checkable tonight.",
+    "frames": [
+      [
+        "The Signs:",
+        "What Means Nothing:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How to tell {she} likes you, based on {her} {singular}"
+      ],
+      "him": [
+        "How to know he actually likes you"
+      ],
+      "they": [
+        "How {each} shows interest without saying it"
+      ]
+    },
+    "pattern": "They [specific observable behaviour] when they [ordinary trigger].",
+    "patternNote": "Every line must be something the reader could literally check tonight. Observable, not internal - a behaviour with a witness. \"They text back fast\" is too generic; \"they answer instantly and then apologise for being slow\" is a tell. No mind-reading, no \"they secretly feel\".",
+    "examples": [
+      "They apologise for a slow reply that was eleven minutes long.",
+      "They remember a name you mentioned once in passing.",
+      "They ask a follow-up question about something boring.",
+      "They angle their whole body toward you in a crowded room.",
+      "They tell you a story you can tell they have been saving."
+    ]
+  },
+  "what-makes-them-feel-loved": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The specific small act that actually registers as love for them — rarely the grand gesture. Concrete and doable.",
+    "frames": [
+      [
+        "What Works:",
+        "What Does Not:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What actually makes you feel loved, based on {your} {singular}"
+      ],
+      "her": [
+        "What makes {her} feel loved, and it is small"
+      ],
+      "him": [
+        "What makes him feel loved and he will never request"
+      ],
+      "they": [
+        "What {each} needs to feel loved"
+      ]
+    },
+    "pattern": "[A small, specific, unglamorous act] - not [the grander thing people assume].",
+    "patternNote": "The contrast is mandatory. The small act must be genuinely small and doable tonight (a saved seat, a remembered order, a message before sleep). The dismissed alternative must be the obvious romantic gesture. Without the contrast it reads as a wish list.",
+    "examples": [
+      "Being asked how the hard thing went, not being sent flowers after.",
+      "Someone remembering the small detail, not someone planning the big night.",
+      "Being told they were thought of at noon, not being told they are beautiful.",
+      "Someone staying on the call in silence, not someone filling it.",
+      "Being defended quietly in a room they were not in, not being praised in one they were."
+    ]
+  },
+  "how-they-show-up-in-a-crisis": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Who they become when something goes badly wrong. This is where character shows — the practical, unglamorous competence of love.",
+    "frames": [
+      [
+        "In a Crisis:",
+        "What It Costs Them:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Who {she} becomes when everything goes wrong"
+      ],
+      "him": [
+        "What he does in a crisis, based on {his} {singular}"
+      ],
+      "they": [
+        "How {each} shows up when it matters"
+      ]
+    }
+  },
+  "the-first-date": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose",
+      "bullets"
+    ],
+    "brief": "What they are actually assessing across the first hour, behind the small talk. The private checklist nobody announces.",
+    "frames": [
+      [
+        "What They Notice:",
+        "What Decides It:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} is really deciding on the first date"
+      ],
+      "him": [
+        "What he notices first, based on {his} {singular}"
+      ],
+      "they": [
+        "What {each} is secretly assessing on a first date"
+      ]
+    }
+  },
+  "three-months-in": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The point where the performance ends and the real person arrives. What changes, and whether it is a warning or a relief.",
+    "frames": [
+      [
+        "What Changes:",
+        "What It Means:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} is like once {she} stops performing"
+      ],
+      "him": [
+        "Who he becomes three months in"
+      ],
+      "they": [
+        "What {each} is like once the honeymoon ends"
+      ]
+    }
+  },
+  "how-they-say-i-love-you": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The substitute phrases and acts used instead of the words. Write the actual line or gesture, then what it stands in for.",
+    "frames": [
+      [
+        "What They Say Instead:",
+        "What It Means:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How {she} says I love you without saying it"
+      ],
+      "him": [
+        "What he says instead of I love you"
+      ],
+      "they": [
+        "How {each} says it without saying it"
+      ]
+    },
+    "pattern": "[The substitute phrase or act they use] - which means [what they cannot say directly].",
+    "patternNote": "First half is what they actually do or say out loud. Second half translates it. The substitute must be ordinary and slightly deflating (a text about traffic, a plate of food) - the gap between how small it looks and how much it carries is the whole point.",
+    "examples": [
+      "Sending you an article about something you mentioned - which means I think about you when you are gone.",
+      "Asking if you ate today - which means I need you to still be here tomorrow.",
+      "Fixing a thing you never asked them to fix - which means I do not know how to say it.",
+      "Waiting up without mentioning they waited - which means you are the last thing I check on.",
+      "Telling you to text when you get home - which means I cannot rest until you are safe."
+    ]
+  },
+  "what-safety-feels-like": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What emotional safety concretely looks like for them — what they can finally stop doing in the right person's company.",
+    "frames": [
+      [
+        "Safety Looks Like:",
+        "What You Stop Doing:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What safety actually feels like for you"
+      ],
+      "her": [
+        "How you know {she} feels safe with you"
+      ],
+      "him": [
+        "What lets him finally relax"
+      ]
+    }
+  },
+  "how-they-rebuild-trust": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What repair actually requires from them — time, evidence, or a specific act. Honest about whether it fully returns.",
+    "frames": [
+      [
+        "What It Takes:",
+        "What Never Comes Back:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What it takes for you to trust again"
+      ],
+      "her": [
+        "How to earn {her} trust back, if you still can"
+      ],
+      "him": [
+        "What he needs before he lets you in again"
+      ]
+    }
+  },
+  "who-they-marry": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Not the fantasy — the person they end up choosing for the long run, and why it is rarely the most exciting one.",
+    "frames": [
+      [
+        "Who You Marry:",
+        "Why Not the Other One:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you actually end up with, based on {your} {singular}"
+      ],
+      "her": [
+        "The kind of man {she} actually marries"
+      ],
+      "him": [
+        "Who he settles down with in the end"
+      ]
+    }
+  },
+  "the-unexpected-match": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The pairing that should not work and does. Explain the mechanism — what each one supplies that the other lacks.",
+    "frames": [
+      [
+        "The Match:",
+        "Why It Works:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The person you least expect to work, based on {your} {singular}"
+      ],
+      "they": [
+        "The unexpected match for {each}"
+      ]
+    }
+  },
+  "what-they-bring": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What they add to a relationship that the other person did not know was missing. Genuine and specific, not flattery.",
+    "frames": [
+      [
+        "What You Bring:",
+        "What They Did Not Know They Needed:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you bring that nobody else does"
+      ],
+      "her": [
+        "What loving {her} adds to a life"
+      ],
+      "him": [
+        "What he brings that you will only notice when it is gone"
+      ]
+    }
+  },
+  "how-they-take-care-of-people": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The unrequested, unannounced acts of care. The point is that nobody asked and nobody thanked them.",
+    "frames": [
+      [
+        "How They Care:",
+        "What Nobody Notices:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How {she} takes care of you without mentioning it"
+      ],
+      "him": [
+        "The quiet things he does for you"
+      ],
+      "they": [
+        "How {each} looks after the people they love"
+      ]
+    }
+  },
+  "their-love-language-mismatch": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "They give love the way they want to receive it, and it misses. Name the specific mismatch and the fix.",
+    "frames": [
+      [
+        "How You Give:",
+        "What They Need Instead:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Why your love keeps missing, based on {your} {singular}"
+      ],
+      "they": [
+        "The mistake {each} makes when they love someone"
+      ]
+    }
+  },
+  "what-they-notice-first": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The specific detail that catches them — usually not looks. Hands, laugh, how someone treats staff, the pause before answering.",
+    "frames": [
+      [
+        "What Catches Them:",
+        "What They Ignore:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} notices about you first"
+      ],
+      "him": [
+        "What he actually notices, based on {his} {singular}"
+      ],
+      "they": [
+        "What {each} notices before anything else"
+      ]
+    }
+  },
+  "how-they-are-in-love": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The transformation once they are properly in it — softer, sillier, more afraid. Who they become when it is real.",
+    "frames": [
+      [
+        "In Love:",
+        "What It Costs Them to Show It:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Who {she} becomes when {she} is properly in love"
+      ],
+      "him": [
+        "What he is like when he is actually in love"
+      ],
+      "they": [
+        "Who {each} becomes when it is real"
+      ]
+    }
+  },
+  "the-green-flag": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Their own green flag — the genuinely good thing they do in relationships and do not credit themselves for.",
+    "frames": [
+      [
+        "Your Green Flag:",
+        "Why You Discount It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your green flag, based on {your} {singular}"
+      ],
+      "her": [
+        "Why {she} is the safest person you will date"
+      ],
+      "him": [
+        "The thing he does right that you should not take for granted"
+      ]
+    }
+  },
+  "what-they-need-in-silence": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What comfortable silence with them requires. Some need presence, some need proximity without attention. Practical.",
+    "frames": [
+      [
+        "What They Need:",
+        "What Breaks It:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How to be quiet with {her} properly"
+      ],
+      "him": [
+        "What he needs when he goes quiet"
+      ],
+      "they": [
+        "What silence means to {each}"
+      ]
+    }
+  },
+  "how-they-handle-distance": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What happens to their feelings across physical or emotional distance — whether it intensifies or quietly dissolves.",
+    "frames": [
+      [
+        "What Distance Does:",
+        "What Holds:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What distance does to you, based on {your} {singular}"
+      ],
+      "her": [
+        "Whether {she} survives distance"
+      ],
+      "him": [
+        "What happens to him when you are not there"
+      ]
+    }
+  },
+  "the-thing-they-remember": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The small detail about you they retained without being told twice. Each line is a specific act of attention.",
+    "frames": [
+      [
+        "What They Remember:",
+        "What You Never Told Them Twice:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What {she} remembers about you that you forgot telling {her}"
+      ],
+      "him": [
+        "What he has quietly memorised about you"
+      ],
+      "they": [
+        "What {each} remembers without being told twice"
+      ]
+    }
+  },
+  "what-they-would-fight-for": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The line they will not let anyone cross — for someone else, not themselves. Reveals values without stating them.",
+    "frames": [
+      [
+        "What You Defend:",
+        "What You Let Go:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you would actually fight for, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} will not let anyone take from you"
+      ],
+      "him": [
+        "What he would burn it all down for"
+      ]
+    }
+  },
+  "what-they-outgrew": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "Behaviours they have left behind. Written as evidence of growth already achieved, not instructions. Each line is a small win.",
+    "frames": [
+      [
+        "What You Outgrew:",
+        "What Replaced It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you have already outgrown, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} does not tolerate anymore"
+      ]
+    }
+  },
+  "younger-self": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What they would tell themselves five years ago. Each line short, spoken, and specific enough to have changed something.",
+    "frames": [
+      [
+        "What You Would Say:",
+        "What You Know Now:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you would tell your younger self, based on {your} {singular}"
+      ]
+    }
+  },
+  "what-they-are-becoming": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Forward-looking. The version of them already forming, described as visible change rather than aspiration.",
+    "frames": [
+      [
+        "Who You Are Becoming:",
+        "What Is Already Different:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Who you are turning into, based on {your} {singular}"
+      ],
+      "her": [
+        "The woman {she} is becoming"
+      ]
+    }
+  },
+  "their-quiet-strength": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The unshowy capability nobody praises — endurance, steadiness, the ability to stay calm. Give it the credit it never gets.",
+    "frames": [
+      [
+        "Your Quiet Strength:",
+        "Why Nobody Mentions It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The strength nobody gives you credit for"
+      ],
+      "her": [
+        "What {she} does that nobody ever thanks {her} for"
+      ],
+      "him": [
+        "His strength that goes completely unnoticed"
+      ]
+    }
+  },
+  "what-they-are-proud-of": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The private achievement they would never post about — usually surviving something, or breaking a pattern.",
+    "frames": [
+      [
+        "What You Are Proud Of:",
+        "Why You Never Say It:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you should be proud of, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} survived that nobody knows about"
+      ]
+    }
+  },
+  "their-joy": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What genuinely delights them — specific, slightly childish, unguarded. A deliberate break from the heavier angles.",
+    "frames": [
+      [
+        "What Lights You Up:",
+        "What You Pretend Not to Love:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What actually makes you happy, based on {your} {singular}"
+      ],
+      "her": [
+        "What makes {her} genuinely light up"
+      ],
+      "him": [
+        "What he loves and pretends he does not"
+      ],
+      "they": [
+        "What {each} is happiest doing"
+      ]
+    }
+  },
+  "what-they-forgave": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What they let go of, and what it took. Forgiveness as a decision made for themselves, not a gift to the other person.",
+    "frames": [
+      [
+        "What You Let Go:",
+        "What It Took:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you finally forgave, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} let go of to get {her} peace back"
+      ]
+    }
+  },
+  "how-they-rest": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "What actually restores them versus what they think should. Most people rest wrong — name the correction.",
+    "frames": [
+      [
+        "What Actually Rests You:",
+        "What Only Looks Like Rest:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you actually rest, based on {your} {singular}"
+      ],
+      "they": [
+        "What genuinely recharges {each}"
+      ]
+    }
+  },
+  "the-compliment-they-cannot-take": {
+    "moods": [
+      "positive",
+      "negative"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The praise that makes them uncomfortable, and why. Usually the one closest to true. Land on accepting it.",
+    "frames": [
+      [
+        "What You Deflect:",
+        "Why It Is True Anyway:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The compliment you cannot accept, based on {your} {singular}"
+      ],
+      "her": [
+        "The thing {she} will never believe about {poss} own worth"
+      ],
+      "him": [
+        "What he deflects every time you say it"
+      ]
+    }
+  },
+  "what-they-teach-their-kids": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "you",
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The lesson they will pass on, and the one they are determined to break. Generational, warm, forward-looking.",
+    "frames": [
+      [
+        "What You Pass On:",
+        "What Stops With You:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you will pass on, and what stops with you"
+      ],
+      "her": [
+        "What {she} will teach {her} daughter"
+      ],
+      "him": [
+        "What he swore he would do differently"
+      ]
+    }
+  },
+  "when-they-are-finally-free": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The moment the hold breaks — when a name stops meaning anything. Written as arrival, not victory.",
+    "frames": [
+      [
+        "How You Know:",
+        "What Is Waiting:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you will know you are over it, based on {your} {singular}"
+      ],
+      "her": [
+        "The day {she} stops caring, and what happens next"
+      ]
+    }
+  },
+  "what-they-deserve-to-stop-explaining": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "brief": "The things about themselves they keep justifying and should not have to. Each line lifts one specific defence.",
+    "frames": [
+      [
+        "Stop Explaining:",
+        "Say This Instead:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What you should stop explaining, based on {your} {singular}"
+      ],
+      "her": [
+        "What {she} should never have to justify again"
+      ]
+    }
+  },
+  "the-standard-they-set": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "How loving them permanently raises the bar for everyone after. Written to the person who had them, past tense.",
+    "frames": [
+      [
+        "The Standard:",
+        "What Comes After:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "Why nobody after {her} will be enough"
+      ],
+      "him": [
+        "The standard he set that you did not notice until later"
+      ]
+    }
+  },
+  "how-they-come-back": {
+    "moods": [
+      "positive"
+    ],
+    "voices": [
+      "you",
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The comeback pattern — how they rebuild after being flattened. Specific stages, not a montage.",
+    "frames": [
+      [
+        "How You Rebuild:",
+        "What Is Different This Time:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "How you come back, based on {your} {singular}"
+      ],
+      "her": [
+        "How {she} rebuilds, every single time"
+      ]
+    }
+  },
+  "what-people-take": {
+    "moods": [
+      "negative",
+      "toxic"
+    ],
+    "voices": [
+      "you",
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": 8,
+    "nameItemInCopy": true,
+    "brief": "What this type gives away and never gets back - energy, patience, loyalty, time. Every bullet opens with the item name itself. Short, flat, cumulative: the list should feel like a tally.",
+    "frames": [
+      [
+        "What They Take:",
+        "What It Costs:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "What people steal from you, by your {singular}",
+        "What you give away and never get back, by your {singular}"
+      ],
+      "they": [
+        "What people steal from {each}",
+        "What {each} keeps giving to people who never return it"
+      ]
+    },
+    "pattern": "{item} [gives/does a specific generous thing] that [never comes back / is never returned / no one gives back].",
+    "patternNote": "The item name is the grammatical subject of every line, not just a label. The verb must be concrete (gives, fights, keeps, holds, loses, stays) — never abstract nouns like \"energy\" alone. The second half must state the non-return plainly, not poetically.",
+    "examples": [
+      "Aries gives energy that never comes back.",
+      "Aries fights for people who wouldn't return it.",
+      "Aries keeps giving even when it costs them.",
+      "Taurus gives comfort that no one gives back.",
+      "Taurus stays loyal to those who don't deserve it.",
+      "Gemini gives attention no one returns.",
+      "Gemini keeps the conversation alive for people who don't try."
+    ]
+  },
+  "apology-you-never-got": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "anaphora": "I am sorry you",
+    "bulletCount": 5,
+    "pattern": "I am sorry you [gave/did X generously] for people who [withheld exactly that X].",
+    "patternNote": "The second half must MIRROR the first using the same verb or idea. fight/never fought. too much/too little. protected/never protected. listened/never heard. That mirror is the whole line - a bullet without it has failed.",
+    "examples": [
+      "I am sorry you had to fight for people who never fought for you.",
+      "I am sorry you got called too much by people who gave too little.",
+      "I am sorry you protected hearts that never once protected yours.",
+      "I am sorry you burned bright for people who only came for the warmth.",
+      "I am sorry you listened to everyone and got heard by no one.",
+      "I am sorry you loved people loudly who only loved you conveniently.",
+      "I am sorry you stayed for people who never stayed for you.",
+      "I am sorry you got called stubborn by people who never held on to anything.",
+      "I am sorry you built a home for people who treated it like a hotel.",
+      "I am sorry you gave your all to people who gave their leftovers.",
+      "I am sorry you were someone's safe place and no one was yours.",
+      "I am sorry you made people laugh who never asked if you were okay.",
+      "I am sorry you got called fake by people who never met the real you.",
+      "I am sorry you filled every silence for people who left you in yours.",
+      "I am sorry you were everyone's favorite and no one's priority.",
+      "I am sorry you held people who let you fall.",
+      "I am sorry you got called sensitive by people who caused the tears.",
+      "I am sorry you remembered everything for people who forgot you.",
+      "I am sorry you gave endless care to people who gave you doubt.",
+      "I am sorry you loved people at their worst who left you at yours."
+    ],
+    "brief": "A compassionate voice apologising TO the reader for what was done to them - never the ex confessing. Each line names a generous act and the exact way it was not returned. Plain verbs, no metaphor.",
+    "frames": [
+      [
+        "The Apology:",
+        "What You Were Owed:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The apology you never got, based on your {singular}",
+        "The apology you are still owed, based on your {singular}"
+      ]
+    }
+  },
+  "your-truth": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "i"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": 6,
+    "itemTitle": [
+      "{item}",
+      "{item}",
+      "{item}",
+      "{item}",
+      "{item}",
+      "{item}",
+      "I'm a/an {item}",
+      "I'm a/an {item}",
+      "{item}, Unmasked",
+      "The {item} Truth"
+    ],
+    "pattern": "I [defensive behaviour or persona I perform], [but/so] [the vulnerable truth underneath it].",
+    "patternNote": "Two clauses. First: the armor - what I DO to avoid the real feeling (say I do not care first, stay busy, make jokes). Second: the truth the armor is hiding, stated plainly with no metaphor. Some lines invert the order: state the exhausted truth first (\"I am tired of being the one who is fine\"), or use a clean X-not-Y contrast (\"I want to be held, not admired\").",
+    "examples": [
+      "I say I do not care first, so I get to say it before you do.",
+      "I am loud about everything except the thing that actually hurts.",
+      "I want someone to stay without me having to ask them to.",
+      "I am tired of being the one who is fine.",
+      "Some nights I want to be held, not admired.",
+      "I am softer than anyone gets to see."
+    ],
+    "brief": "A confession spoken in the reader's own first-person voice, as if finally being honest with themselves. Reveals the gap between the persona they perform and what they actually need. The cover addresses them as \"you\"; the body switches to \"I\" - that mismatch is the whole device.",
+    "frames": [
+      [
+        "The Armor:",
+        "The Truth Underneath:"
+      ]
+    ],
+    "hooks": {
+      "i": [
+        "Your {singular}, your truth",
+        "Your {singular}, the truth you don't say out loud"
+      ]
+    }
+  },
+  "why-people-get-addicted": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What makes this person magnetic, and why that same quality is what traps people. Flattering on the surface, unsettling underneath. The reader should feel powerful and slightly exposed at once.",
+    "pattern": "SECTION 1 - the quality that draws people, unpacked in short declarative fragments. SECTION 2 - MUST open \"They cannot leave because...\" and MUST close with the negation-elevation: \"You did not just X. You Y.\"",
+    "patternNote": "Section 1 leans on sentence fragments for rhythm: \"Quiet, steady, unshakeable.\" / \"A quiet dinner. A slow morning.\" / \"Braver. Wilder. More alive.\" Section 2 is the trap: name what the reader TAUGHT the other person to expect, then what everything after feels like by comparison (\"After you, cautious love feels empty\"). The final two sentences are non-negotiable - a small claim denied, then a larger one asserted.",
+    "examples": [
+      "Your magnetism: You make people feel awake. Your energy is direct, fearless, impossible to fake. You do not wait for permission. Around you, life feels faster. Brighter. More exciting.",
+      "Your trap: They cannot leave because you made hesitation feel unbearable. You taught them what passion looks like when it is not watered down. After you, cautious love feels empty. You did not just enter their life. You set it on fire.",
+      "Your magnetism: You make people feel safe without making life feel boring. Your presence is warm. Grounded. Sensual. A quiet dinner. A slow morning. A hand held at exactly the right time.",
+      "Your trap: They cannot leave because you became their peace. Their routine. Their favorite place to return to. After you, uncertainty feels exhausting. You did not just love them. You gave their nervous system a home.",
+      "Your trap: They cannot leave because no one else makes connection feel this alive. You made their mind race and their heart follow. After you, silence feels heavier. You did not just entertain them. You became the thought they cannot stop returning to."
+    ],
+    "frames": [
+      [
+        "Your magnetism:",
+        "Your trap:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Why people get addicted to you, based on your {singular}",
+        "Why they cannot get over you, based on your {singular}"
+      ]
+    }
+  },
+  "how-you-love-how-you-leave": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Two halves of the same person: the way they love, and the way they end it. The leaving section must feel like a consequence of the loving section, not a separate topic.",
+    "pattern": "BOTH sections open with a manner phrase answering \"how\" - a fragment, not a full sentence. Section 1: \"Like a promise they can hold onto.\" Section 2: \"Without a word.\" Then unpack. Section 2 MUST close on a correction that reframes what came before.",
+    "patternNote": "The opening fragment is the signature - never start either section with a full subject-verb sentence. Section 1 uses short stacked adjectives for rhythm (\"Quiet, steady, unshakeable\"). Section 2 closes by denying the obvious reading and supplying the real one: \"You dont look back. Not because it didnt hurt. Because you already decided.\" The leaving is never cruel - it is already-decided, quiet, and costly to the leaver.",
+    "examples": [
+      "How You Love: Like a promise they can hold onto. Quiet, steady, unshakeable. You do not say much but you never leave. You show up before they ask. Being loved by you feels like solid ground in a world that keeps moving.",
+      "How You Leave: Without a word. You were already gone before the conversation happened. You do not fight, do not beg, do not explain. You do not look back. Not because it did not hurt. Because you already decided.",
+      "How You Love: Differently than anyone else has. You see their person as a whole human, not a role. You love their contradictions, their mess, their weird. No performance required.",
+      "How You Leave: Quietly and already decided. You process it alone for months before you say a word. By the time you speak, it is not a conversation. It is a conclusion. But you never fully stop caring and that is the part you never say out loud.",
+      "How You Love: With everything you have and then some. You feel their pain like it is yours. You stay up for them, absorb for them, sacrifice for them without keeping score.",
+      "How You Leave: By staying too long. You feel it breaking and keep pouring into it anyway. You tell yourself it is loyalty. It is not. It is fear. The leaving does not feel like freedom. It feels like loss on top of loss."
+    ],
+    "frames": [
+      [
+        "How You Love:",
+        "How You Leave:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}: how you love, how you leave",
+        "How you love and how you leave, based on your {singular}"
+      ]
+    }
+  },
+  "want-have-lose": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "they"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "bulletCount": 5,
+    "brief": "A three-beat arc across time: how this type behaves while wanting you, while having you, and after losing you. Written about a partner, to the reader who is with them or was.",
+    "pattern": "THREE sections tracking one relationship through time. Each opens with a flat behavioural claim, never a feeling. Section 3 MUST end unresolved - they still carry it, but silently.",
+    "patternNote": "Section 1 opens with a denial-then-correction: \"They dont flirt, they decide.\" / \"They watch before they move.\" Section 2 reveals the private version nobody else gets. Section 3 is the aftermath and must NOT resolve - it ends on lingering that is never spoken aloud: \"Still wonder. Still carry it. Just never out loud.\" / \"They just learned how to miss you quietly.\" Never let section 3 end in closure or a lesson.",
+    "examples": [
+      "When They Want You: They do not flirt, they decide. You become the one they study, the one they make time for without explaining why. Cold on the outside, already obsessed on the inside.",
+      "When They Have You: The walls come down behind closed doors. The ambition, the armor, the face they show the world, none of it shows up when it is just you. You become the soft place they did not know they needed.",
+      "When They Lose You: They do not cry in front of you. They go silent, disappear into work, turn the pain into something productive. But years from now they will still remember exactly where they messed up. Still wonder. Still carry it. Just never out loud.",
+      "When They Want You: They watch before they move. You will feel their eyes on you before you feel their hand. They want the parts of you no one else notices.",
+      "When They Have You: They love you and keep a room locked at the same time. Close but never fully close, yours but never fully yours. You will spend the whole relationship trying to reach the part of them they protect from everyone. And still never find it.",
+      "When They Lose You: They detach like it did not matter, rewrite the whole thing in their head until they barely feel it. But somewhere late at night, they still think about you. They just made sure no one would ever know."
+    ],
+    "frames": [
+      [
+        "When They Want You:",
+        "When They Have You:",
+        "When They Lose You:"
+      ]
+    ],
+    "hooks": {
+      "they": [
+        "Your {singular}: when they want you, when they have you, when they lose you",
+        "How each {singular} wants you, keeps you, and loses you"
+      ]
+    }
+  },
+  "most-addictive-thing": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The gift, why it works on people, and the fear underneath it. Opens as a compliment and ends somewhere the reader did not agree to go. The turn in section three is the whole post.",
+    "pattern": "THREE sections. 1 - the quality, stated as a compliment. 2 - MUST begin \"Because...\" explaining the effect on other people. 3 - the fear driving the quality, and it MUST close on what they are scared of.",
+    "patternNote": "The arc is gift, effect, wound. Section 3 reveals the same trait from section 1 is a defence mechanism - it reframes the compliment as a symptom. It ends with the fear stated plainly, usually \"You are scared that...\" or an equivalent. Do not soften it, do not resolve it, do not offer advice. The discomfort of the last line is why the post gets saved.",
+    "examples": [
+      "The most addictive thing about you: How completely you give yourself once you finally let someone in. You love loud, fast, with your whole chest. Most people have never been wanted that hard in their life.",
+      "Why they get hooked: Because your intensity makes them feel real. Ordinary people become the main character around you. Being the focus of your fire is a high nothing else touches.",
+      "What it is really hiding: You burn that hot because slowing down means feeling what is underneath. You are scared that if you ever stopped moving, you would notice how tired you are of being the strong one. You give everything fast so no one sees how terrified you are of being left.",
+      "The most addictive thing about you: The way you make someone feel safe. You stay when others run. You build a home out of your presence and let people live in it.",
+      "Why they get hooked: Because the world is loud and you are quiet. People exhale around you. You make love feel less like a risk and more like a place to land.",
+      "What it is really hiding: You hold on so tightly because letting go has always meant losing. Underneath the calm is someone afraid that the moment they stop being easy to love, they will be left too."
+    ],
+    "frames": [
+      [
+        "The most addictive thing about you:",
+        "Why they get hooked:",
+        "What it is really hiding:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The most addictive thing about you, by your {singular}",
+        "What people cannot resist about you, based on your {singular}"
+      ]
+    }
+  },
+  "thats-why": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "i"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      5,
+      6
+    ],
+    "anaphora": {
+      "birth-month": "I was born in {item}, that is why",
+      "zodiac-sign": "I am a/an {item}, that is why"
+    },
+    "brief": "The reader claiming their own contradictions out loud, using their birth month as the reason. Defiant rather than apologetic - this is not a confession, it is an explanation given to someone who did not ask.",
+    "pattern": "Every bullet opens \"I was born in {item}, that is why\" (bold), then a SELF-CONTRADICTION: something they do paired with the opposite thing they will not do.",
+    "patternNote": "The line after the anaphora must contain its own internal contradiction. One half is the visible behaviour, the other is what it costs or conceals. For zodiac signs the opening is \"I am a/an {sign}\" - nobody is born IN a sign. A line without that tension is just a trait and fails.",
+    "examples": [
+      "I fix everyone but never let them fix me",
+      "I look calm while my mind runs a marathon",
+      "I give advice I refuse to take",
+      "I need silence to feel like myself again",
+      "I catch your lie before you finish it",
+      "I live half in this world, half in my head",
+      "I feel everything and show none of it",
+      "I love hard but never chase",
+      "nobody reads me right the first time",
+      "I run from conflict like it is fire",
+      "I say what everyone is too scared to",
+      "I move first and think after",
+      "I vanish when I need to feel again",
+      "the future feels closer than today",
+      "fake people make my skin crawl",
+      "I disappear into my own thoughts",
+      "I feel your mood before you say a word",
+      "I am the one you call at 2am",
+      "I still believe in soulmates",
+      "slow people test my patience",
+      "I love loud and fight louder",
+      "I would burn down the world for my people",
+      "I turn heads without lifting a finger"
+    ],
+    "frames": [
+      [
+        "The Reason:",
+        "The Cost:"
+      ]
+    ],
+    "hooks": {
+      "i": [
+        "Your {singular}, that is why",
+        "Your {singular} — that is why you are like this"
+      ]
+    }
+  },
+  "im-fine-but": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "i"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      6,
+      7
+    ],
+    "anaphora": "I am fine, but",
+    "brief": "The gap between the two words everyone says and everything sitting behind them. Each line is one thing they have never said out loud, delivered calmly. No self-pity - the calm is what makes it land.",
+    "pattern": "Every bullet opens \"I am fine, but\" then names ONE specific unmet need or self-deception, as a full sentence ending in a full stop.",
+    "patternNote": "What follows the comma is either a need they will not ask for, or a lie they tell themselves with the lie named. The naming is the device - the line says the true thing AND the story told over it.",
+    "examples": [
+      "I carry everyone's weight and call it being reliable.",
+      "I wish being needed felt the same as being loved.",
+      "I stopped asking for help because the silence hurt more than the struggle.",
+      "I want to rest without the world falling apart when I do.",
+      "I built walls so high that even I forget how to get out.",
+      "I want to be someone's soft place, not just their strong one.",
+      "I feel most alone in rooms full of people.",
+      "I brace for goodbye before anyone even stayed.",
+      "I go quiet just to see who notices the silence.",
+      "I mistake being useful for being wanted.",
+      "I am tired of turning my hurt into something pretty.",
+      "I hide how much I feel and call it being low maintenance.",
+      "I hint at what I need and hope someone reads between the lines.",
+      "I want to be loved without explaining every ache.",
+      "I hold everyone's feelings until I lose track of my own.",
+      "I keep excusing people who never tried to understand me.",
+      "I want someone to stay without me shrinking to fit them.",
+      "I want a love that lets me take up space."
+    ],
+    "frames": [
+      [
+        "What You Say:",
+        "What You Mean:"
+      ]
+    ],
+    "hooks": {
+      "i": [
+        "Your {singular}, your \"I am fine\"",
+        "Your {singular} and the thing behind \"I am fine\""
+      ]
+    }
+  },
+  "i-dont-care-but": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "i"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      6,
+      7
+    ],
+    "anaphora": "I do not care, but",
+    "brief": "The defensive claim of numbness, undercut every time by what follows. A sibling to im-fine-but, but the lie is DENIAL OF FEELING rather than exhaustion from over-giving - this is someone insisting nothing gets to them while listing exactly what does.",
+    "pattern": "Every bullet opens \"I do not care, but\" then names something that proves they very much do - noticing, absorbing, hoping, being scared by their own depth of feeling.",
+    "patternNote": "Distinct from im-fine-but: im-fine-but is about carrying too much FOR OTHERS and being tired. i-dont-care-but is about refusing to admit feeling ANYTHING and being caught in the act. The tell is always noticing, absorbing, or being scared by how deeply they feel, not fatigue from giving.",
+    "examples": [
+      "I cry about it in the shower where no one asks questions.",
+      "I feel things so deeply it scares me sometimes.",
+      "I say it to protect the softest parts of me.",
+      "I keep hoping to be noticed without asking for it.",
+      "I absorb every mood in the room and call it nothing.",
+      "I want someone to look closer instead of believing me.",
+      "I carry disappointment like it is part of my job.",
+      "I stopped expecting things so nothing can hurt me.",
+      "I notice everything and admit almost nothing.",
+      "I am tired of being the one who handles it all quietly.",
+      "pretending is easier than explaining what I actually need.",
+      "deep down I want to matter without having to earn it."
+    ],
+    "frames": [
+      [
+        "What I Say:",
+        "What Is True:"
+      ]
+    ],
+    "hooks": {
+      "i": [
+        "Your {singular}, your \"I do not care\"",
+        "Your {singular} and the thing behind \"I do not care\""
+      ]
+    }
+  },
+  "gift-or-curse": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "itemTitle": "People born in {item}",
+    "bulletLabels": [
+      "Your Power:",
+      "Your Fear:",
+      "Your Gift:",
+      "Your Curse:",
+      "What Hurts You:",
+      "What Heals You:"
+    ],
+    "brief": "A full audit of one type in six labelled beats, moving from what they are good at to what it costs them and what repairs it. Power and Gift are outward. Fear and Curse are the price. The last two are the reader being seen.",
+    "pattern": "Six labelled bullets in a FIXED order. After each label comes a short PHRASE, never a full sentence - no \"You are\", no \"They\". Gift and Curse must be two sides of the same trait.",
+    "patternNote": "The content is compressed: \"Silent strength that keeps everyone grounded\" not \"Your power is that you have silent strength\". Gerunds and noun phrases only. Your Gift and Your Curse describe the SAME quality from opposite sides. What Heals You is always another person doing something small and specific.",
+    "examples": [
+      "Your Power: Silent strength that keeps everyone grounded",
+      "Your Fear: Being ordinary when you are meant for greatness",
+      "Your Gift: Making others feel safe and secure",
+      "Your Curse: Carrying everyone's burdens but never asking for help",
+      "What Hurts You: Being taken for granted",
+      "What Heals You: Someone finally checking if you are okay",
+      "Your Power: Seeing beauty where others see nothing",
+      "Your Curse: Falling for potential instead of reality",
+      "What Hurts You: Having to explain why you care so much"
+    ],
+    "frames": [
+      [
+        "Your Power:",
+        "What Heals You:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Is your {singular} a gift or a curse",
+        "Your {singular}, your gift and your curse"
+      ]
+    }
+  },
+  "the-warning-label": {
+    "moods": [
+      "toxic",
+      "love"
+    ],
+    "voices": [
+      "her",
+      "him"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletLabels": [
+      "Warning:",
+      "What To Expect:",
+      "What {Subj} Hides:",
+      "What Breaks {Obj}:",
+      "What {Subj} Needs:"
+    ],
+    "brief": "A five-beat character report written as a product label - a blunt warning, then what dating them is actually like, the defence mechanism, the breaking point, and what they actually need. Each beat is TWO sentences, not a phrase.",
+    "pattern": "Five FIXED labels in order, each followed by exactly TWO sentences. Warning states the core trait bluntly. What To Expect elaborates it with a but-clause. What She Hides reveals the insecurity under the trait from Warning. What Breaks Her is a specific triggering scenario. What She Needs is the corrective, stated as a type of person, not an action. (For the his/her voice, swap every pronoun and label to match - What He Hides, What Breaks Him, etc.)",
+    "patternNote": "Every beat must trace back to the SAME core trait named in Warning - this is one character study, not five separate facts. The two sentences per beat are short and plain, never a single long sentence. Written below for the her voice - mirror every pronoun for him.",
+    "examples": [
+      "Warning: She'd rather act than sit in the not-knowing. Will decide how it ends before you do.",
+      "What To Expect: She'll go all the way in fast and mean every second of it. She is direct, decisive, the one who says the thing nobody else will.",
+      "What She Hides: She isn't actually fearless. She just cannot stand the helpless feeling of waiting, so she takes control of the ending before anyone can hand it to her.",
+      "What Breaks Her: Being left waiting on an answer. Wanting someone so much she has to sit still for it.",
+      "What She Needs: Someone who reassures her without being asked. Someone steady enough that she does not have to rush to protect herself.",
+      "Warning: Adjusts to whoever she is with. Will lose herself before she lets a silence get awkward.",
+      "What She Hides: She talks around the thing instead of saying it. The constant words are a way to keep you close without letting you all the way in."
+    ],
+    "frames": [
+      [
+        "Warning:",
+        "What {Subj} Needs:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "The warning label {subj} should come with, by her {singular}"
+      ],
+      "him": [
+        "The warning label {subj} should come with, by his {singular}"
+      ]
+    }
+  },
+  "why-cant-read-you": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "they"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "itemTitle": "Why People Can't Read {item}:",
+    "bulletCount": [
+      6,
+      7
+    ],
+    "brief": "The gap between the visible surface reaction and the private, delayed, real one. Every line is a specific act of misreading corrected in the same breath.",
+    "pattern": "Every bullet: \"[seems/looks/appears/acts like] SURFACE but [is actually/has been/still/replays] PRIVATE\". No subject named - drop it, exactly like a dictionary definition.",
+    "patternNote": "The two halves must be genuinely opposed. The surface reading is what a stranger would conclude, the private half is what is actually true and is usually about DURATION, REPETITION, or ABSENCE. Lowercase, no full stop, one clause each side of \"but\".",
+    "examples": [
+      "seems angry but is actually hurt and refuses to say it",
+      "looks impulsive but has been thinking about it for weeks",
+      "appears over it but replays the argument in the shower",
+      "acts like they do not care but tested you three times today",
+      "seems like they start fights but they are really checking who stays",
+      "looks strong but nobody ever asks if they are okay, and it shows",
+      "looks patient but is keeping score quietly",
+      "seems relaxed but has not actually rested in years",
+      "appears over you but still checks if you are okay from a distance",
+      "seems open but only shares what is already healed",
+      "looks social but leaves every party emptier than they came",
+      "seems inconsistent but is really just different with people who feel safe"
+    ],
+    "frames": [
+      [
+        "The Surface:",
+        "The Private Version:"
+      ]
+    ],
+    "hooks": {
+      "they": [
+        "The reason people cannot read you, based on your {singular}",
+        "What makes {each} so hard to read"
+      ]
+    }
+  },
+  "the-type-he-is": {
+    "moods": [
+      "toxic",
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "him",
+      "her"
+    ],
+    "formats": [
+      "bullets"
+    ],
+    "bulletCount": [
+      7,
+      8
+    ],
+    "brief": "A clipped read on the type, written like someone listing what they already know about him. Unsentimental, a little amused, entirely accurate. Reads as observation, never as a complaint.",
+    "pattern": "Every bullet OMITS the subject and starts with the verb or adjective: \"talks big, but...\", \"protective until...\", \"obsessed with...\". Each line contains a TURN - but / until / while / except / right before.",
+    "patternNote": "Never begin with He or She - the subject is implied and dropping it is the format. All lowercase, no full stop. Each line pairs an outward behaviour with the thing that undercuts it. Keep them short - most run under 60 characters.",
+    "examples": [
+      "talks big, but will not say what is actually wrong",
+      "treats competition like a personality",
+      "protective until you give him a reason not to be",
+      "pretends he is chill while planning everything",
+      "says \"I do not care\" right before caring the most",
+      "silent when he is mad, louder when he is hurt",
+      "avoids drama, somehow stars in it anyway",
+      "gives advice he never takes himself",
+      "soft on the inside, ruthless with the roasts",
+      "picky about everything except what matters",
+      "brilliant ideas, zero follow-through",
+      "already three moves ahead of you"
+    ],
+    "frames": [
+      [
+        "The Type:",
+        "What It Costs Him:"
+      ]
+    ],
+    "hooks": {
+      "him": [
+        "Boys born in these {singular}s",
+        "The type he is, based on his {singular}"
+      ],
+      "her": [
+        "Girls born in these {singular}s",
+        "The type she is, based on her {singular}"
+      ]
+    }
+  }
+}
