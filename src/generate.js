@@ -177,6 +177,28 @@ async function generateHooks(seed, axis) {
     // only ever reached writeBodies — so the hook step was blind to them and
     // produced "What each zodiac sign calls a spark" over slides headed "The
     // red flag you fall for:". The cover never mentioned red flags at all.
+    // The bullets equivalent, and the strongest invariant in the whole system:
+    // an anaphora is a phrase repeated VERBATIM on every line of every slide.
+    // It was invisible here too, so the hook step wrote "What each birth month
+    // claims is fine" over 28 lines that all begin "I do not care, but" —
+    // adjacent denials, but not the same one. "I don't care" denies investment,
+    // "I'm fine" denies distress, and no slide said fine.
+    seed.anaphora
+      ? [
+          '',
+          `EVERY LINE OF EVERY SLIDE BEGINS WITH THESE EXACT WORDS: "${seed.anaphora.replace('{item}', seed.items[0])}"`,
+          '',
+          'That phrase is the post. The hook must be consistent with the claim it',
+          'makes — do not paraphrase it into a different claim. If the lines say',
+          'the reader does not care, the hook is about not caring, not about being',
+          'fine or being over it or being unbothered. Those are different denials',
+          'and the reader meets the cover and the phrase back to back.',
+          ''
+        ].join('\n')
+      : '',
+    seed.bulletLabels && seed.bulletLabels.length
+      ? `\nEVERY SLIDE CARRIES THESE LABELS, in this order: ${seed.bulletLabels.join('  ')}\nThe hook must set up what they cover. One that announces a different subject is the wrong cover on the right post.\n`
+      : '',
     seed.format === 'prose' && seed.frame && seed.frame.length
       ? [
           '',
@@ -273,6 +295,15 @@ async function scoreHooks(seed, hooks) {
     // the subject, was in the pool and lost to it.
     seed.format === 'prose' && seed.frame && seed.frame.length
       ? `\nHARD RULE: every slide is printed with these headers: ${seed.frame.join('  ')}\nThe hook must be recognisably about what "${seed.frame[0]}" names. One that announces a different subject cannot score above 5, however good it reads alone — the reader meets the cover and that header back to back.`
+      : '',
+    // Same enforcement for the repeated phrase. The judge crowned "claims is
+    // fine" at 9.5 over lines that all read "I do not care, but" — it had no
+    // way to know, so it scored the hook on sound alone.
+    seed.anaphora
+      ? `\nHARD RULE: every line of every slide begins "${seed.anaphora.replace('{item}', seed.items[0])}". A hook that restates that claim as a DIFFERENT claim cannot score above 5 — not caring, being fine, and being over it are three different denials, and the cover has to make the same one the lines make.`
+      : '',
+    seed.bulletLabels && seed.bulletLabels.length
+      ? `\nHARD RULE: every slide carries these labels: ${seed.bulletLabels.join('  ')}\nA hook that does not set up what they cover cannot score above 5.`
       : '',
     // The judge crowned "What you lose when you lose her" over slides with no
     // loss in them. It has to see what the body actually delivers.

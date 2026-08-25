@@ -302,7 +302,10 @@ const HOOK_STOP = new Set(
 function hookPayoffTerms(hook, axis) {
   const h = norm(hook);
   const axisWords = new Set(norm(axis).split(' '));
-  const usable = (w) => w.length >= 5 && !HOOK_STOP.has(w) && !axisWords.has(w);
+  // 4 rather than 5: the payoff is very often a short word — fine, love, cold,
+  // hurt, safe. "What each birth month claims is fine" was missed entirely
+  // because "fine" fell under a 5-character floor.
+  const usable = (w) => w.length >= 4 && !HOOK_STOP.has(w) && !axisWords.has(w);
 
   // Detected by NAMING CONSTRUCTION, not by position. Two earlier versions got
   // this wrong in opposite directions: scanning every long word flagged "Her
@@ -314,8 +317,13 @@ function hookPayoffTerms(hook, axis) {
   //
   // These verbs all mean "the reader gives this thing a name", which is exactly
   // where a hook stops describing the angle and commits to one value.
+  //
+  // Only ASSERTIVE forms qualify — "says", never bare "say". The infinitive is
+  // not a naming construction, and including it flagged two good hooks on the
+  // trailing word alone: "The exact words to say to each zodiac sign tonight"
+  // on "tonight", and "...to say when they quiet down" on "down".
   const m = h.match(
-    /\b(?:as|into|for|calls?|calling|called|misreads?|misread|mistakes?|mistook|reads?|confuses?)\s+(?:it\s+|a\s+|an\s+|the\s+)?(.+)$/
+    /\b(?:as|into|for|calls?|calling|called|misreads?|misread|mistakes?|mistook|reads?|confuses?|claims?|claiming|says|insists?|pretends?|swears?)\s+(?:it\s+|a\s+|an\s+|the\s+|is\s+|was\s+|are\s+)?(.+)$/
   );
   return m ? m[1].split(' ').filter(usable) : [];
 }
