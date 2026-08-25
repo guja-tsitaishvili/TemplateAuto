@@ -353,6 +353,178 @@
       "How She Leaves: She doesn't leave impulsively. She analyzes, reflects, and gives countless chances before making a final decision. She'll tell you what's hurting her and hope things improve. But if nothing changes, she slowly begins detaching. The overthinking eventually turns into acceptance. By the time she walks away, she's already made peace with losing the relationship."
     ]
   },
+  "why-shes-irreplaceable": {
+    "moods": [
+      "love",
+      "positive"
+    ],
+    "voices": [
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "How she loves, ending on the fear she carries about it, and then the case for why no one replaces her. An argument made to whoever has her.",
+    "frames": [
+      [
+        "How she loves:",
+        "Why she's irreplaceable:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "What makes {her} irreplaceable, based on {her} {singular}",
+        "Why nobody replaces {her}, by {her} {singular}",
+        "Why {she} is the one you do not get over"
+      ]
+    },
+    "pattern": "Section 1 opens with a short flat claim about how she loves (\"She loves out loud\", \"She does not love halfway\"), gives 2-3 sentences of what that looks like, then MUST turn on \"But underneath\" or equivalent to the private fear she carries about loving that way. Section 2 opens by denying the cheap reading of her and correcting it (\"She is not the glow. She is the heart behind it.\"), then a sentence beginning \"To be loved by her is to\", and closes on a sentence beginning \"And the person who has her\".",
+    "patternNote": "Both section 2 phrases are mandatory and word for word: \"To be loved by her is to\" and the closing \"And the person who has her\". The private fear closing section 1 is what stops the post being a greeting card - she wonders if she is only wanted while shining, or whether loving that hard is something to apologise for. Section 2 never argues she is perfect, it argues her supposed flaw IS the gift and most people are simply not equipped to receive it. Shares its first label with how-she-loves-how-she-leaves; that angle spends section 2 on her exit, this one spends it on her worth, and the two must not be blended.",
+    "examples": [
+      "How she loves: She loves out loud. She brags about the people who are hers. She points the light at them in a crowded room and asks for nothing but to be loved back with the same whole heart. But underneath all that warmth, she carries a quiet fear that she is only wanted when she is shining.",
+      "Why she's irreplaceable: The peace she creates is not weakness, it is a gift most people cannot give. To be loved by her is to be handled gently, to be heard instead of managed, to finally have the calm version of love everyone pictures but rarely gets. She makes connection feel graceful, like love does not have to be a fight. And the person who has her gets to come home to softness, every single day, in a world that is rough everywhere else.",
+      "Why she's irreplaceable: Her intensity is not something to fix. It is the gift, and only the rare ones are strong enough to receive it. To be loved by her is to be wanted completely, to be looked at in the places no one else dared to look and chosen anyway. She gives a devotion most people only read about. And the person who has her holds a loyalty so total that everything thinner, everywhere else, looks like a cheap imitation of the real thing."
+    ]
+  },
+  "your-biggest-lie": {
+    "moods": [
+      "negative",
+      "toxic"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The sentence they say about themselves that is not true, rebutted on the spot, then what they actually want underneath it.",
+    "frames": [
+      [
+        "Your Lie:",
+        "Your Truth:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your biggest lie in relationships, based on your {singular}",
+        "Your {singular}, your biggest lie",
+        "The lie each {singular} tells about love"
+      ]
+    },
+    "pattern": "Section 1 states the lie in FIRST PERSON as its own sentence, then rebuts it immediately in the very next sentence - three words or fewer where possible (\"You need both.\" / \"You are.\") - then 3-4 sentences tracing how the lie got built, then closes on the fear it is hiding. Section 2 opens \"You want\" plus what they actually want, then stacks short fragments beginning \"When\" or naming conditions, then closes on one more \"You want someone who\" or \"Someone who\" line.",
+    "patternNote": "The immediate rebuttal is the signature of this angle and the reason it is separate from the-delusion: there the excuse sits in quotation marks and is granted a paragraph of credit before being taken apart (\"You say it like a strength, and you almost believe it\"), whereas here it is contradicted in the next breath and never flattered. The lie must be a sentence people actually say out loud about themselves. Section 2's stacked \"When you're tired. When you're doubting. When the crown slips.\" fragments are where it lands - keep them short and keep them coming.",
+    "examples": [
+      "Your Lie: I don't need to be loved, I need to be respected. You need both. You just stopped asking for love. Too many people gave you applause instead of devotion. So you lowered the ask. Respect feels safer. Love means they could see all of you and still leave. And that's the part that terrifies you.",
+      "Your Truth: You want someone who earns your walls coming down. Slowly. Carefully. Without rushing you or punishing you for being guarded. You don't need perfect. You need loyal. Someone who sees your darkness and doesn't flinch. Someone who proves that letting them in won't destroy you."
+    ]
+  },
+  "your-karma": {
+    "moods": [
+      "negative",
+      "positive"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The trap they built themselves and are now living inside, the correction that would open it, and the strength that came out of the same material. Ends on the strength, not the trap.",
+    "frames": [
+      [
+        "Your karma:",
+        "Your lesson:",
+        "Your gift:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your karma",
+        "The karma each {singular} is living out",
+        "What you did to yourself, based on your {singular}"
+      ]
+    },
+    "pattern": "THREE sections. Section 1 is a consequence chain: the protective choice they made, what they did with it repeatedly, then the present state it produced - closing on a sentence beginning \"Now you're\" plus two or three flat adjectives. Section 2 opens with a corrective aphorism that denies the logic of section 1, then 2-3 sentences, then closes on a direct imperative. Section 3 opens with a flat claim of strength and closes on the single most flattering true thing that can be said about them.",
+    "patternNote": "Karma here is self-inflicted consequence, never cosmic punishment - they are living in a room they built. The \"Now you're\" close on section 1 is the hinge and must be unsentimental: successful, independent, and completely isolated. Empty, resentful, and still giving. A paradox pair works instead where it lands better - \"Everyone knows you. Nobody knows you.\" Section 3 must be the SAME trait as section 1 read generously, and it is the only warm section; do not hedge it or qualify it.",
+    "examples": [
+      "Your karma: You became so self-sufficient that needing someone feels like failure. People tried to love you and you handled it alone anyway. Now you're successful, independent, and completely isolated.",
+      "Your karma: You love people who don't love you back the same way. You give everything and call it love when really it's just you refusing to protect yourself. Now you're empty, resentful, and still giving.",
+      "Your lesson: The ground shifting doesn't mean you're falling. Sometimes it means you're finally moving. What you're clinging to is already gone. Open your hands.",
+      "Your lesson: Depth scares you because staying still means feeling things. Stop entertaining people and start letting someone matter. The connection you're dying for requires you to shut up and be vulnerable.",
+      "Your gift: You're the calm in everyone's chaos. Your presence is a weighted blanket. You build things that last. Your love doesn't waver. When you commit, it's forever. That's rare and you know it.",
+      "Your gift: When you love someone, they feel it in their bones. Your intuition is witchcraft. You know what people need before they say it. You make home feel like a person."
+    ]
+  },
+  "your-main-character": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Which character they are in the story, named like a title, and the specific thing they are better at than everyone around them. Flattering without being flattery.",
+    "frames": [
+      [
+        "Your Main Character:",
+        "Your Superpower:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your main character",
+        "Which main character each {singular} is",
+        "The character you actually are, by your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens by NAMING the archetype as a title in noun-phrase form and nothing else - \"The Behind-The-Scenes Hero.\" \"The Complex One.\" \"The Intense Soul.\" - then 3-4 short sentences of what that looks like, then closes on a paradox or a three-part verdict. Section 2 opens with a gerund phrase naming the ability, then short punchy sentences of proof, then closes on a clipped flat line of three or fewer sentences.",
+    "patternNote": "The archetype title is mandatory and must be capitalised like a label, with a full stop after it and no verb. It has to sound like something a person would screenshot and claim. Section 1's close is a contradiction held together rather than resolved: \"You're essential but invisible.\" \"You're too much for some. Not enough for others. Perfect for the right ones.\" Section 2 never explains the ability, it demonstrates it, and the final line should land short: \"You know. That's enough. Most days.\"",
+    "examples": [
+      "Your Main Character: The Behind-The-Scenes Hero. You fix problems before anyone knows they exist. You work quietly and rarely take credit. People don't realize how much you do until you're gone. You see solutions others miss. You're essential but invisible.",
+      "Your Main Character: The Intense Soul. You love few people but you love them deeply. You don't do surface level anything. You want to know what actually matters. People either get you completely or not at all. You're too much for some. Not enough for others. Perfect for the right ones.",
+      "Your Superpower: Pulling people deeper without trying. You don't perform. You don't pretend. And somehow that makes people want to stay longer than they planned. They peel back one layer and find another. Then another. Most people bore them. You never do. And you're not even trying."
+    ]
+  },
+  "your-love-note": {
+    "moods": [
+      "positive",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Written to someone carrying too much: what they are carrying, the thing that is actually true instead, and what they are owed. Gentle the whole way through, no accusation anywhere.",
+    "frames": [
+      [
+        "What You Carry:",
+        "What's True:",
+        "What You Deserve:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your love note",
+        "The love note each {singular} needs to read",
+        "What you needed to hear, based on your {singular}"
+      ]
+    },
+    "pattern": "THREE sections. Section 1 names the burden by naming the ROLE they play (\"You're the strong one, the fine one, the one who never asks\") or what they have been called, then closes on the cost in a line that denies the obvious remedy. Section 2 opens with a flat denial or affirmation of four words or fewer - \"You are not too much.\" \"It does get better.\" - then supplies the true reading, usually locating the fault outside them. Section 3 is stacked infinitives beginning \"To be\" or \"To feel\" or \"To stop\", then closes on one instruction or promise.",
+    "patternNote": "This is the warmest angle in the bank and must never turn into a lecture: nothing in it blames the reader for anything, including the shrinking. Section 2's short opening line is the whole pivot and must be plain enough to be believed - the reframe that follows moves the fault to the people around them (\"you were just surrounded by people too small to hold you\") without naming a villain. Section 3's infinitives are things they are OWED, not things they should do; the single closing instruction is the only ask in the entire post, and it is small.",
+    "examples": [
+      "What You Carry: You're the strong one, the fine one, the one who never asks. You hold everyone together and smile so no one checks if you're okay. You're tired in a way rest doesn't fix.",
+      "What You Carry: You're so tired you can't even picture lighter days anymore. You keep going because stopping isn't an option, not because you believe it gets better. Hope feels like a thing other people get to have.",
+      "What's True: You were never too much. You were just surrounded by people who couldn't hold the depth of you, and you mistook their limit for your flaw. Your feelings were never the problem.",
+      "What's True: It does get better. Not all at once, but slowly, in small softenings you'll almost miss. You only have to survive today. Then the next. That's all this asks of you right now.",
+      "What You Deserve: To be chosen before you prove you're worth it. To be held in the rooms where you're always strong. One day someone stays without you convincing them. Until then, choose yourself the way you keep waiting for someone else to.",
+      "What You Deserve: To stop editing yourself for people who were never going to read the whole story anyway. Be all of it. Loud, deep, tender, alive. The world needs every bit of your light, unapologized for."
+    ]
+  },
   "addiction": {
     "moods": [
       "toxic"
