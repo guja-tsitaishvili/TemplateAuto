@@ -1821,6 +1821,10 @@
       [
         "How It Shows:",
         "What It Is Really About:"
+      ],
+      [
+        "How You Get Jealous:",
+        "The Truth You Hide:"
       ]
     ],
     "hooks": {
@@ -1833,7 +1837,56 @@
       "him": [
         "How he shows jealousy and calls it something else"
       ]
-    }
+    },
+    "pattern": "Section 1 names the MECHANISM, not the mood - how the jealousy physically arrives and what it makes them do - in 4-5 sentences, then closes on the behaviour it produces. Section 2 opens with a denial and a correction in one sentence (\"You're not angry, you're scared\"), then somewhere in the middle uses the words \"The truth is\", then closes on the fear that was driving all of it, usually as \"You hide X because Y\".",
+    "patternNote": "Section 1 must describe arrival and mechanics - fast and hot before the brain catches up, or detaching first and processing later - never \"you feel jealous\". A strong opening variant is denying the emotion outright and renaming it: \"You don't. You feel disrespect.\" Section 2's opening denial-correction is mandatory and the correction must be a FEAR, not a flaw. The post never resolves and never advises; the last line leaves the fear sitting there. Written for the you voice; mirror every pronoun for her and him.",
+    "examples": [
+      "How You Get Jealous: You feel it fast and hot, like fire in your chest before your brain catches up. You try to hide it behind confidence but your questions get sharper, more direct. You'd rather know the ugly truth than sit with uncertainty for one more second. Silence isn't your style. You confront because waiting feels like weakness.",
+      "How You Get Jealous: You don't. You feel disrespect. You saw this coming six months before it happened because you're an overthinker who notices patterns others miss. You clocked the red flags on day one and hoped you were wrong. By the time they slip up, you've already mentally packed your bags. You don't fight for people who make you feel like an option.",
+      "The Truth You Hide: You feel more than you'll ever let anyone see. Jealousy confuses you because emotions aren't supposed to control you. But this one does. The truth is you've convinced yourself that needing someone is weakness, so when jealousy proves you need them, it shakes your whole identity. You hide in logic because feelings make you feel out of control.",
+      "The Truth You Hide: You're not overreacting, you're feeling what they won't admit yet. Your sensitivity is a gift but it's also a wound. Jealousy doesn't just visit you, it moves in. The truth is you feel everything so deeply that even the possibility of losing someone you love feels like drowning. You hide how much it hurts because you're scared of being too much again."
+    ]
+  },
+  "how-she-acts-as-a-partner": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "A partner portrait in three beats - the energy she brings, how her love actually shows up, and the flaw the partner will absolutely have to live with. Affectionate about the first two, unsparing about the third.",
+    "frames": [
+      [
+        "Her Energy:",
+        "Her Love Language:",
+        "Her Red Flag:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How each {singular} acts as a girlfriend",
+        "How each {singular} acts as a wife",
+        "What each {singular} is like to actually be with"
+      ]
+    },
+    "itemTitle": [
+      "{item} Girlfriend",
+      "{item} Wife"
+    ],
+    "pattern": "THREE sections. Section 1 opens by casting her as a ROLE or type in one short sentence (\"She's the CEO of the relationship\"), then specific behaviours, then closes on one oddly concrete detail. Section 2 opens \"She shows love through\" or \"She loves by\" plus the mechanism, then closes on how the love actually feels to receive. Section 3 names the flaw through a scenario rather than a label, often with a line of her dialogue in quotes, and closes on a second-person consequence beginning \"You'll\".",
+    "patternNote": "The oddly concrete detail closing section 1 is the whole charm - a spreadsheet of your favourite snacks, glitter in your laundry for weeks, she files your taxes early and calls it romance. Never end section 1 on an abstraction. Section 3 must be a flaw the reader recognises and would still sign up for; it is never a dealbreaker and never cruelty. IMPORTANT: if the slide title says Wife rather than Girlfriend, the stakes move from weeks to years and the tone goes quieter and more resigned - \"you'll spend your marriage knocking on a door she sometimes forgets to open\" - while Girlfriend stays lighter and funnier. Same three beats either way.",
+    "examples": [
+      "Her Energy: She's the CEO of the relationship. Plans everything, remembers everything, somehow shows up perfect after texting \"on my way\" five minutes before she left. Low-key ride or die. She's picking you up from the airport at 2AM without saying a word. Barely posts on socials but has a spreadsheet of your favorite snacks.",
+      "Her Energy: She will gas you up louder than your own mom. The main character girlfriend. She knows what she brings to the table, and she is the table. Loud, confident, allergic to being ignored. Never takes a bad photo, somehow still makes you feel like the main character.",
+      "Her Love Language: She loves by mothering you in the best way. Makes sure you ate, slept, took your medicine. She feels your pain like it's her own and tries to absorb it for you. Her love is gentle, all-encompassing, wraps around you like a warm blanket.",
+      "Her Love Language: She loves the you that nobody else notices. Writes you letters you'll find in coat pockets years later. Makes random Tuesdays feel like scenes from a film only she's directing.",
+      "Her Red Flag: She reorganized your closet while you were in it. Try doing something your way. She'll redo it before you finish. Her face won't change but her disappointment will fill the room like gas. You'll start asking permission to exist in your own house.",
+      "Her Red Flag: She's bored and your marriage is about to get interesting. Starts fights to feel something. Says things that leave marks. Apologizes with her body and thinks that counts. It kind of does. You'll be addicted to the chaos before you realize you're exhausted by it."
+    ]
   },
   "the-delusion": {
     "moods": [
