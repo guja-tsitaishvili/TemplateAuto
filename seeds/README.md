@@ -124,6 +124,35 @@ prompt, so this works reliably; unresolved template syntax does not.
 If an angle's `hooks`, `frames` or `bulletLabels` need a voice-specific word,
 those three fields DO support the placeholders below.
 
+### Never let `examples` reconstruct ONE complete item
+
+On a `bulletLabels` angle, if the examples happen to cover every label exactly
+once, they add up to a full filled-in slide — and the model will replay it
+almost word for word on whichever item comes first.
+
+This happened on `the-monthly-profile`. All eight examples were lifted from the
+same "January girl" reference poster, in label order, so the generated January
+came back 6/8 identical to it — a near-copy of the reference account's actual
+published post, and an item that would never vary. The prompt does say "do not
+reuse these, match their construction"; that instruction does not survive a set
+of examples this complete.
+
+**Rule:** scramble examples across at least two or three different items, and
+give at least two alternatives per label so no single item is reconstructible.
+Then say so in `patternNote` — "the examples are deliberately scrambled across
+three months; never assemble them back into one profile".
+
+Diagnostic — flags any fixed-label angle whose examples cover every label with
+little slack:
+
+```bash
+node -e "const a=require('./seeds/angles.json');for(const[i,x]of Object.entries(a)){if(!x.bulletLabels||x.disabled)continue;console.log(i,'labels='+x.bulletLabels.length,'examples='+(x.examples||[]).length)}"
+```
+
+Anything where `examples` is not comfortably larger than `labels` needs a look.
+This applies to free-sentence angles too, just less sharply — there is no fixed
+slot count for the examples to fill.
+
 ### Placeholders
 
 Resolved from the voice (pronouns) and the subject (noun):

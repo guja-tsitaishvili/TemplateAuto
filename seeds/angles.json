@@ -3864,16 +3864,24 @@
     ],
     "brief": "A full eight-beat personality dossier for one birth month, moving from surface charm to the private exception underneath, then closing on a quoted line in her own voice. Denser than the-archetype - a profile, not a list of loose recognitions.",
     "pattern": "Eight FIXED labels in order, each a SHORT PHRASE (2-6 words), except Her mantra which is a first-person line in quotation marks. Her vibe and Superpower are the surface charm. Downfall names the specific cost of that same charm. In public and In private are an explicit contrast pair - composed, then not. Dating her is an instruction, stated as a short condition. Mood is two states joined by a comma, not a single word. Her mantra is what she would actually say out loud, never a description of her.",
-    "patternNote": "Downfall must trace back to the trait named in Her vibe/Superpower, not introduce a new flaw. In public and In private must contradict each other sharply - if they read as the same mood, the beat has failed. Her mantra is quoted speech, not a summary (\"I'll figure it out alone\" not \"she prefers independence\"). Distinct from the-warning-label: labels are fixed at eight not five, most beats are short phrases not two-sentence beats, and it ends on a spoken line rather than a stated need.",
+    "patternNote": "Downfall must trace back to the trait named in Her vibe/Superpower, not introduce a new flaw. In public and In private must contradict each other sharply - if they read as the same mood, the beat has failed. Her mantra is quoted speech, not a summary (\"I do it my way\" not \"she prefers independence\"). Distinct from the-warning-label: labels are fixed at eight not five, most beats are short phrases not two-sentence beats, and it ends on a spoken line rather than a stated need. The examples below are deliberately SCRAMBLED across three different months - never assemble them back into one profile, and never reuse a line. Write eight fresh beats for every month.",
     "examples": [
-      "Her vibe: too young to be this serious",
+      "Her vibe: from another planet",
+      "Her vibe: half here, half in a dream",
+      "Superpower: feels what you can't say",
       "Superpower: has a plan for everything",
       "Downfall: doesn't know how to relax",
-      "In public: calm, sharp, a little intimidating",
+      "Downfall: emotionally three feet away",
+      "In public: cool, different, hard to read",
+      "In public: soft, kind, a little far away",
+      "In private: replaying that one moment from years ago",
       "In private: crying, then back to the to-do list",
+      "Dating her: give her space or lose her",
       "Dating her: prove you're worth her",
-      "Mood: locked in, then completely shut off",
-      "Her mantra: \"I'll figure it out alone\""
+      "Mood: sad song, full volume",
+      "Mood: all in, then suddenly gone",
+      "Her mantra: \"I do it my way\"",
+      "Her mantra: \"soft, not stupid\""
     ],
     "frames": [
       [

@@ -100,7 +100,22 @@ function seedContext(seed) {
 
 /* ---------------------------------------------------------------- step 1 */
 
+/**
+ * The reader looks up their OWN item on you/i/they posts, so the cover says
+ * "your sign". On her/him posts the subject is a third party and "your" is
+ * simply the wrong person — those take her/his instead. (The i voice keeps
+ * "your" deliberately: voices.json has the cover addressing the reader as you
+ * while only the body switches to I.)
+ */
+function hookPossessive(voice) {
+  if (voice === 'her') return { poss: 'her', who: 'her' };
+  if (voice === 'him') return { poss: 'his', who: 'him' };
+  return { poss: 'your', who: 'the reader' };
+}
+
 async function generateHooks(seed, axis) {
+  const { poss, who } = hookPossessive(seed.voice);
+  const Poss = poss.charAt(0).toUpperCase() + poss.slice(1);
   const prompt = [
     houseStyle(),
     '',
@@ -112,14 +127,21 @@ async function generateHooks(seed, axis) {
     'Without it the reader cannot place themselves and the post loses its',
     'astrology signal. A hook missing it is discarded automatically.',
     '',
-    'Use ONLY these three house templates. The hook shape is brand recognition —',
+    'Use ONLY these four house templates. The hook shape is brand recognition —',
     'novelty belongs in the idea, never in the format:',
-    `  A)  Your ${axis}, your <noun phrase>`,
-    `  B)  <claim about the reader>, based on your ${axis}`,
+    `  A)  ${Poss} ${axis}, ${poss} <noun phrase>`,
+    `  B)  <claim about ${who}>, based on ${poss} ${axis}`,
     `  C)  What each ${axis} <verb phrase>`,
-    `  D)  <claim about the reader>, by your ${axis}`,
+    `  D)  <claim about ${who}>, by ${poss} ${axis}`,
     '',
     'Spread them across all four. Vary the IDEA, not the structure.',
+    // The possessive was hardcoded to "your" for every voice, which collides on
+    // the third-person ones: a her-voice post produced the cover "The truth of
+    // her, based on YOUR birth month" — two different people in one sentence,
+    // and no way to tell whose month decides it.
+    poss === 'your'
+      ? ''
+      : `\nPRONOUN: this post is about ${who}, not about the reader. The hook says "${poss} ${axis}" — never "your ${axis}". Do not mix the two in one hook.`,
     '',
     // The earlier fix stopped hooks promising content OUTSIDE the pattern. This
     // is the same bug one level in: a hook can promise a narrow slice INSIDE the
@@ -182,6 +204,7 @@ async function generateHooks(seed, axis) {
 /* ---------------------------------------------------------------- step 2 */
 
 async function scoreHooks(seed, hooks) {
+  const { poss, who } = hookPossessive(seed.voice);
   const prompt = [
     'You are a ruthless editor for a large astrology Instagram account.',
     '',
@@ -197,6 +220,11 @@ async function scoreHooks(seed, hooks) {
     // enforce it or the best-sounding narrow hook still wins. Deliberately does
     // NOT reward generality — a vague hook must not beat a specific one here.
     '',
+    // Same collision as in the generator: score down covers that put the reader
+    // and the third-person subject in one sentence.
+    poss === 'your'
+      ? ''
+      : `\nPRONOUN RULE: this post is about ${who}. Score 4 or lower any hook that says "your ${subjects[seed.subject].singular}" instead of "${poss} ${subjects[seed.subject].singular}", or that mixes the two — "The truth of her, based on your birth month" names two different people and does not say whose ${subjects[seed.subject].singular} decides it.`,
     `COVERAGE RULE: this carousel has ${seed.items.length} items (${seed.items.join(', ')}).`,
     'Score 4 or lower any hook naming a situation, a target or a condition that',
     'only SOME of those items could plausibly deliver on — a promise kept on most',
