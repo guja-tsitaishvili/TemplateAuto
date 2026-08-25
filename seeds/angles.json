@@ -81,6 +81,142 @@
       "Your Healing: It starts with admitting what the tests are protecting. Somewhere, you trusted completely and it destroyed you. So you swore it would never happen again. Tell someone one guarded truth. Let them hold it. And when they do, let it count. Put the armor down. You survived once. You might not have to again."
     ]
   },
+  "your-danger": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The exact condition under which they stop being safe to cross, and then the same capability seen as something worth loving. Cold first, warm second, no apology in either direction.",
+    "frames": [
+      [
+        "Your danger:",
+        "Your truth:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your danger",
+        "What makes you dangerous, based on your {singular}",
+        "What each {singular} is like with nothing left to prove"
+      ]
+    },
+    "pattern": "Section 1 names the exact condition under which they become dangerous, gives 3-4 short sentences of what they do in that state, then closes on a flat line that raises the stakes instead of softening them. Section 2 concedes the cold behaviour and why it happens, pivots in the middle on a single But or Yet, then closes on the specific good thing they give when they feel safe.",
+    "patternNote": "The danger is never villainy - it is a good trait with the safety off: ambition fuelled by humiliation, patience that becomes quiet erasure, insight that becomes knowing exactly what someone needs to hear. Section 2 MUST contain a But or Yet turn in the middle; without it the section is just a compliment. The trait in section 2 has to be the SAME trait as section 1 - if section 1 is about going cold, section 2 cannot arrive at generosity out of nowhere. Section 1 never apologises, section 2 never scolds.",
+    "examples": [
+      "Your danger: You become most dangerous when someone thinks they can break your spirit. Pain doesn't always slow you down. Sometimes it gives you direction. You turn humiliation into ambition, rejection into fuel, anger into action. People fear your temper. They should fear what comes after it.",
+      "Your danger: You understand how people think faster than they realize you're studying them. You hear contradictions. You notice what someone avoids. You can change your tone, your argument and your entire approach in seconds. You don't only know what to say. You know what the other person needs to hear.",
+      "Your truth: You can stay attached long after something has stopped making you happy, because letting go feels like destroying a life you already built in your head. But that same attachment makes you someone's stability. You stay consistent, you remember what matters, and you create the kind of loyalty people spend years searching for.",
+      "Your truth: You can act untouchable when being overlooked has wounded you more than criticism ever could. Yet when you feel truly loved, you become incredibly generous. You celebrate your people loudly, defend them fiercely, and have a gift for making someone feel special simply because they're yours."
+    ]
+  },
+  "why-people-fall-for-you": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What draws people in, then the self-protective habit that drives the same people out. The two halves must be the same person, described twice.",
+    "frames": [
+      [
+        "Why people fall for you:",
+        "Why people lose you:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, why people fall for you",
+        "Why people fall for you and why they lose you, by your {singular}",
+        "What each {singular} is loved for and left for"
+      ]
+    },
+    "pattern": "Section 1 opens with a short flat claim about what they are like, unpacks it for 3-4 sentences, then closes on a sentence containing the exact words \"People fall for\" followed by two or three things stacked with commas. Section 2 names the self-protective habit, unpacks what it costs, then closes on a sentence containing the exact words \"People lose you because\" followed by the real reason.",
+    "patternNote": "Both closing phrases are mandatory and word for word - \"People fall for\" in section 1, \"People lose you because\" in section 2. The reason in section 2 must be a self-deception the reader half knows: a habit they call by a flattering name. Name both names in the same breath - walls disguised as strength, one foot out the door called freedom when it was fear of being tied to a single life. Section 2 is never about the other person failing, always about the reader's own exit.",
+    "examples": [
+      "Why people fall for you: You see people. Not the version they perform, the one underneath they thought no one noticed. You make others feel understood in a way that almost aches. People fall for your tenderness, the way you turn heavy moments soft, the way loving you feels like being forgiven for things you never confessed.",
+      "Why people fall for you: Being with you feels like living more. You pull people into experiences they would never have chased alone, and the world looks brighter through your eyes. People fall for your appetite for life, the comfort of your presence, the way you make even ordinary days feel worth remembering.",
+      "Why people lose you: You confuse control with love, and you hold on so tightly that people start to feel managed instead of held. You struggle to let anyone see you unsure or unravelling, so they never feel fully let in. People lose you because you built walls disguised as strength. You wanted closeness but couldn't stand to be seen as anything less than solid."
+    ]
+  },
+  "emotions-you-dont-express": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The feeling they swallow, the one underneath it, and the thing they have wanted for years and never once asked for out loud.",
+    "frames": [
+      [
+        "The Emotion You Bury:",
+        "The Feeling You Hide:",
+        "The Need You Never Voice:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular} and the emotions you don't express",
+        "What each {singular} buries instead of saying",
+        "Your {singular}, your unspoken need"
+      ]
+    },
+    "pattern": "THREE sections, each with a different fixed opening shape. Section 1 opens with ONE abstract noun and a full stop - Resentment. Insecurity. Anxiety. - then unpacks it and closes on a short flat line. Section 2 opens with a gerund phrase and a full stop - Feeling abandoned. Feeling not good enough. - then unpacks it and closes on a short flat line. Section 3 is three or four clauses each beginning \"To be\" or \"To have\", separated by full stops, and nothing else.",
+    "patternNote": "The three openings must stay in that order and must never swap shapes: single noun, then gerund, then stacked infinitives. Section 3 has NO closing commentary - the stacked wants ARE the ending, and one sentence added after them kills the whole post. Section 3 is why this gets saved, so every clause must be something the reader has wanted for years and never asked for. Section 2 is not a restatement of section 1: section 1 is the emotion they feel, section 2 is the older fear underneath it.",
+    "examples": [
+      "The Emotion You Bury: Resentment. You feel everything and carry everyone. You give until you're empty and then you give more. And sometimes it turns bitter and you never say it. You just go quiet and pull back into your shell.",
+      "The Emotion You Bury: Insecurity. You walk in like you own the room. Inside you're wondering if they'd still love you dimmed. You perform confidence because you learned the crowd leaves when the light goes out. No one knows how much you question yourself.",
+      "The Feeling You Hide: Feeling abandoned. You nurture people who never nurture back. You remember every time you needed someone and the space stayed empty. You stop asking. You just keep caring from a safer distance.",
+      "The Feeling You Hide: Feeling not good enough. You give your best and still replay what you missed. You criticize yourself harder than anyone else ever could. Nothing you do feels finished. Nothing feels like enough.",
+      "The Need You Never Voice: To be adored for your heart, not just your spark. To be seen on the days you're low. To be loved when you're not performing.",
+      "The Need You Never Voice: To be told you're enough without having to be perfect. To rest without guilt chasing you. To be loved for who you are, not who you're trying to become."
+    ]
+  },
+  "your-dark-gift": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "One trait that damages people, stated without flinching, then the identical trait as the reason someone will never get over them. Same quality, two readings.",
+    "frames": [
+      [
+        "Your dark gift:",
+        "Your light:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your dark gift",
+        "The gift that costs people something, by your {singular}",
+        "What each {singular} does to people without meaning to"
+      ]
+    },
+    "pattern": "Section 1 states the flaw as a capability - something they DO to people, never something wrong with them - unpacks the cost over 3-4 sentences, then closes on the most damning line in the post. Section 2 MUST open with the word But, reframes the identical trait as the thing that makes them worth loving, then names the partner who unlocks it with a phrase beginning \"With someone\" or \"With a partner\", and closes on the trait turning.",
+    "patternNote": "Section 2 opening with But is mandatory and is the hinge of the format. The trait must be IDENTICAL across both sections, not a related virtue - the one who burns people is also the most alive person you will ever meet, the one who cannot let go also loves deeper than anyone. A strong closing move is \"stops being a wound and becomes\" something - use it, but not on every item. Section 1 must not hedge and section 2 must not apologise for section 1.",
+    "examples": [
+      "Your dark gift: You set people on fire and walk away before the flame dies. You burn bright, then go cold, chasing the spark of the beginning and losing interest the second it settles. You leave people still burning long after you've moved on, remembered forever by hearts you never stayed to hold. You crave the chase more than the catch.",
+      "Your light: But that same steadiness makes you the most reliable love a person could find. When someone finally deserves your patience, they get a devotion nothing can shake. With a partner who stays as steadily as you do, your loyalty stops being a wound and becomes the foundation you both stand on for life.",
+      "Your light: But a heart that forgets nothing loves harder and deeper than anyone alive. When the right person chooses you back, being loved by you feels like being finally, fully seen. With someone who stays without being held in place, your memory stops being a wound and becomes the thing that makes them feel unforgettable."
+    ]
+  },
   "addiction": {
     "moods": [
       "toxic"
@@ -3529,7 +3665,7 @@
     ],
     "brief": "Two halves of the same person: the way they love, and the way they end it. The leaving section must feel like a consequence of the loving section, not a separate topic.",
     "pattern": "BOTH sections open with a manner phrase answering \"how\" - a fragment, not a full sentence. Section 1: \"Like a promise they can hold onto.\" Section 2: \"Without a word.\" Then unpack. Section 2 MUST close on a correction that reframes what came before.",
-    "patternNote": "The opening fragment is the signature - never start either section with a full subject-verb sentence. Section 1 uses short stacked adjectives for rhythm (\"Quiet, steady, unshakeable\"). Section 2 closes by denying the obvious reading and supplying the real one: \"You dont look back. Not because it didnt hurt. Because you already decided.\" The leaving is never cruel - it is already-decided, quiet, and costly to the leaver.",
+    "patternNote": "The opening fragment is the signature - never start either section with a full subject-verb sentence. Section 1 uses short stacked adjectives for rhythm (\"Quiet, steady, unshakeable\"). Section 2 closes by denying the obvious reading and supplying the real one: \"You dont look back. Not because it didnt hurt. Because you already decided.\" The leaving is never cruel - it is already-decided, quiet, and costly to the leaver. Section 1 closes on what it is LIKE to be on the receiving end, using \"Being loved by you\" or \"Being with you\" plus feels like or means - solid ground in a world that keeps moving, being known without having to explain yourself. That closing move appears in every reference post and is the warmest line in the whole carousel; section 2 then takes it away.",
     "examples": [
       "How You Love: Like a promise they can hold onto. Quiet, steady, unshakeable. You do not say much but you never leave. You show up before they ask. Being loved by you feels like solid ground in a world that keeps moving.",
       "How You Leave: Without a word. You were already gone before the conversation happened. You do not fight, do not beg, do not explain. You do not look back. Not because it did not hurt. Because you already decided.",

@@ -62,7 +62,7 @@ function opening(line) {
  *   rewrite only those. `globalProblem` means the fault is with the SET (wrong
  *   count, too many shared openings) and a partial rewrite cannot fix it.
  */
-function checkItems(items, { expectedCount, anaphora, bulletLabels } = {}) {
+function checkItems(items, { expectedCount, anaphora, bulletLabels, examples } = {}) {
   const problems = [];
   // Titles of items that individually failed. A retry can regenerate only
   // these instead of all twelve — the full rewrite was costing as much as the
@@ -183,7 +183,56 @@ function checkItems(items, { expectedCount, anaphora, bulletLabels } = {}) {
     else seen.set(key, title);
   }
 
+  // Lines lifted from the angle's own reference examples. When the examples
+  // happen to contain every section of one item, they add up to a complete
+  // filled-in slide and the model replays it near-verbatim — that shipped a
+  // 6/8 copy of a reference poster once already. Authoring the examples in a
+  // scrambled order was supposed to prevent it and did not: three angles
+  // written the same day the rule was documented still had whole items in
+  // them, because scrambling the LABELS while reusing the same ITEMS leaves
+  // the item complete. Checking the output is the only defence that holds.
+  if (examples && examples.length) {
+    const exNorm = examples.map(stripLabel);
+    for (const { title, line } of allLines) {
+      const candidate = stripLabel(line);
+      if (candidate.length < 25) continue;
+      const hit = exNorm.find((ex) => ex.length >= 25 && overlap(candidate, ex) >= 0.7);
+      if (hit) {
+        problems.push(
+          `"${title}" reuses a reference example almost verbatim: "${line.slice(0, 60)}..."`
+        );
+        failed.add(title);
+      }
+    }
+  }
+
   return { ok: problems.length === 0, problems, failed: [...failed], globalProblem };
+}
+
+/** Drops a leading "Label:" so a section is compared on its prose alone. */
+function stripLabel(line) {
+  return norm(String(line).replace(/^[^:]{0,40}:\s*/, ''));
+}
+
+/**
+ * Fraction of the shorter string's word 5-grams that appear in the other. Word
+ * shingles rather than whole-string equality because the replay is never exact
+ * — it comes back with "do not" for "don't" and one clause reworded.
+ */
+function overlap(a, b) {
+  const grams = (s) => {
+    const w = s.split(' ');
+    const out = new Set();
+    for (let i = 0; i + 5 <= w.length; i++) out.add(w.slice(i, i + 5).join(' '));
+    return out;
+  };
+  const ga = grams(a);
+  const gb = grams(b);
+  if (!ga.size || !gb.size) return 0;
+  const [small, big] = ga.size <= gb.size ? [ga, gb] : [gb, ga];
+  let shared = 0;
+  for (const g of small) if (big.has(g)) shared++;
+  return shared / small.size;
 }
 
 /**

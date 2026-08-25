@@ -664,7 +664,7 @@ async function generatePost(opts = {}) {
   const priorVecs = opts.fresh ? {} : priorVectors(seed.angle, seed.subject, seed.items);
 
   let items = await writeBodies(seed, chosen.hook, undefined, prior);
-  let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels });
+  let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples });
   let semantic = await checkSemantic(seed, items, priorVecs, log);
 
   const allProblems = () => [...check.problems, ...semantic.problems];
@@ -723,7 +723,7 @@ async function generatePost(opts = {}) {
       items = rewritten;
     }
 
-    check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels });
+    check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples });
     semantic = await checkSemantic(seed, items, priorVecs, log);
   }
   log(
