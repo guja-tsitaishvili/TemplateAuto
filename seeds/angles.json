@@ -217,6 +217,142 @@
       "Your light: But a heart that forgets nothing loves harder and deeper than anyone alive. When the right person chooses you back, being loved by you feels like being finally, fully seen. With someone who stays without being held in place, your memory stops being a wound and becomes the thing that makes them feel unforgettable."
     ]
   },
+  "your-secret-desire": {
+    "moods": [
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "What they actually want in love, escalating from the abstract wish to the concrete need to one specific scene they have imagined and never said aloud.",
+    "frames": [
+      [
+        "Secret Desire:",
+        "Secret Need:",
+        "Secret Fantasy:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your secret desire",
+        "What each {singular} secretly wants in love",
+        "The thing you want and never ask for, by your {singular}"
+      ]
+    },
+    "cta": 4,
+    "pattern": "THREE sections that escalate. Section 1 opens with an infinitive - \"To be chosen first, always\" or \"To feel completely safe with someone\" - then \"You want someone who\" plus what that looks like. Section 2 names the need as a bare noun phrase, then \"You need someone who\" or \"You need to be\" plus the specific reassurance. Section 3 is stacked noun phrases and images with NO \"you\" subject at all - a scene, not a sentence.",
+    "patternNote": "The escalation is the format: abstract wish, then concrete need, then one specific imagined moment. Section 3 dropping the \"you\" subject entirely is what makes it read as a confession rather than a description - \"Someone grabbing your face mid-argument and kissing you hard. Passion that matches your fire.\" If section 3 starts using full you-sentences it collapses into section 2. Desire and Need must not restate each other: the desire is what they want to be, the need is what they require to believe it.",
+    "examples": [
+      "Secret Desire: To be chosen first, always. You want someone who picks you without hesitation, who fights for you like you fight for everything else. You crave being someone's priority, their first thought, their instant yes.",
+      "Secret Desire: To feel completely safe with someone. You want love that feels like coming home. Someone who protects your heart like it's made of glass and never makes you question if you're too much.",
+      "Secret Need: Emotional security you can count on. You need someone who stays when things get hard, who doesn't run when you cry, who makes you feel like you're their person no matter what.",
+      "Secret Need: Constant validation that you're still special. You need to be told you're beautiful, amazing, irreplaceable. Compliments aren't vanity for you - they're how you know you're loved.",
+      "Secret Fantasy: Someone grabbing your face mid-argument and kissing you hard. Passion that matches your fire. Love that feels like a battle you both want to win. Intensity that never fades into comfortable routine.",
+      "Secret Fantasy: Grand romantic gestures that everyone sees. Public declarations of love. Someone who's proud to be with you and wants the whole world to know they're yours and they're the lucky one."
+    ]
+  },
+  "your-silence": {
+    "moods": [
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The sentence they never say, and then the exact words to say instead. Ends by handing the reader something short enough to actually use.",
+    "frames": [
+      [
+        "Your silence:",
+        "Your voice:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your silence",
+        "What each {singular} never says out loud",
+        "The sentence you swallow, based on your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens \"You never say\" or \"You never admit\" plus the exact thing they will not say, then 2-3 sentences of what it costs to hold it in, then closes on how it looks to everyone else. Section 2 denies the belief that made silence necessary, names who has earned the truth, then gives the reader an actual SENTENCE to say - five words or fewer, plain - and closes on what saying it would be worth.",
+    "patternNote": "The handed-over sentence is the entire point of the angle and is mandatory: \"Say I'm exhausted to someone safe.\" \"Say the sentence you swallow every time.\" \"Say this was hard and I need it noticed.\" It must be short enough to repeat from memory and must never be \"be vulnerable\", \"open up\" or any therapy phrasing. Section 1 never suggests the silence was stupid - it was protective and it worked, which is why it is hard to drop.",
+    "examples": [
+      "Your silence: You never say I need you. You'd rather handle it bleeding than let someone watch you struggle. Every time you wanted to reach out, you talked yourself out of it and carried the weight alone. People think you're fine because you never let them see otherwise.",
+      "Your silence: You never say how much it took. You carry weight no one acknowledges, work harder than anyone notices, push through pain while smiling like it's nothing. You're terrified that if you complain, you'll seem weak, so you stay quiet and let the effort go unseen.",
+      "Your voice: You don't have to earn love by being impressive. The people worth keeping want the off-stage you, the tired one, the one who isn't performing anything. Say I'm exhausted to someone safe. The relief of being human in front of one person is worth more than the whole audience."
+    ]
+  },
+  "your-sin": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "One named moral failing, stated as a vice rather than a quirk, then the release from whatever story made it feel necessary.",
+    "frames": [
+      [
+        "Your sin:",
+        "Your salvation:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your sin",
+        "The sin each {singular} keeps committing",
+        "What you are actually guilty of, by your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens with ONE word naming the sin followed by a full stop, then immediately qualifies it so it is precise rather than cartoonish (\"Not lies exactly, but charm.\"), then 2-3 sentences of how it actually operates, then closes on the cost stated flatly. Section 2 removes the obligation that justified it, reframes what they were really doing, then closes on a plain truth that lands as relief.",
+    "patternNote": "The sin must be a real vice named in one word - Deceit, Martyrdom, Ego, Envy, Pride - never a soft euphemism like \"overthinking\". The qualifier right after it is what keeps it fair: the deceit is charm, the martyrdom is giving that keeps score. Section 2 is never forgiveness handed down from above; it cancels a duty the reader invented for themselves. Distinct from emotions-you-dont-express, which also opens on a single word: there the word is an EMOTION they feel, here it is a FAILING they commit.",
+    "examples": [
+      "Your sin: Deceit. Not lies exactly, but charm. You know exactly what to say to make people trust you, open up, adore you, and you use it before you even mean to. You perform closeness so well that people think they know you. They know the character you play.",
+      "Your sin: Ego. You need to be seen so badly that being ordinary feels like dying. Every room, you're subtly performing, subtly measuring whether you're still the one they're watching. The applause feeds you for a second, then leaves you hungrier than before.",
+      "Your salvation: Nobody asked you to disappear for them. Pouring yourself out isn't noble if it leaves you bitter and hollow. The most loving thing you can do is fill your own cup first, so what you give comes from overflow, not from a wound that wants to be seen."
+    ]
+  },
+  "how-she-loves-how-she-leaves": {
+    "moods": [
+      "love",
+      "negative"
+    ],
+    "voices": [
+      "her"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "Her love described in full, then her exit described in full. The leaving is slow, warned, and finished internally long before it happens out loud.",
+    "frames": [
+      [
+        "How She Loves:",
+        "How She Leaves:"
+      ]
+    ],
+    "hooks": {
+      "her": [
+        "How she loves and how she leaves, by her {singular}",
+        "Her {singular}, her way of loving and leaving",
+        "What each {singular} woman is like in love"
+      ]
+    },
+    "pattern": "FULL sentences throughout, nearly every one opening \"She\" or \"Her\". Section 1 runs 4-5 sentences building how she loves and closes on a summary claim about the love itself (\"Her love is impossible to ignore\"). Section 2 opens by denying the obvious exit (\"She doesn't leave after the first mistake\"), traces the slow accumulation that changed her mind, and closes on the leaving already being complete before it happened.",
+    "patternNote": "This is the her-voice sibling of how-you-love-how-you-leave and must NOT copy its device: that angle opens both sections on a bare fragment, this one uses full subject-verb sentences only. Never make her impulsive or cruel - she forgives, she warns, she gives chances, and she leaves only once staying costs more than going. Section 2 closes on the gap between emotional and physical departure (\"by the time she leaves physically, she left emotionally months ago\") or on her choosing herself.",
+    "examples": [
+      "How She Loves: She loves with intensity and zero apology. She won't make you guess how she feels. If she chooses you, she'll stand proudly beside you and push you to become your best self. She's fiercely protective and never hesitates to fight for the relationship. Her love is bold, genuine, and fully alive.",
+      "How She Loves: She loves with pride, passion, and unwavering loyalty. She wants you to feel admired and celebrated every single day. She'll hype your dreams, defend you in your absence, and make you feel like the luckiest person alive. She believes love should be shown, not hidden. Her love is impossible to ignore.",
+      "How She Leaves: She stays longer than most people think. She'll forgive, overlook flaws, and hope things improve because she doesn't give up easily. But every broken promise chips away at her trust. One day, without much warning, she accepts she's holding on to something that no longer feels healthy. She won't leave dramatically. By the time she leaves physically, she left emotionally months ago.",
+      "How She Leaves: She doesn't leave impulsively. She analyzes, reflects, and gives countless chances before making a final decision. She'll tell you what's hurting her and hope things improve. But if nothing changes, she slowly begins detaching. The overthinking eventually turns into acceptance. By the time she walks away, she's already made peace with losing the relationship."
+    ]
+  },
   "addiction": {
     "moods": [
       "toxic"
@@ -1146,7 +1282,14 @@
       "him": [
         "Why he was the one, and you found out too late"
       ]
-    }
+    },
+    "pattern": "Written TO the person who lost her, never about her in the abstract. Section 1 opens \"She\" plus the invisible work she did, lists three specific things she carried, then names the misreading with \"You mistook X for Y\" or \"you thought it just happened on its own\". Section 2 stacks sentences that all begin \"She deserved someone who\" or \"Someone who\", three or four of them, then closes on a present-tense line beginning \"now\" that states what he is living with.",
+    "patternNote": "The regret is never stated as regret - it is produced by listing what she did and then showing he read it as obligation rather than choice. Section 2's stacked \"someone who\" clauses are the engine; each one should be a thing he specifically failed to do. The closing \"now\" line is mandatory and always present tense: now nobody is going to hold it together the way she did, now every woman you meet you compare to her. Never let him off, and never insult him either - the flatness is what makes it land. Written for the her voice; mirror every pronoun for him.",
+    "examples": [
+      "Why They Got Away: She held your entire life together and you just assumed that is what women do. She remembered everything, planned everything, showed up for everything. You mistook her loyalty for obligation instead of seeing it as a choice she made every single day.",
+      "Why They Got Away: She turned your life into something beautiful and you thought it just happened on its own. The meals, the home, the way everything felt right, that was all her. She built your comfort, your peace, your entire world and you got so used to it you forgot she was the one creating it.",
+      "What They Deserved: She deserved someone who loved her back with the same whole chest she gave you. Someone who protected her softness instead of testing it. Someone who understood that a love like that comes once and does not come around again. She believed in who you could be when nobody else did. Now every woman you meet you compare to her and none of them come close."
+    ]
   },
   "what-they-deserve": {
     "moods": [
@@ -1213,7 +1356,14 @@
       "you": [
         "Stay single until you meet someone like this, based on {your} {singular}"
       ]
-    }
+    },
+    "pattern": "Section 1 opens with a gerund or noun fragment naming the compromise they keep accepting, then short stacked fragments, then how they came to believe it was normal. Section 2 opens \"The person who\" and stacks two or three relative clauses each beginning \"Who\", then turns to what they have always done for everyone, then what the right person does instead, and closes on a flat imperative or claim.",
+    "patternNote": "Section 1 is what they have settled for, described so precisely they recognise the exact room it happened in - never a generic red flag. It is not about a bad partner, it is about the shrinking they did voluntarily. Section 2 never describes an ideal personality, only specific ACTS: notices you went quiet, shows up with the thing you mentioned once, hands you water and asks what the plan is. Close on a short line that gives permission to stop: \"Stop dating people who treat your fire like a problem to solve.\"",
+    "examples": [
+      "Don't settle for: Dimming yourself so someone else feels comfortable. Your whole life people have given you the \"you're too much\" look. Too loud. Too intense. Too fast. And somewhere along the way you started believing them. You started making yourself smaller at dinner tables and in rooms where you should have been the loudest person there.",
+      "Don't settle for: Being wanted for the highlight reel. Everyone loves the show. The confidence. The warmth. You've never had trouble being wanted. The problem is you keep being wanted for the performance and not the person running it.",
+      "Wait for: The person who notices you've gone quiet and doesn't let it slide. Who shows up at your door with the thing you mentioned once three weeks ago. Who lets you fall apart without looking at you like you're broken. You've spent your whole life holding everyone. The right person finally holds you. And doesn't let go when you pretend you're fine."
+    ]
   },
   "superpower": {
     "moods": [
@@ -1624,14 +1774,26 @@
       [
         "Your Delusion:",
         "The Actual Truth:"
+      ],
+      [
+        "Your Excuse:",
+        "The Truth:"
       ]
     ],
     "hooks": {
       "you": [
         "The lie you keep telling yourself, based on {your} {singular}",
-        "Your {singular}, your delusion"
+        "Your {singular}, your delusion",
+        "Your {singular}, your excuse",
+        "The excuse you have almost convinced yourself of, by {your} {singular}"
       ]
-    }
+    },
+    "pattern": "Section 1 opens with the excuse itself in quotation marks, written exactly as they say it out loud, then \"You say it like a strength\" or an equivalent acknowledgement, then 2-3 sentences of the behaviour it licenses, then a but-clause that denies the stated reason without yet giving the real one. Section 2 opens \"You're not X, you're Y\", then a sentence beginning \"Somewhere along the way you learned\" that locates where it started, then closes by comparing the easy line to the hard admission, usually with the hard one quoted.",
+    "patternNote": "The quoted excuse must be a sentence people genuinely say and half believe - \"I'm too independent to need anyone\", \"I just take my time with people\" - never a strawman. Section 1 must CONCEDE that the excuse contains something true (you do love your freedom, you have been let down) before pulling it away; the post fails if it reads as an accusation. Section 2's \"You're not X, you're Y\" is the hinge and the Y must be a fear, not a flaw. End on the two sentences side by side: what is easier to say against what is true.",
+    "examples": [
+      "Your Excuse: \"I'm too independent to need anyone.\" You say it like a strength, and you almost believe it. You keep yourself busy, you move fast, you fill your life so full that there's no room to notice the empty part. You tell people you love your freedom, and you do. But freedom was never the reason you kept everyone at arm's length.",
+      "The Truth: You're not taking your time, you're bracing for the moment they leave. You've been let down by people you trusted too soon, so now you make love earn its way in slowly, hoping that if it's slow enough it can't hurt you. But some people get tired of knocking, and you lose them while you're still deciding if it's safe to open the door."
+    ]
   },
   "how-they-chase": {
     "moods": [
@@ -4023,7 +4185,14 @@
       "What Breaks Her: Being left waiting on an answer. Wanting someone so much she has to sit still for it.",
       "What She Needs: Someone who reassures her without being asked. Someone steady enough that she does not have to rush to protect herself.",
       "Warning: Adjusts to whoever she is with. Will lose herself before she lets a silence get awkward.",
-      "What She Hides: She talks around the thing instead of saying it. The constant words are a way to keep you close without letting you all the way in."
+      "What She Hides: She talks around the thing instead of saying it. The constant words are a way to keep you close without letting you all the way in.",
+      "What She Hides: She goes quiet instead of telling you she's hurt, then waits to see if you'll notice. She wants to be looked after the way she looks after everyone, but asking feels like too much.",
+      "What She Hides: She suspects she's only loved when she's impressive. The confidence is partly a performance she keeps up so no one finds out how much reassurance she actually needs.",
+      "What Breaks Her: Being agreeable for so long that nobody asks what she wants. Realizing she edited herself for someone who never noticed the real one.",
+      "What Breaks Her: Giving her whole heart and getting a lukewarm one back. Sensing she has to earn the affection she hands out freely.",
+      "What She Needs: Someone who sits with her in the quiet. Someone who wants the unedited version and waits for it.",
+      "What She Needs: Someone who checks on the caretaker. Someone who notices the silence and asks before she has to spell it out.",
+      "What To Expect: She'll meet you exactly where you are and make it effortless. She's perceptive, funny, easy to be around. But she shape-shifts to fit the moment and forgets which version was actually hers."
     ],
     "frames": [
       [

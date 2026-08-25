@@ -286,6 +286,11 @@ function roll(opts = {}) {
       // 'allow' = the pattern says where; used by 4-section prose profiles that
       //           sign off a section with "Virgo doesn't flirt. Virgo helps."
       nameItemInCopy: angle.nameItemInCopy || false,
+      // Index into cta.json. The reference set inflects the promo line per
+      // format — "Secret Love Match:" on the secret-desire carousels, "Her
+      // Best Matches:" on the her-voice ones — so an angle can pin its own.
+      // Undefined leaves compose.js on the default variant.
+      cta: angle.cta,
       // Opts each item into a generated first-person quote line under the
       // title — "I don't have an attitude, I have a personality you can't
       // handle." Off by default; only angles that declare it pay the cost.

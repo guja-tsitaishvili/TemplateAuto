@@ -759,6 +759,10 @@ async function generatePost(opts = {}) {
     items,
     caption,
     hashtags,
+    // Only set when the angle pins one; compose.js falls back to the default
+    // variant otherwise. Omitted rather than sent as undefined so the saved
+    // content.json stays clean for angles that do not care.
+    ...(seed.cta === undefined ? {} : { cta: seed.cta }),
     // Must report BOTH check sets. Reading only `check` marked posts "passed"
     // while the run log showed unresolved semantic problems — the saved record
     // disagreed with what actually happened.

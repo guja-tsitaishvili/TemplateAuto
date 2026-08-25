@@ -16,6 +16,10 @@
     {
       "label": "{Poss} Worst & Best Matches:",
       "text": "Check your compatibility on astraten.com (link in profile)"
+    },
+    {
+      "label": "Secret Love Match:",
+      "text": "Check your compatibility on astraten.com (link in profile)"
     }
   ],
   "note": "Labels may use {Poss}, which compose.js resolves from the post voice: Your / Her / His / Their. The reference set inflects this per carousel."
