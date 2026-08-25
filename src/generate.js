@@ -172,6 +172,25 @@ async function generateHooks(seed, axis) {
     seed.itemTitle && seed.itemTitle !== '{item}'
       ? `\nEACH SLIDE IS TITLED "${seed.itemTitle.replace('{item}', seed.items[0])}", "${seed.itemTitle.replace('{item}', seed.items[1])}" and so on.\nThe hook MUST set that up so the cover and the slides read as one post. A hook that ignores this theme is wrong however good it sounds on its own.\n`
       : '',
+    // The prose equivalent of the itemTitle rule above, and it was missing.
+    // Frames are the section headers PRINTED ON EVERY SLIDE, but seed.frame
+    // only ever reached writeBodies — so the hook step was blind to them and
+    // produced "What each zodiac sign calls a spark" over slides headed "The
+    // red flag you fall for:". The cover never mentioned red flags at all.
+    seed.format === 'prose' && seed.frame && seed.frame.length
+      ? [
+          '',
+          'EVERY SLIDE IS PRINTED WITH THESE SECTION HEADERS, in this order:',
+          ...seed.frame.map((f) => `  ${f}`),
+          '',
+          'The reader sees the cover, then these exact words on every slide. The',
+          'hook MUST set them up — it has to be recognisably about the same thing',
+          `the first header names ("${seed.frame[0]}"). A hook that announces a`,
+          'different subject reads as the wrong cover on the right post, however',
+          'good it sounds alone.',
+          ''
+        ].join('\n')
+      : '',
     // The hook step could not see the body pattern, so it promised things the
     // body never delivers — "What you lose when you lose her" over slides that
     // are a present-tense portrait of her habits, with no loss in them at all.
@@ -247,6 +266,13 @@ async function scoreHooks(seed, hooks) {
     // slides titled "January Girlfriend".
     seed.itemTitle && seed.itemTitle !== '{item}'
       ? `\nHARD RULE: the slides are titled "${seed.itemTitle.replace('{item}', seed.items[0])}", "${seed.itemTitle.replace('{item}', seed.items[1])}" and so on.\nA hook that does not set up that theme cannot score above 5, however good it reads alone. Cover and slides must be one post.`
+      : '',
+    // Same rule for prose, where the frames are the visible headers. Without it
+    // the judge crowned "What each zodiac sign calls a spark" over slides headed
+    // "The red flag you fall for:" — and the angle's own hook, which does name
+    // the subject, was in the pool and lost to it.
+    seed.format === 'prose' && seed.frame && seed.frame.length
+      ? `\nHARD RULE: every slide is printed with these headers: ${seed.frame.join('  ')}\nThe hook must be recognisably about what "${seed.frame[0]}" names. One that announces a different subject cannot score above 5, however good it reads alone — the reader meets the cover and that header back to back.`
       : '',
     // The judge crowned "What you lose when you lose her" over slides with no
     // loss in them. It has to see what the body actually delivers.
