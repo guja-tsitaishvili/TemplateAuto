@@ -767,7 +767,9 @@
       "they": [
         "How each {singular} destroys a good thing"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "own-red-flag": {
     "moods": [
@@ -792,7 +794,9 @@
         "Your red flag, based on {your} {singular}",
         "You are somebody's red flag. Here is which one."
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-loop": {
     "moods": [
@@ -824,7 +828,9 @@
       "her": [
         "Why it always ends the same way for {her}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-test": {
     "moods": [
@@ -856,7 +862,9 @@
       "him": [
         "How he tests her and calls it nothing"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "going-cold": {
     "moods": [
@@ -892,7 +900,9 @@
       "her": [
         "What {her} silence actually means"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-you-tolerate": {
     "moods": [
@@ -921,7 +931,9 @@
       "her": [
         "What {she} calls patience and everyone else calls settling"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-lose-interest": {
     "moods": [
@@ -957,7 +969,9 @@
       "her": [
         "How {she} leaves months before {she} goes"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "deepest-fear": {
     "moods": [
@@ -1027,7 +1041,9 @@
       "her": [
         "What happened to {her} before you met {her}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "blind-spot": {
     "moods": [
@@ -1055,7 +1071,9 @@
       "they": [
         "The thing each {singular} cannot see about themselves"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "never-say-out-loud": {
     "moods": [
@@ -1132,7 +1150,9 @@
       "him": [
         "What he does instead of falling apart"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-exhausts-them": {
     "moods": [
@@ -1159,7 +1179,9 @@
       "her": [
         "The job nobody gave {her} that {she} does anyway"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "why-underestimated": {
     "moods": [
@@ -1187,7 +1209,9 @@
       "her": [
         "Why they always underestimate {her}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-hide": {
     "moods": [
@@ -1267,7 +1291,9 @@
       "they": [
         "How {each} loves without saying it"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "falling-in-love": {
     "moods": [
@@ -1391,7 +1417,9 @@
       "they": [
         "How to love {each} the way they need"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "who-gets-the-soft-side": {
     "moods": [
@@ -1418,7 +1446,9 @@
       "him": [
         "The version of him almost nobody meets"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-makes-them-stay": {
     "moods": [
@@ -1449,7 +1479,9 @@
       "him": [
         "What makes him stay, and it is not what you think"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-archetype": {
     "moods": [
@@ -1745,7 +1777,9 @@
       "they": [
         "What {each} is quietly unbeatable at"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "after-the-healing": {
     "moods": [
@@ -1776,7 +1810,9 @@
       "her": [
         "The version of {her} that comes back stronger"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "permission": {
     "moods": [
@@ -1836,7 +1872,9 @@
       "her": [
         "Why {she} is impossible to get over"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-teach-you": {
     "moods": [
@@ -1868,7 +1906,9 @@
       "they": [
         "What {each} teaches the people who love them"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-argue": {
     "moods": [
@@ -1906,7 +1946,9 @@
       "him": [
         "How he fights when he knows he is wrong"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-apologise": {
     "moods": [
@@ -1942,7 +1984,9 @@
       "him": [
         "Why his apology never lands"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-unsent-message": {
     "moods": [
@@ -2015,7 +2059,9 @@
       "they": [
         "How {each} handles missing someone"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-dealbreaker": {
     "moods": [
@@ -2047,7 +2093,9 @@
       "him": [
         "What ends it for him, instantly"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-never-forgive": {
     "moods": [
@@ -2078,7 +2126,9 @@
       "him": [
         "What he is still holding, quietly"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-jealousy": {
     "moods": [
@@ -2231,7 +2281,9 @@
       "him": [
         "How he chases, and why it pushes her further"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-type-on-paper": {
     "moods": [
@@ -2263,7 +2315,9 @@
       "him": [
         "The gap between his type and his history"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-handle-rejection": {
     "moods": [
@@ -2294,7 +2348,9 @@
       "him": [
         "What he does after being turned down"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-parent-wound": {
     "moods": [
@@ -2321,7 +2377,9 @@
       "her": [
         "What {she} learned about love before {she} met you"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-do-with-anger": {
     "moods": [
@@ -2353,7 +2411,9 @@
       "him": [
         "What he does with anger instead of saying it"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "at-2am": {
     "moods": [
@@ -2384,7 +2444,9 @@
       "him": [
         "Who he is at 2am"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-self-soothe": {
     "moods": [
@@ -2411,7 +2473,9 @@
       "they": [
         "The private ritual {each} has for bad days"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-lost": {
     "moods": [
@@ -2438,7 +2502,9 @@
       "her": [
         "The part of {her} that did not survive him"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-version-they-perform": {
     "moods": [
@@ -2469,7 +2535,9 @@
       "him": [
         "How long he can keep it up"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-handle-being-chosen": {
     "moods": [
@@ -2501,7 +2569,9 @@
       "him": [
         "What he does when it finally gets easy"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-romanticise": {
     "moods": [
@@ -2529,7 +2599,9 @@
       "her": [
         "The story {she} tells about someone who did not deserve it"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "still-waiting-for": {
     "moods": [
@@ -2560,7 +2632,9 @@
       "him": [
         "What he is waiting for and will not admit"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-breaks-their-heart": {
     "moods": [
@@ -2591,7 +2665,9 @@
       "him": [
         "What broke him, and it was not the ending"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-handle-silence": {
     "moods": [
@@ -2623,7 +2699,9 @@
       "him": [
         "What your silence actually does to him"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "who-they-were-before": {
     "moods": [
@@ -2651,7 +2729,9 @@
       "her": [
         "Who {she} was before he got to {her}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-comfort-person": {
     "moods": [
@@ -2683,7 +2763,9 @@
       "him": [
         "Who he tells the truth to"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-hold-a-grudge": {
     "moods": [
@@ -2714,7 +2796,9 @@
       "him": [
         "What he is still keeping score of"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-thing-they-cannot-say-sober": {
     "moods": [
@@ -2746,7 +2830,9 @@
       "him": [
         "What he admits at 3am and denies by morning"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-leave": {
     "moods": [
@@ -2778,7 +2864,9 @@
       "him": [
         "How he ends it without ending it"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "would-they-take-you-back": {
     "moods": [
@@ -2806,7 +2894,9 @@
       "him": [
         "Would he come back, and should you let him"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-need-after-a-fight": {
     "moods": [
@@ -2838,7 +2928,9 @@
       "they": [
         "How to repair it with {each}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-are-really-asking": {
     "moods": [
@@ -2906,7 +2998,9 @@
       "they": [
         "How {each} loves their friends differently"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-carry": {
     "moods": [
@@ -2933,7 +3027,9 @@
       "her": [
         "What {she} has been holding up alone"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-friend-they-become": {
     "moods": [
@@ -2961,7 +3057,9 @@
       "him": [
         "What he does when someone he loves is breaking"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "red-flag-you-fall-for": {
     "moods": [
@@ -3205,7 +3303,9 @@
       "they": [
         "How {each} shows up when it matters"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-first-date": {
     "moods": [
@@ -3237,7 +3337,9 @@
       "they": [
         "What {each} is secretly assessing on a first date"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "three-months-in": {
     "moods": [
@@ -3268,7 +3370,9 @@
       "they": [
         "What {each} is like once the honeymoon ends"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-say-i-love-you": {
     "moods": [
@@ -3340,7 +3444,9 @@
       "him": [
         "What lets him finally relax"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-rebuild-trust": {
     "moods": [
@@ -3372,7 +3478,9 @@
       "him": [
         "What he needs before he lets you in again"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "who-they-marry": {
     "moods": [
@@ -3403,7 +3511,9 @@
       "him": [
         "Who he settles down with in the end"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-unexpected-match": {
     "moods": [
@@ -3430,7 +3540,9 @@
       "they": [
         "The unexpected match for {each}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-bring": {
     "moods": [
@@ -3462,7 +3574,9 @@
       "him": [
         "What he brings that you will only notice when it is gone"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-take-care-of-people": {
     "moods": [
@@ -3494,7 +3608,9 @@
       "they": [
         "How {each} looks after the people they love"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-love-language-mismatch": {
     "moods": [
@@ -3522,7 +3638,9 @@
       "they": [
         "The mistake {each} makes when they love someone"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-notice-first": {
     "moods": [
@@ -3553,7 +3671,9 @@
       "they": [
         "What {each} notices before anything else"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-are-in-love": {
     "moods": [
@@ -3584,7 +3704,9 @@
       "they": [
         "Who {each} becomes when it is real"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-green-flag": {
     "moods": [
@@ -3616,7 +3738,9 @@
       "him": [
         "The thing he does right that you should not take for granted"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-need-in-silence": {
     "moods": [
@@ -3647,7 +3771,9 @@
       "they": [
         "What silence means to {each}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-handle-distance": {
     "moods": [
@@ -3679,7 +3805,9 @@
       "him": [
         "What happens to him when you are not there"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-thing-they-remember": {
     "moods": [
@@ -3710,7 +3838,9 @@
       "they": [
         "What {each} remembers without being told twice"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-would-fight-for": {
     "moods": [
@@ -3742,7 +3872,9 @@
       "him": [
         "What he would burn it all down for"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-outgrew": {
     "moods": [
@@ -3769,7 +3901,9 @@
       "her": [
         "What {she} does not tolerate anymore"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "younger-self": {
     "moods": [
@@ -3792,7 +3926,9 @@
       "you": [
         "What you would tell your younger self, based on {your} {singular}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-are-becoming": {
     "moods": [
@@ -3819,7 +3955,9 @@
       "her": [
         "The woman {she} is becoming"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-quiet-strength": {
     "moods": [
@@ -3850,7 +3988,9 @@
       "him": [
         "His strength that goes completely unnoticed"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-are-proud-of": {
     "moods": [
@@ -3877,7 +4017,9 @@
       "her": [
         "What {she} survived that nobody knows about"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "their-joy": {
     "moods": [
@@ -3912,7 +4054,9 @@
       "they": [
         "What {each} is happiest doing"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-forgave": {
     "moods": [
@@ -3939,7 +4083,9 @@
       "her": [
         "What {she} let go of to get {her} peace back"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-rest": {
     "moods": [
@@ -3966,7 +4112,9 @@
       "they": [
         "What genuinely recharges {each}"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-compliment-they-cannot-take": {
     "moods": [
@@ -3998,7 +4146,9 @@
       "him": [
         "What he deflects every time you say it"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-teach-their-kids": {
     "moods": [
@@ -4030,7 +4180,9 @@
       "him": [
         "What he swore he would do differently"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "when-they-are-finally-free": {
     "moods": [
@@ -4057,7 +4209,9 @@
       "her": [
         "The day {she} stops caring, and what happens next"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-they-deserve-to-stop-explaining": {
     "moods": [
@@ -4084,7 +4238,9 @@
       "her": [
         "What {she} should never have to justify again"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "the-standard-they-set": {
     "moods": [
@@ -4112,7 +4268,9 @@
       "him": [
         "The standard he set that you did not notice until later"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "how-they-come-back": {
     "moods": [
@@ -4139,7 +4297,9 @@
       "her": [
         "How {she} rebuilds, every single time"
       ]
-    }
+    },
+    "disabled": true,
+    "note": "Unpatterned - runs on brief alone, which produces the generic metaphor copy rejected early on. Parked, not deleted: add pattern/patternNote/examples from a reference poster, then flip disabled to false."
   },
   "what-people-take": {
     "moods": [

@@ -191,8 +191,15 @@ function roll(opts = {}) {
   //
   // Measured in posts rather than days because cadence varies: 60 posts is twelve
   // days at 5/day and two months at 1/day, which is the right shape either way.
-  // Kept well under the bank size so there are always candidates left to pick.
-  const cooldown = opts.angleCooldown == null ? 60 : opts.angleCooldown;
+  //
+  // Scaled to HALF the available pool rather than hardcoded, because the two
+  // numbers have to move together. A flat 60 was fine against 143 angles; once
+  // the unpatterned ones were parked the pool dropped to 63 and a 60-post
+  // cooldown left just 3 fresh candidates, which turns the roller into a fixed
+  // cycle. Half the pool keeps roughly half of it eligible at any time, and it
+  // scales back up on its own as angles are re-enabled.
+  const cooldown =
+    opts.angleCooldown == null ? Math.min(60, Math.floor(candidates.length / 2)) : opts.angleCooldown;
   if (cooldown > 0 && candidates.length > 1) {
     const cooling = new Set(used.slice(-cooldown).map((u) => u.angle));
     const fresh = candidates.filter((a) => !cooling.has(a));
