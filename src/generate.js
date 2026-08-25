@@ -27,7 +27,11 @@ const { priorIdeas, priorVectors, recordIdeas } = require('./history');
 const { embedMany, closestPrior } = require('./embed');
 const { hashtagsFor } = require('./hashtags');
 const { generate } = require('./gemini');
-const { generateLocal, available: localAvailable } = require('./local');
+const { generateLocal, available: localAvailableRaw } = require('./local');
+// Gated by config.useLocalModel, which is off by default — see the note there
+// for the measured reason. Wrapping it here means both call sites stay
+// unchanged and the local path is one env var away from coming back.
+const localAvailable = async () => config.useLocalModel && (await localAvailableRaw());
 const { checkItems, filterHooks, hookNamesAxis, BANNED, LIMITS } = require('./quality');
 const config = require('./config');
 
@@ -713,7 +717,10 @@ async function generatePost(opts = {}) {
   };
 }
 
-module.exports = { generatePost };
+// generateHooks/scoreHooks are exported for diagnostics — comparing the local
+// judge against the API judge on an IDENTICAL hook list is the only way to tell
+// whether the 3B model is picking well or just rubber-stamping.
+module.exports = { generatePost, generateHooks, scoreHooks, writeCaption };
 
 if (require.main === module) {
   const argv = process.argv.slice(2);

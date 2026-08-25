@@ -72,9 +72,37 @@ improvements with a known reason to wait.
 - **Nothing checks grammar.** "She plan every detail" shipped in a generated
   post. QA covers length, banned phrases, repetition and idea-similarity, but
   no agreement or tense checking. Rare enough to leave to a human eye for now.
-- **Captions run on the local 3B model and are noticeably weaker** than the API
-  version. Accepted deliberately — captions matter less than slide copy — but
-  it is one `try` block in `writeCaption` to revert if engagement looks soft.
+- **RESOLVED (2026-08-25): local 3B model is off by default.** It was running
+  hook scoring and captions. Measured head-to-head and it lost on both axes:
+
+  *Savings were tiny.* ~470 tokens of ~3,840 per post (12%) — because the two
+  steps it handled are the two CHEAPEST calls. Hook generation and body writing
+  stay on the API and are ~80% of the spend, so local was never the cost lever
+  it looked like.
+
+  *Quality cost was real.* Given an IDENTICAL list of 12 hooks, local picked
+  "Your birth month, your quietest defense" and scored it **5/10**, while the
+  API found "What each birth month claims to ignore" at **8.5/10** in the same
+  list — the API's pick sets up the post's "I do not care, but..." device and
+  local's is the abstract-noun phrasing the house style explicitly penalises.
+  Local scoring its own winner 5/10 is the tell: it is not discriminating, it
+  is picking. The local caption was worse — "I do not care, but you make my
+  inbox warm 💌", i.e. the body's anaphora copied into the caption slot, plus
+  a prop that appears nowhere in the post. Unusable, not just weaker.
+
+  Now gated behind `USE_LOCAL_MODEL=1` (see `config.js`). The code path is
+  intact; only the default changed. Revisit only with a bigger local model —
+  the 3B is not viable for either step.
+- **Watch: API captions can name the wrong axis.** The API caption in the same
+  test read "your **sign's** armor" on a birth-MONTH post. Minor and was not
+  present in the other tests, so not fixed — but if it recurs, `writeCaption`
+  never receives the axis noun and should.
+- **`ollama-service.stop()` silently no-ops if the server was already up.** By
+  design (`startedByUs` guard, so a run cannot kill a session the user opened),
+  but it means an autostarted Ollama is never shut down and keeps ~2GB resident
+  after a batch — the opposite of the module's purpose. Callers also ignore the
+  `false` return, so a test can report "stopped" when nothing stopped. Cost me
+  one invalid test run. Only matters while `USE_LOCAL_MODEL=1`.
 - **`seeds/idea-history.json` carries test junk.** 24 item-keys were saturated
   by repeated same-angle test runs. Those are real forbidden ideas and will
   suppress legitimate content when those angles come round for real. Worth
