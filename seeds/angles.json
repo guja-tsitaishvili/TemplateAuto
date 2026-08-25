@@ -33,7 +33,53 @@
       "him": [
         "The woman he keeps choosing and the one he actually needs"
       ]
-    }
+    },
+    "pattern": "Section 1 opens \"You attract people who [misread one of your good traits as a flaw]\", runs 2-3 short sentences of how that plays out, then a line where the universe or the world keeps handing you the wrong version of what you want, then a flat 4-6 word correction. Section 2 opens \"Someone [three adjectives]\" or \"Someone who [does the right thing]\", then a sentence starting \"A partner who\", then closes on an explicit contrast: you do not need X, you need Y.",
+    "patternNote": "The thing that gets misread in section 1 must be a GOOD trait, never a flaw - spontaneity read as inability to commit, calm read as something to borrow, depth read as entertainment. That misreading is the whole angle; if section 1 describes a bad habit instead, the post has failed. The closing contrast in section 2 must name the wrong thing and the right thing in the same breath, not just state a want. Written for the you voice; mirror every pronoun for her and him.",
+    "examples": [
+      "Your Toxic Attraction: You attract people who see you as a project they never plan to finish. They love that you point out their flaws and work to fix them while they make excuses. You fall for potential like it has a deadline. You keep thinking if you just organize the situation well enough, it will finally make sense. It will not.",
+      "Your Toxic Attraction: You attract people who fall in love with your peace and slowly disturb it. They are drawn to your calm like it is something they can borrow. You create balance wherever you go and keep attracting people who throw it off. The universe keeps sending you chaos with good manners. They never learn to be steady back.",
+      "Your Toxic Attraction: You attract people who flirt like it is therapy and disappear the moment things get real. They are fascinated by your depth right up until it asks something of them. The world keeps sending you puddles and calling them oceans. They run the second the mystery turns into intimacy.",
+      "What You Really Need: Someone who can handle the full weight of who you are without flinching. A partner who goes beneath the surface willingly and stays there. You do not need someone fascinated by your depth. You need someone brave enough to live in it.",
+      "What You Really Need: Someone spontaneous, funny, and emotionally grounded. A partner who can keep up with your energy and still be someone you come home to. You do not need more chaos. You need a person who understands that freedom and foundation are not opposites.",
+      "What You Really Need: Someone organized, honest, and already emotionally grown. A partner who says what they mean and does what they say. You do not need to manage a person. You need to be met by one."
+    ]
+  },
+  "the-love-lesson": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "One corrective lesson about love, delivered as a verdict and then a route out of it. Section one names what they have wrong and why; section two is the specific admission that starts the repair. Tough, then warm - never scolding.",
+    "frames": [
+      [
+        "Your Lesson:",
+        "Your Healing:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The love lesson you need to learn, based on your {singular}",
+        "Your {singular}, your love lesson",
+        "What you still have wrong about love, by your {singular}"
+      ]
+    },
+    "pattern": "Section 1 opens with a flat aphorism that denies a belief they hold (\"Love is not a salary\"), then 3-4 very short sentences naming the behaviour, then the fixed phrase \"You need to learn that\" plus the correction, then closes on 2-3 fragments. Section 2 opens with the fixed phrase \"It starts with admitting\" plus what they will not admit, then a sentence beginning \"Somewhere\" that locates where they learned it, then a direct instruction to do one specific thing, then closes by reframing what they thought they were doing.",
+    "patternNote": "Both fixed openings are mandatory and must appear word for word - \"You need to learn that\" in section 1 and \"It starts with admitting\" at the very start of section 2. The instruction near the end of section 2 must be one concrete act a person could do this week (say a sentence out loud, show someone the flaw), never \"be vulnerable\". The rhythm is the device: long observation, then three or four words. A strong closing move is \"You were never X. You were Y\" - use it, but not on every item.",
+    "examples": [
+      "Your Lesson: Love is not a salary. You cannot work hard enough to deserve it. You provide, you build, you show up with results instead of feelings. You need to learn that the people who love you don't want your output. They want your presence. Your softness. The part of you that isn't producing anything. That part exists. You've just never let it out of the office.",
+      "Your Lesson: You cannot test someone into being trustworthy. You watch. You probe. You set little traps and wait for people to fail them. You need to learn that trust is not a verdict you reach after enough evidence. It's a risk you take before you have any. No one can prove themselves to a judge who's already decided everyone eventually lies.",
+      "Your Lesson: Peace you have to purchase with silence is not peace. You smooth things over. You agree. You shrink your needs until they fit in your pocket. You need to learn that a relationship without your honest voice in it is not a relationship. It's a performance of one. Conflict doesn't end love. Avoiding it does. Slowly. Politely. Completely.",
+      "Your Healing: It starts with admitting whose voice is grading you. It was never yours. Someone taught you that love had conditions. That you were almost enough, if you just fixed one more thing. So you've been fixing ever since. But there is no finish line. There never was. Show someone the flaw you always hide. Let them see it and stay. You were never broken. You were just measured by someone who didn't know how to love.",
+      "Your Healing: It starts with admitting when you learned to disappear. Somewhere, being easy kept you safe. Your needs caused problems, so you folded them smaller until even you couldn't find them. Now you're loved by many and known by no one. Say the true thing sitting in your throat right now. Your voice will shake. Let it. You were never keeping the peace. You were keeping yourself hostage.",
+      "Your Healing: It starts with admitting what the tests are protecting. Somewhere, you trusted completely and it destroyed you. So you swore it would never happen again. Tell someone one guarded truth. Let them hold it. And when they do, let it count. Put the armor down. You survived once. You might not have to again."
+    ]
   },
   "addiction": {
     "moods": [
@@ -317,7 +363,17 @@
         "Your {singular}, your fear",
         "The fear you never say out loud"
       ]
-    }
+    },
+    "pattern": "Section 1 opens with a bare noun phrase naming the fear and no verb (\"Being underestimated.\"), then 3-4 sentences of evidence all starting \"You\", then closes on a sentence beginning \"You're scared of\" or \"You're terrified of\" that states the specific outcome they dread. Section 2 opens with a declarative \"You [verb]\" claim of the strength, then 3-4 sentences of proof, then closes on one short flat claim that settles it.",
+    "patternNote": "The power in section 2 must be the SAME trait as the fear in section 1 seen from the other side - fear of being overlooked pairs with commanding attention, fear of failing silently pairs with perfectionism that makes them irreplaceable. If the two sections name unrelated things the post has failed. Section 1 must open on a fragment, never a full sentence; that clipped opening is the format. No comfort in section 1 and no hedging in section 2.",
+    "examples": [
+      "Your fear: Being underestimated. You act strong but deep down, you want people to see just how serious your dreams are. You're tired of being the one everyone overlooks, the one whose ambitions get dismissed as cute or unrealistic. You're scared of being stuck in a life where nobody takes you seriously.",
+      "Your fear: Living a life that feels small. Routine scares you more than chaos ever could. You're terrified of becoming someone who just goes through the motions, waking up to the same day on repeat until suddenly you're old and realize you never actually lived. Predictability feels like prison, and you're scared you'll get trapped there.",
+      "Your fear: Never figuring it out. You feel like you're running out of time to become who you're meant to be. Everyone else seems to have their path mapped out while you're still searching for the starting line. You're scared that you'll spend your whole life feeling like you're on the verge of something without ever actually arriving.",
+      "Your power: You perfect everything you touch. Your attention to detail, your work ethic, your refusal to do anything halfway makes you irreplaceable. You don't just complete tasks, you elevate them. People rely on you because you're the one who actually follows through. Your standards aren't punishment, they're proof of your excellence.",
+      "Your power: You transform through fire. Every breakdown became a breakthrough. Every loss taught you something nobody could have taught you in comfort. You don't fear the dark because you've lived there and walked out stronger. You rise from things that would destroy other people.",
+      "Your power: You breathe life into everything. Your need for balance, beauty, and meaning transforms ordinary moments into experiences people remember forever. You don't settle for surface level anything. You pull magic out of the mundane. Your presence makes everything more vibrant."
+    ]
   },
   "core-wound": {
     "moods": [
@@ -604,16 +660,27 @@
     "formats": [
       "prose"
     ],
-    "brief": "The tells. What changes in them the moment it becomes real — outwardly, then what is happening underneath at the same time.",
+    "brief": "The tells. What changes in them the moment it becomes real — outwardly, then underneath, then the fear that comes with it and the one thing that would settle it.",
+    "nameItemInCopy": "allow",
     "frames": [
       [
         "On the outside:",
-        "On the inside:"
-      ],
-      [
-        "The Tell:",
-        "The Truth:"
+        "On the inside:",
+        "Their biggest fear:",
+        "Their biggest need:"
       ]
+    ],
+    "pattern": "FOUR sections. \"On the outside\" describes observable behaviour in 3-4 short sentences and signs off with a line that names the sign itself. \"On the inside\" gives the private contradiction in present tense, opening \"They're\". \"Their biggest fear\" is exactly two sentences, the first a bare fragment. \"Their biggest need\" opens \"Someone who\" or \"Someone [adjective] enough to\" and closes on a conditional that names the sign again.",
+    "patternNote": "The outside and the inside must contradict - warm and public on the outside, nervous and private underneath. This is one of only two angles allowed to name the sign inside the copy, and ONLY in the sign-off lines of sections 1 and 4: \"Virgo doesn't flirt. Virgo helps.\" or \"Once Cancer feels safe, they never leave first.\" Everywhere else use they/them. The fear is about being seen, never about losing the person. Sections get shorter as they go: 3-4 sentences, then 3, then 2, then 2.",
+    "examples": [
+      "On the outside: They start fixing things. Your schedule, your headache, that problem you mentioned once two weeks ago. Virgo doesn't flirt. Virgo helps.",
+      "On the outside: Warmer than ever. They compliment you in front of people, pull you into their world, make you feel like the main character. Leo falling in love looks like sunlight.",
+      "On the inside: They knew weeks ago. They're just waiting for a sign it's safe to show you. Cancer never falls slowly, they just reveal it slowly.",
+      "On the inside: They're weighing it constantly. Is this real, is this right, is this the person. They see every side of everything, including every way this could go wrong.",
+      "Their biggest fear: Choosing wrong. Committing fully and then meeting the person they were supposed to wait for.",
+      "Their biggest fear: Being fully seen and found flawed. They notice every one of their own imperfections and assume you will too.",
+      "Their biggest need: Someone patient enough to earn their trust and gentle enough to keep it. Once Cancer feels safe, they never leave first.",
+      "Their biggest need: Someone who notices the small things they do, because that's where they hide all the love they don't say out loud."
     ],
     "hooks": {
       "you": [

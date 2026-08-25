@@ -282,7 +282,10 @@ function roll(opts = {}) {
       bulletCount: Array.isArray(angle.bulletCount)
         ? pick(rng, angle.bulletCount)
         : angle.bulletCount || 5,
-      nameItemInCopy: angle.nameItemInCopy === true,
+      // true    = name the item in EVERY line (the repetition is the format)
+      // 'allow' = the pattern says where; used by 4-section prose profiles that
+      //           sign off a section with "Virgo doesn't flirt. Virgo helps."
+      nameItemInCopy: angle.nameItemInCopy || false,
       // Opts each item into a generated first-person quote line under the
       // title — "I don't have an attitude, I have a personality you can't
       // handle." Off by default; only angles that declare it pay the cost.

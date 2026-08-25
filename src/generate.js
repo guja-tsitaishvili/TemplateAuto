@@ -317,7 +317,7 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
               'The content is a short phrase, not a full sentence — no "You are", no "They".'
             ].join('\n')
           : '',
-        seed.nameItemInCopy
+        seed.nameItemInCopy === true
           ? 'Begin each bullet with the item name itself, e.g. "Aries gives energy that never comes back". The repetition of the name is the format.'
           : ''
       ].filter(Boolean)
@@ -395,9 +395,13 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
       ? '- The fixed opening is required; make what FOLLOWS it different every time.'
       : '- Vary how items OPEN. Do not start more than two with the same two words.',
     '- No item may repeat a line or idea from another item.',
-    seed.nameItemInCopy
+    seed.nameItemInCopy === true
       ? '- Name the item in every line, as instructed above.'
-      : '- Do not mention the sign or month name inside the copy — the title says it.',
+      : seed.nameItemInCopy === 'allow'
+        ? '- You MAY name the sign or month inside the copy, but ONLY where the' +
+          ' pattern says to. Everywhere else use a pronoun — naming it in every' +
+          ' sentence reads like a stuck record.'
+        : '- Do not mention the sign or month name inside the copy — the title says it.',
     '- Do not write a call to action. That is added separately.',
     '- For each item also return "idea": a 3-6 word label of that item\'s core' +
       ' thought, e.g. "pre-empts abandonment by leaving first". It is never shown' +
@@ -480,7 +484,25 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     }
   });
 
-  return result.items || [];
+  return (result.items || []).map(normaliseSectionLabels);
+}
+
+/**
+ * Section labels are declared WITH a trailing colon ("On the outside:") but on
+ * any voice other than `you` the frameNote asks the model to rewrite them, and
+ * it reliably drops the colon — shipping "On the outside They go quiet" next to
+ * the code-generated "Their Best Matches:" on the same slide. Enforced here
+ * instead of asked for in the prompt: it costs no tokens and cannot regress.
+ */
+function normaliseSectionLabels(item) {
+  if (!item || !Array.isArray(item.sections)) return item;
+  return {
+    ...item,
+    sections: item.sections.map((s) => {
+      const label = String(s.label || '').trim().replace(/[:\s]+$/, '');
+      return { ...s, label: label ? `${label}:` : label };
+    })
+  };
 }
 
 /* ---------------------------------------------------------------- step 5 */
