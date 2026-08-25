@@ -1,3 +1,47 @@
+# Where this left off — 2026-08-26
+
+Bank: **63 active angles, all patterned.** 30 bullets-capable, 35 prose-capable.
+The other 80 are `disabled: true` with a note — unpatterned, parked not deleted.
+Coverage where it counts: with the 4x weighting, ~81% of bullets rolls and ~70%
+of prose rolls land on a patterned angle.
+
+Last thing fixed was a run of three related bugs, all the same shape: **the hook
+step could not see whatever the body was contractually required to repeat.**
+Titles were wired long ago; `frame`, `anaphora` and `bulletLabels` were not.
+Plus `checkHookCoverage`, which measures the cover against the finished slides
+instead of predicting, and rewrites the COVER rather than the carousel.
+Confirmed working end to end — same hook that failed at 1/3 came back 4/4.
+
+## Pick up here
+
+- **Content register on red-flag angles.** `red-flag-you-fall-for` produced
+  "monitors your whereabouts", "stop leaving your house without permission",
+  "a beautiful cage". That is coercive control described as a dating
+  preference, under a "check your compatibility" CTA. Deliberately left alone
+  — it is an editorial call, not a bug. One line in `houseStyle()` would keep
+  red flags at emotional-unavailability level if wanted.
+- **Two quality findings from the prose read that were never fixed:** the
+  misreading device fired 4x per slide (measured, exactly 4 in every item),
+  and every section 2 used an identical sentence skeleton ("You crave a
+  challenge, and a partner who..." / "You want absolute certainty, and a
+  partner who..."). QA missed the second because `opening()` compares only the
+  first TWO words, so structural templating slips through the one check meant
+  to catch templating.
+- **Captions are consistently weaker than the slides.** "Tell us your birth
+  month and if you are guilty of this" under genuinely good copy. Same model
+  as everything else now, so it is a prompt problem.
+- **Known gap in the hook check:** only payoffs after a preposition or a naming
+  verb are caught. "Your quiet storm" names a value with neither and slips
+  through. Scanning every long word was tried and produced false positives on
+  real hooks, so precision was kept over reach.
+- **Binding-payoff posts have more parallel CLOSING lines** ("And you call
+  conflict passion / surveillance passion / instability passion"). Arguably a
+  feature — it is a drumbeat confirming the cover — but nothing checks it,
+  since the templating check only looks at openings.
+- **`secondPerson` is set on 3 angles only.** `thats-why`, `im-a-sign-so` and
+  `your-truth` have genuinely mixed references and were left free; revisit if
+  register drift shows up there too.
+
 # Noted for later
 
 Things identified but deliberately deferred. Nothing here is broken — these are
