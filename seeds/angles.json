@@ -1030,7 +1030,11 @@
       "Their biggest fear: Choosing wrong. Committing fully and then meeting the person they were supposed to wait for.",
       "Their biggest fear: Being fully seen and found flawed. They notice every one of their own imperfections and assume you will too.",
       "Their biggest need: Someone patient enough to earn their trust and gentle enough to keep it. Once Cancer feels safe, they never leave first.",
-      "Their biggest need: Someone who notices the small things they do, because that's where they hide all the love they don't say out loud."
+      "Their biggest need: Someone who notices the small things they do, because that's where they hide all the love they don't say out loud.",
+      "On the outside: Bold and obvious. They text first, plan the dates, say the risky thing out loud. When an Aries is falling, everyone can tell. Subtlety was never their thing.",
+      "On the outside: Charming as always, so it's hard to tell. The difference is the effort. Planned dates, thoughtful details, your favorite everything. Libra in love turns romance into an art form.",
+      "On the inside: They're checking constantly. Did you laugh at that. Did you pull back. They've never been this confident and this unsure at the same time.",
+      "Their biggest fear: Wanting you more than you want them. Losing interest doesn't scare them. Losing the upper hand does."
     ],
     "hooks": {
       "you": [
@@ -2687,27 +2691,111 @@
       ]
     }
   },
+  "red-flag-you-fall-for": {
+    "moods": [
+      "toxic",
+      "negative"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "The type they are reliably drawn to, why the warning reads as attractive, what the pattern has already cost them, and the version that would actually work.",
+    "frames": [
+      [
+        "The red flag you fall for:",
+        "Why you fall for it:",
+        "What it costs you:",
+        "What you need:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "The red flag you always fall for, based on your {singular}",
+        "Your {singular}, your favourite red flag",
+        "The type each {singular} keeps choosing"
+      ]
+    },
+    "pattern": "FOUR sections. Section 1 names the TYPE in stacked noun fragments, then one sentence on how the warning gets read as something attractive. Section 2 gives the misreading as an equation - \"you confuse X with Y\", \"X feels like Y\", \"you mistake X for Y\". Section 3 lists what the pattern has cost in 2-3 sentences and MUST close on \"And you call X Y.\" Section 4 opens \"Someone who\" and closes on a sentence beginning \"The right one\".",
+    "patternNote": "The red flag is the type THEY are drawn to. Distinct from own-red-flag, which is the flaw in themselves, and from toxic-attraction, which is who is drawn to THEM - all three are different directions and must not blur. Section 3's closing \"And you call X Y\" is mandatory and is the line the post gets saved for: exhaustion called passion, being controlled called being loved, surveillance called devotion. The misreading in section 2 must be a category error, not a preference - confusing difficulty with worth, control with care.",
+    "examples": [
+      "The red flag you fall for: The one who plays it cool. Distant. A little unavailable. The chase lights you up, so you read indifference as a challenge instead of a warning.",
+      "The red flag you fall for: The one who keeps you guessing. Flirtatious. Hot then cold. The one who triggers your jealousy and calls it spark. The unpredictability hooks you before the games do.",
+      "Why you fall for it: You hate deciding, so someone who decides for you feels like relief. Their jealousy reads as proof you matter. Control feels like care when you're scared of being left.",
+      "Why you fall for it: You crave intensity, and chaos feels like passion. If they make you suspicious, you mistake the obsession for love. The fight to keep them feels like proof it's real.",
+      "What it costs you: You keep choosing people who make you prove yourself. You burn out trying to win someone who was never going to fully show up. And you call exhaustion passion.",
+      "What it costs you: You hand over your voice to keep the peace. You shrink until your own opinions disappear. And you call being controlled being loved.",
+      "What you need: Someone who wants your opinion, not your obedience. Real love doesn't need to own you to keep you. The right one holds you close without holding you down.",
+      "What you need: Someone steady enough to never make you doubt them. No decoding, no bracing, no waiting for the mood to turn. The right one makes calm feel like closeness instead of boredom."
+    ]
+  },
+  "your-attachment-style": {
+    "moods": [
+      "negative",
+      "love"
+    ],
+    "voices": [
+      "you"
+    ],
+    "formats": [
+      "prose"
+    ],
+    "brief": "How they behave when they are attached, the thing they most need from a partner, and the one lesson that would change it. Behaviour, never clinical labels.",
+    "frames": [
+      [
+        "Your Attachment Style:",
+        "Your Deepest Need:",
+        "Your Relationship Lesson:"
+      ]
+    ],
+    "hooks": {
+      "you": [
+        "Your {singular}, your attachment style",
+        "How each {singular} attaches to people",
+        "The way you hold on, based on your {singular}"
+      ]
+    },
+    "pattern": "THREE sections. Section 1 opens with a vivid image of the distortion (\"until a wrinkle looks like a rip\"), then a sentence shaped \"You love by X because Y\", then a want-but contradiction that often closes on \"and call it\" plus the flattering name they give it. Section 2 opens with a bare noun phrase naming the need, then a sentence beginning \"You want someone who\", then one beginning \"You crave\". Section 3 opens with a flat aphorism, then two imperatives, then closes on a claim about what grows.",
+    "patternNote": "NEVER use the clinical labels - anxious, avoidant, secure, disorganised. Those were retired from this account as off-brand; describe the behaviour and let the reader recognise themselves without the jargon. Section 2's \"You want... You crave...\" pair is mandatory and in that order. Section 3's aphorism must stand alone as a quotable line (\"Peace without truth is just pretty loneliness\", \"Control is not the same as safety\") and the imperatives must be doable this week - say the honest thing, speak the friction - never \"communicate more\".",
+    "examples": [
+      "Your Attachment Style: You overthink every interaction until a wrinkle looks like a rip. You love by fixing because repair feels safer than risk. You want deep connection but audit every feeling like evidence and call it being prepared.",
+      "Your Attachment Style: You love with your whole chest but guard the door like a soldier. You test loyalty in the dark and memorize every flinch. You crave total merge but panic when someone gets too close to the truth you protect.",
+      "Your Deepest Need: Partnership that does not require you to disappear. You want someone who asks what you actually think and waits for the real answer. You crave balance that includes your weight, not just theirs.",
+      "Your Deepest Need: Trust that survives your intensity. You want someone who stays when you show the raw parts and does not use them as weapons later. You crave depth that does not make you the only one diving.",
+      "Your Relationship Lesson: Perfection delays connection and turns love into homework. Say the honest, imperfect thing and let the room breathe while it lands. Trust presence more than plans and watch closeness grow.",
+      "Your Relationship Lesson: Peace without truth is just pretty loneliness. Your feelings are not disruptions when they matter to you. Speak the friction before it turns into distance and let love include your edges."
+    ]
+  },
   "how-they-flirt": {
     "moods": [
       "love",
       "toxic"
     ],
     "voices": [
+      "you",
       "her",
       "him",
       "they"
     ],
     "formats": [
-      "bullets"
+      "prose"
     ],
-    "brief": "Their actual tell — usually not obvious. Teasing, sudden formality, remembering a detail. Include the version they do not realise they do.",
+    "brief": "How they flirt, described as a recognisable style rather than a list of tells, then the two mirrored halves of what draws them in and what kills it.",
     "frames": [
       [
-        "The Tell:",
-        "What They Think They Are Doing:"
+        "How You Flirt:",
+        "Your Turn Ons:",
+        "Your Turn Offs:"
       ]
     ],
     "hooks": {
+      "you": [
+        "Your {singular}, your flirty side",
+        "How you flirt, based on your {singular}",
+        "What each {singular} is like when they flirt"
+      ],
       "her": [
         "How {she} flirts without realising it"
       ],
@@ -2717,7 +2805,15 @@
       "they": [
         "How {each} flirts and never admits it"
       ]
-    }
+    },
+    "pattern": "THREE sections. Section 1 MUST open with \"You flirt like\" plus a simile, then 3-4 sentences of exactly what that looks like, then a turn naming what makes them withdraw or what they refuse to trade, then closes on a flat two-sentence pair. Sections 2 and 3 are symmetrical: each opens with a ONE-WORD noun and a full stop, then stacked fragments only - no full sentences anywhere in either.",
+    "patternNote": "\"You flirt like\" plus a simile is mandatory and is the signature - a movie scene, an invitation to chaos. Sections 2 and 3 must mirror each other in shape, and Turn Offs must be the exact inverse of Turn Ons for the SAME person, not a generic list of annoyances: reciprocity against imbalance, spontaneity against control. If either section slips into you-sentences the symmetry breaks and the slide reads flat. Converted from bullets to prose: the reference format is three labelled prose beats, and the old The Tell:/What They Think They Are Doing: frame was never used because frames do not apply to bullets. Written for the you voice; mirror every pronoun for her, him and they.",
+    "examples": [
+      "How You Flirt: You flirt like a movie scene. Eye contact, little jokes, casual compliments that feel like silk. You know how to make someone feel like they're the most interesting person in the room. But the second you feel like you're the only one trying, you start pulling back. Not dramatically. Just enough for them to wonder what happened. You flirt for the chemistry. You stay for the effort.",
+      "How You Flirt: You flirt like an invitation to chaos. You'll say something ridiculous just to see how they react, drop a wild story from your past, and ask if they want to come with you to an impromptu road trip that may or may not exist. You don't chase. You spark. And whoever follows better be ready to keep up without turning it into a cage. You want love, but not if it costs your freedom.",
+      "Your Turn Ons: Adventure. Spontaneity. Saying yes without needing a five-year plan. Laughing at your chaos instead of trying to tame it.",
+      "Your Turn Offs: Imbalance. Being the only one who texts first. Expecting you to keep the chemistry alive while they sit back and watch."
+    ]
   },
   "how-you-know-they-like-you": {
     "moods": [
