@@ -393,7 +393,18 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     '- Every item must be genuinely different. Do not fill in a template.',
     seed.anaphora
       ? '- The fixed opening is required; make what FOLLOWS it different every time.'
-      : '- Vary how items OPEN. Do not start more than two with the same two words.',
+      // A pattern that fixes the opening SHAPE (an infinitive, a single noun, a
+      // She-sentence) collides with a bare "vary how items open" rule, and the
+      // model resolves the collision by obeying the pattern — so every item came
+      // back starting "To be" or "She loves with", which is a set-level QA
+      // failure and forces a rewrite of ALL items. Naming both halves of the
+      // requirement up front is far cheaper than paying for that rewrite.
+      : seed.pattern
+        ? '- Vary how items OPEN. If the pattern fixes the opening SHAPE, keep' +
+          ' the shape and change the WORDS: "To conquer / To build / To find",' +
+          ' not "To be / To be / To be". Obeying the pattern is not an excuse' +
+          ' for three items opening on the same two words.'
+        : '- Vary how items OPEN. Do not start more than two with the same two words.',
     '- No item may repeat a line or idea from another item.',
     seed.nameItemInCopy === true
       ? '- Name the item in every line, as instructed above.'
