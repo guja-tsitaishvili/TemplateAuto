@@ -727,7 +727,20 @@ async function writeCaption(seed, hook, items) {
     `  "if you are guilty of this" is the failure — guilty of WHAT.`,
     '- Do not restate the hook. Do not write hashtags.',
     '- The caption is weaker than the slides by default. Earn its place: react',
-    '  to one specific thing above rather than summarising all of it.'
+    '  to one specific thing above rather than summarising all of it.',
+    // Measured across 15 captions from earlier runs. These three are the
+    // defaults the model falls back on, and the "guide" one is also simply
+    // untrue — it is a carousel, there is nothing to open.
+    '',
+    'DO NOT USE THESE. They are the fallbacks, and they have all been used:',
+    `- "Tell me your ${axis} and ..." — the laziest possible ask. If you want`,
+    `  them to name their ${axis}, make the second half worth answering.`,
+    '- "Read the full guide inside" / "read the full breakdown inside" — there',
+    '  is no guide and nothing to open. It is a carousel they are already in.',
+    '- "Which of these ..." as an opener. It appeared in four captions already.',
+    '',
+    'Better: quote or point at ONE line from the slides above and let that be',
+    'the whole caption, or say the thing the slides deliberately left unsaid.'
   ]
     .filter(Boolean)
     .join('\n');
