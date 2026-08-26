@@ -14,33 +14,47 @@ Confirmed working end to end — same hook that failed at 1/3 came back 4/4.
 
 ## Pick up here
 
-- **Content register on red-flag angles.** `red-flag-you-fall-for` produced
-  "monitors your whereabouts", "stop leaving your house without permission",
-  "a beautiful cage". That is coercive control described as a dating
-  preference, under a "check your compatibility" CTA. Deliberately left alone
-  — it is an editorial call, not a bug. One line in `houseStyle()` would keep
-  red flags at emotional-unavailability level if wanted.
-- **Two quality findings from the prose read that were never fixed:** the
-  misreading device fired 4x per slide (measured, exactly 4 in every item),
-  and every section 2 used an identical sentence skeleton ("You crave a
-  challenge, and a partner who..." / "You want absolute certainty, and a
-  partner who..."). QA missed the second because `opening()` compares only the
-  first TWO words, so structural templating slips through the one check meant
-  to catch templating.
-- **Captions are consistently weaker than the slides.** "Tell us your birth
-  month and if you are guilty of this" under genuinely good copy. Same model
-  as everything else now, so it is a prompt problem.
+- **Content register on red-flag angles — NEEDS A DECISION, not a fix.**
+  `red-flag-you-fall-for` produced "monitors your whereabouts", "stop leaving
+  your house without permission", "a beautiful cage". That is coercive control
+  described as a dating preference, under a "check your compatibility" CTA,
+  aimed at readers who may be living it. Deliberately untouched — it is
+  editorial, not a bug. One line in `houseStyle()` keeps red flags at
+  emotional-unavailability level if that is wanted.
+- **Shared sentence SKELETON is undetectable with what is here — do not retry
+  the obvious approaches.** Real finding: `opening()` compares the first TWO
+  words, so three section-2 paragraphs reading "You crave a challenge, and a
+  partner who...", "You want absolute certainty, and a partner who...", "You
+  dread boredom, and someone who..." passed QA while reading as one sentence
+  filled in three times. Both deterministic attempts failed: an n-gram check
+  keyed on phrases missing from the angle's examples flagged 3-grams in the
+  GOOD runs too ("you read their" 4/4 in the 4/4-passion post, "you crave a"
+  in secret-desire), and 4-grams caught nothing at all including the bad run.
+  The shared words ARE documented devices; only the shape repeats. Since every
+  QA problem triggers a rewrite, an imprecise check regenerates good posts, so
+  it was reverted. Would need grammatical abstraction (POS tagging) or an AI
+  judge on the finished copy.
+- **Same reason the parallel CLOSING lines are unchecked.** "And you call
+  conflict passion / surveillance passion / instability passion" is arguably a
+  feature — a drumbeat confirming the cover — and it is a mandated device, so
+  any check that catches it also catches the intended version.
 - **Known gap in the hook check:** only payoffs after a preposition or a naming
-  verb are caught. "Your quiet storm" names a value with neither and slips
-  through. Scanning every long word was tried and produced false positives on
-  real hooks, so precision was kept over reach.
-- **Binding-payoff posts have more parallel CLOSING lines** ("And you call
-  conflict passion / surveillance passion / instability passion"). Arguably a
-  feature — it is a drumbeat confirming the cover — but nothing checks it,
-  since the templating check only looks at openings.
-- **`secondPerson` is set on 3 angles only.** `thats-why`, `im-a-sign-so` and
-  `your-truth` have genuinely mixed references and were left free; revisit if
-  register drift shows up there too.
+  verb are caught. "Your quiet storm" names a value with neither. Scanning
+  every long word was tried and false-positived on real hooks, so precision
+  was kept over reach.
+
+## Done since (was on this list)
+
+- Misreading tic capped: `red-flag-you-fall-for` now allows one misreading
+  equation per item, in section 2. Runs had exactly four per item.
+- `writeCaption` rebuilt — it had no voice guidance whatsoever, which is why
+  captions were reliably weaker than the copy above them. Now carries the voice
+  rules, bans first-person plural, requires questions to name what to answer
+  with, bans vague "this", and feeds two lines per item instead of one.
+  NOT yet seen in a live run.
+- `secondPerson: 'sparse'` added for `thats-why`, `im-a-sign-so` and
+  `your-truth` — their references address someone in 3/33, 4/21 and 1/6 lines,
+  so a ban would reject their own material. Capped at 40%.
 
 # Noted for later
 
