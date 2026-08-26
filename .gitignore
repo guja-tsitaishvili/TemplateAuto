@@ -1,3 +1,8 @@
 node_modules/
 out/
 .env
+
+# Regenerable scratch from tools/geometry.js and tools/contact-sheet.js —
+# re-run them any time; tools/catalog-authored.json is the permanent record.
+tools/geometry.json
+tools/contact-sheet-*.png
