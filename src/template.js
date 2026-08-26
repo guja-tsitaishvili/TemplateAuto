@@ -7,7 +7,7 @@
  */
 
 const { getTheme } = require('./themes');
-const { assetDataUri } = require('./assets');
+const { assetDataUri, spriteFor, spriteNames } = require('./assets');
 const { resolveCta } = require('./cta');
 
 /** Always present, top-right. The house mark. */
@@ -147,6 +147,42 @@ function decoration(d) {
   const transforms = [`translate(${tx},${ty})`];
   if (d.flip) transforms.push('scaleX(-1)');
   if (d.rotate) transforms.push(`rotate(${d.rotate}deg)`);
+
+  // A pose crops one region out of a multi-subject sheet. Done with
+  // background-position rather than a clipped <img> so it scales with the
+  // poster: both the size and the offset are percentages, so the same spec
+  // works at any `size` without recomputing pixels.
+  const sprite = d.pose ? spriteFor(d.src, d.pose) : null;
+  if (d.pose && !sprite) {
+    const available = spriteNames(d.src);
+    throw new Error(
+      `No sprite "${d.pose}" for ${d.src}.` +
+        (available.length ? ` Available: ${available.join(', ')}` : ' No .sprites.json sidecar found.')
+    );
+  }
+
+  if (sprite) {
+    const { sheet, box } = sprite;
+    // Percentages are relative to the ELEMENT for background-size, and to
+    // (element - background) for background-position, which is why the
+    // denominators differ.
+    const bgW = (sheet.w / box.w) * 100;
+    const bgH = (sheet.h / box.h) * 100;
+    const posX = sheet.w === box.w ? 0 : (box.x / (sheet.w - box.w)) * 100;
+    const posY = sheet.h === box.h ? 0 : (box.y / (sheet.h - box.h)) * 100;
+
+    return `<div class="deco" style="
+      ${pos.join(';')};
+      width:${pct(size)};
+      aspect-ratio:${box.w} / ${box.h};
+      background-image:url('${assetDataUri(d.src)}');
+      background-size:${bgW.toFixed(3)}% ${bgH.toFixed(3)}%;
+      background-position:${posX.toFixed(3)}% ${posY.toFixed(3)}%;
+      background-repeat:no-repeat;
+      transform:${transforms.join(' ')};
+      ${d.opacity != null ? `opacity:${d.opacity};` : ''}
+    "></div>`;
+  }
 
   return `<img class="deco" src="${assetDataUri(d.src)}" alt="" style="
     ${pos.join(';')};

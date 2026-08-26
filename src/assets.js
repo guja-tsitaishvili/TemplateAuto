@@ -72,4 +72,41 @@ function assetDataUri(name) {
   return uri;
 }
 
-module.exports = { assetDataUri, resolveAsset, listAssets, ASSET_DIR };
+/**
+ * One image file can hold several poses of the same subject — blackpanthera.png
+ * carries ten. A sidecar `<name>.sprites.json` next to it names each region in
+ * source pixels, so a decoration can ask for "walking" instead of the whole
+ * sheet, and the file stays a single asset (one data: URI, cached once, shared
+ * by every pose on the slide).
+ *
+ * @returns {{sheet:{w,h}, box:{x,y,w,h}}|null} null when there is no map or no
+ *   such pose, which lets the caller fall back to drawing the whole image.
+ */
+function spriteFor(name, pose) {
+  if (!pose) return null;
+  const file = resolveAsset(name);
+  const map = file.replace(/\.[a-z]+$/i, '.sprites.json');
+  if (!fs.existsSync(map)) return null;
+  try {
+    const data = JSON.parse(fs.readFileSync(map, 'utf8'));
+    const box = data.sprites && data.sprites[pose];
+    if (!box || !data.sheet) return null;
+    return { sheet: data.sheet, box };
+  } catch {
+    return null;
+  }
+}
+
+/** @returns {string[]} pose names available for an asset, for error messages. */
+function spriteNames(name) {
+  const file = resolveAsset(name);
+  const map = file.replace(/\.[a-z]+$/i, '.sprites.json');
+  if (!fs.existsSync(map)) return [];
+  try {
+    return Object.keys(JSON.parse(fs.readFileSync(map, 'utf8')).sprites || {});
+  } catch {
+    return [];
+  }
+}
+
+module.exports = { assetDataUri, resolveAsset, listAssets, spriteFor, spriteNames, ASSET_DIR };
