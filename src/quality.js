@@ -212,6 +212,33 @@ function checkItems(items, { expectedCount, anaphora, bulletLabels, examples, se
   // 12 reference lines have none, which made it never-say-out-loud with an
   // anaphora on top — and it dragged the cover along with it, because the copy
   // was suddenly about one relationship rather than about themselves.
+  // 'sparse': a "you" is allowed but must stay incidental. thats-why,
+  // im-a-sign-so and your-truth all have a few reference lines that mention
+  // another person ("I catch your lie before you finish it") without being
+  // addressed AT anyone — 3/33, 4/21 and 1/6, so 9-19%. Forbidding it outright
+  // would reject their own reference material, but leaving them unguarded
+  // invites the drift that turned i-dont-care-but into never-say-out-loud at
+  // 82% addressed. The cap sits between the two.
+  if (secondPerson === 'sparse') {
+    const addressed = allLines.filter(({ line }) =>
+      /\b(you|your|yours|you're|youre)\b/i.test(norm(line))
+    );
+    const share = allLines.length ? addressed.length / allLines.length : 0;
+    if (share > 0.4) {
+      problems.push(
+        `${addressed.length}/${allLines.length} lines (${Math.round(share * 100)}%) speak to a "you" — ` +
+          `this angle is a self-portrait that only glances at other people; keep it under 40%`
+      );
+      // Target the worst offenders so a partial rewrite can fix it.
+      const byItem = new Map();
+      for (const { title } of addressed) byItem.set(title, (byItem.get(title) || 0) + 1);
+      [...byItem.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, Math.ceil(items.length / 2))
+        .forEach(([title]) => failed.add(title));
+    }
+  }
+
   if (secondPerson === 'forbidden' || secondPerson === 'required') {
     for (const { title, line } of allLines) {
       const has = /\b(you|your|yours|you're|youre)\b/i.test(norm(line));

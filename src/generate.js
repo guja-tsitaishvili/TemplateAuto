@@ -686,25 +686,48 @@ async function writeCaption(seed, hook, items) {
   // Showing the model actual lines from the post turns this from invention
   // into reaction, which is far easier work — the first local attempt failed
   // partly because it was given only the hook and had nothing to respond to.
+  // Two lines per item rather than one. Captions kept coming out vaguer than
+  // the copy they sat under — "Tell us your birth month and if you are guilty
+  // of this" — and one line from each of three items is thin ground to react to.
   const sample = (items || [])
     .slice(0, 3)
     .map((it) => {
       const lines = it.bullets || (it.sections || []).map((s) => s.text);
-      return lines && lines[0] ? `- ${lines[0]}` : null;
+      if (!lines || !lines[0]) return null;
+      return `- ${it.title}: ${lines.slice(0, 2).join(' ').slice(0, 200)}`;
     })
     .filter(Boolean);
 
+  const axis = subjects[seed.subject].singular;
+
   const prompt = [
     'You write captions for an astrology Instagram account.',
-    'Plain words. No therapy-speak, no motivational-poster language.',
-    'No exclamation marks. One emoji maximum, at the end, optional.',
+    '',
+    'VOICE — the same one the slides are written in:',
+    '- Plain words. State things as fact. No therapy-speak, no motivational-',
+    '  poster language, no "unlearn", "journey", "healing era".',
+    '- Speak TO the reader as "you", or ask them a direct question. NEVER "we",',
+    '  "us" or "our" — the account is not confessing alongside them, and a',
+    '  caption that says "we often mistake friction for feeling" under slides',
+    '  that all say "you" is two different narrators.',
+    '- No exclamation marks. One emoji maximum, at the end, optional.',
+    `- Never use these phrases: ${BANNED.slice(0, 12).join(', ')}.`,
     '',
     `The carousel's cover reads: "${hook}"`,
-    sample.length ? '\nLines from inside the post:' : '',
+    sample.length ? '\nWhat the slides actually say:' : '',
     ...sample,
     '',
-    'Write a caption of 1-2 short lines that invites a comment or a save.',
-    'Do not restate the hook. Do not write hashtags.'
+    'Write 1-2 short lines that earn a comment or a save.',
+    '',
+    'RULES:',
+    `- If you ask a question it must be answerable in a few words, and it must`,
+    `  say what to answer WITH — their ${axis}, which slide, which one they are.`,
+    '  "Which of these do you do" is answerable. "What do you think" is not.',
+    '- No vague "this" or "these" standing in for something you never named.',
+    `  "if you are guilty of this" is the failure — guilty of WHAT.`,
+    '- Do not restate the hook. Do not write hashtags.',
+    '- The caption is weaker than the slides by default. Earn its place: react',
+    '  to one specific thing above rather than summarising all of it.'
   ]
     .filter(Boolean)
     .join('\n');

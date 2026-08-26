@@ -3089,7 +3089,7 @@
       ]
     },
     "pattern": "FOUR sections. Section 1 names the TYPE in stacked noun fragments, then one sentence on how the warning gets read as something attractive. Section 2 gives the misreading as an equation - \"you confuse X with Y\", \"X feels like Y\", \"you mistake X for Y\". Section 3 lists what the pattern has cost in 2-3 sentences and MUST close on \"And you call X Y.\" Section 4 opens \"Someone who\" and closes on a sentence beginning \"The right one\".",
-    "patternNote": "The red flag is the type THEY are drawn to. Distinct from own-red-flag, which is the flaw in themselves, and from toxic-attraction, which is who is drawn to THEM - all three are different directions and must not blur. Section 3's closing \"And you call X Y\" is mandatory and is the line the post gets saved for: exhaustion called passion, being controlled called being loved, surveillance called devotion. The misreading in section 2 must be a category error, not a preference - confusing difficulty with worth, control with care.",
+    "patternNote": "The red flag is the type THEY are drawn to. Distinct from own-red-flag, which is the flaw in themselves, and from toxic-attraction, which is who is drawn to THEM - all three are different directions and must not blur. Section 3's closing \"And you call X Y\" is mandatory and is the line the post gets saved for: exhaustion called passion, being controlled called being loved, surveillance called devotion. The misreading in section 2 must be a category error, not a preference - confusing difficulty with worth, control with care. ONE misreading equation per item, and it lives in section 2. Measured runs came back with exactly four per item - section 1 saying \"you read their anger as intensity\", section 2 saying both \"you confuse their outbursts with depth\" AND \"you mistake the adrenaline for the heat\", section 3 saying it again - which turns the device into a tic. Section 1 SHOWS the misreading by describing the type attractively; it does not name it with a mistake/confuse/read-as sentence. Section 3 is the cost, and its only naming is the mandatory closing line.",
     "examples": [
       "The red flag you fall for: The one who plays it cool. Distant. A little unavailable. The chase lights you up, so you read indifference as a challenge instead of a warning.",
       "The red flag you fall for: The one who keeps you guessing. Flirtatious. Hot then cold. The one who triggers your jealousy and calls it spark. The unpredictability hooks you before the games do.",
@@ -4421,7 +4421,7 @@
       "The {item} Truth"
     ],
     "pattern": "I [defensive behaviour or persona I perform], [but/so] [the vulnerable truth underneath it].",
-    "patternNote": "Two clauses. First: the armor - what I DO to avoid the real feeling (say I do not care first, stay busy, make jokes). Second: the truth the armor is hiding, stated plainly with no metaphor. Some lines invert the order: state the exhausted truth first (\"I am tired of being the one who is fine\"), or use a clean X-not-Y contrast (\"I want to be held, not admired\").",
+    "patternNote": "Two clauses. First: the armor - what I DO to avoid the real feeling (say I do not care first, stay busy, make jokes). Second: the truth the armor is hiding, stated plainly with no metaphor. Some lines invert the order: state the exhausted truth first (\"I am tired of being the one who is fine\"), or use a clean X-not-Y contrast (\"I want to be held, not admired\"). MOSTLY SELF-PORTRAIT: a \"you\" may appear but only in passing, as it does in a small minority of the reference lines. If most lines are aimed at a person this has stopped being a self-portrait.",
     "examples": [
       "I say I do not care first, so I get to say it before you do.",
       "I am loud about everything except the thing that actually hurts.",
@@ -4442,7 +4442,8 @@
         "Your {singular}, your truth",
         "Your {singular}, the truth you don't say out loud"
       ]
-    }
+    },
+    "secondPerson": "sparse"
   },
   "why-people-get-addicted": {
     "moods": [
@@ -4615,7 +4616,7 @@
     },
     "brief": "The reader claiming their own contradictions out loud, using their birth month as the reason. Defiant rather than apologetic - this is not a confession, it is an explanation given to someone who did not ask.",
     "pattern": "Every bullet opens \"I was born in {item}, that is why\" (bold), then a SELF-CONTRADICTION: something they do paired with the opposite thing they will not do.",
-    "patternNote": "The line after the anaphora must contain its own internal contradiction. One half is the visible behaviour, the other is what it costs or conceals. For zodiac signs the opening is \"I am a/an {sign}\" - nobody is born IN a sign. A line without that tension is just a trait and fails.",
+    "patternNote": "The line after the anaphora must contain its own internal contradiction. One half is the visible behaviour, the other is what it costs or conceals. For zodiac signs the opening is \"I am a/an {sign}\" - nobody is born IN a sign. A line without that tension is just a trait and fails. MOSTLY SELF-PORTRAIT: a \"you\" may appear but only in passing, as it does in a small minority of the reference lines. If most lines are aimed at a person this has stopped being a self-portrait.",
     "examples": [
       "I fix everyone but never let them fix me",
       "I look calm while my mind runs a marathon",
@@ -4662,7 +4663,8 @@
         "Your {singular}, that is why",
         "Your {singular} — that is why you are like this"
       ]
-    }
+    },
+    "secondPerson": "sparse"
   },
   "im-fine-but": {
     "moods": [
@@ -5302,7 +5304,7 @@
     "itemTitle": "I'm a/an {item}",
     "brief": "Confident, slightly combative trait-ownership - claiming a behaviour as simply who they are, no apology. Distinct from thats-why: that angle requires an internal self-contradiction on every line; here plain confident admissions are fine, contradiction is common but not required.",
     "pattern": "Every bullet opens \"I'm a/an {item} so\" then a plain trait admission - a behaviour, preference, or contradiction stated flatly, owned rather than confessed.",
-    "patternNote": "Tone is confident/defiant, not vulnerable - contrast with thats-why (defiant explanation) and im-fine-but (quiet exhaustion). A mix of single traits (\"I hate being rushed\") and contradictions (\"I'm independent but also clingy\") both work; do not force contradiction into every line.",
+    "patternNote": "Tone is confident/defiant, not vulnerable - contrast with thats-why (defiant explanation) and im-fine-but (quiet exhaustion). A mix of single traits (\"I hate being rushed\") and contradictions (\"I'm independent but also clingy\") both work; do not force contradiction into every line. MOSTLY SELF-PORTRAIT: a \"you\" may appear but only in passing, as it does in a small minority of the reference lines. If most lines are aimed at a person this has stopped being a self-portrait.",
     "examples": [
       "I speak my mind whether you like it or not",
       "I roast my friends out of love",
@@ -5337,6 +5339,7 @@
         "I'm a/an {item}",
         "That's just how {item}s are"
       ]
-    }
+    },
+    "secondPerson": "sparse"
   }
 }
