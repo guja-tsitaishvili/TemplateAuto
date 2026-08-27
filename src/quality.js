@@ -112,7 +112,14 @@ function checkItems(items, { expectedCount, anaphora, bulletLabels, examples, se
   // "You deserve to... You deserve to..." is a deliberate rhetorical device in
   // this niche, and one of the best-performing formats. Flagging it as
   // templating rejects proven content, so anaphora angles opt out.
-  if (!anaphora && !(bulletLabels && bulletLabels.length)) {
+  // "Templated" is a claim about REPETITION ACROSS items. With fewer than 2
+  // items there is nothing to repeat against, but the share-based check does
+  // not know that — 1/1 items "sharing" an opening with itself is 100% no
+  // matter what was written, so it failed every single-item post generated
+  // this way, and the rewrite it triggers can never satisfy it either. Found
+  // by generating real single-item posts (a token-saving pattern used for
+  // quick tests), not a synthetic case.
+  if (openings.length > 1 && !anaphora && !(bulletLabels && bulletLabels.length)) {
     const total = openings.length;
     // Most items may keep the shared opening — only the surplus has to change.
     // Reporting this as a whole-set fault forced a full rewrite of all twelve
