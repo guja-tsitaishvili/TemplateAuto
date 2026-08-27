@@ -2,10 +2,6 @@
   "zodiac-sign|aries": [
     {
       "date": "2026-08-27",
-      "image": "a closed door"
-    },
-    {
-      "date": "2026-08-27",
       "image": "a race"
     },
     {
@@ -15,6 +11,10 @@
     {
       "date": "2026-08-27",
       "image": "cold water"
+    },
+    {
+      "date": "2026-08-27",
+      "image": "a shield"
     }
   ],
   "zodiac-sign|leo": [
@@ -29,6 +29,70 @@
     {
       "date": "2026-08-27",
       "image": "a heavy burden"
+    },
+    {
+      "date": "2026-08-27",
+      "image": "a golden shield"
+    }
+  ],
+  "zodiac-sign|taurus": [
+    {
+      "date": "2026-08-27",
+      "image": "a heavy anchor"
+    }
+  ],
+  "zodiac-sign|gemini": [
+    {
+      "date": "2026-08-27",
+      "image": "a bright screen"
+    }
+  ],
+  "zodiac-sign|cancer": [
+    {
+      "date": "2026-08-27",
+      "image": "a shell"
+    }
+  ],
+  "zodiac-sign|virgo": [
+    {
+      "date": "2026-08-27",
+      "image": "a perfect ledger"
+    }
+  ],
+  "zodiac-sign|libra": [
+    {
+      "date": "2026-08-27",
+      "image": "a quiet room"
+    }
+  ],
+  "zodiac-sign|scorpio": [
+    {
+      "date": "2026-08-27",
+      "image": "a locked vault"
+    }
+  ],
+  "zodiac-sign|sagittarius": [
+    {
+      "date": "2026-08-27",
+      "image": "a bright horizon"
+    }
+  ],
+  "zodiac-sign|capricorn": [
+    {
+      "date": "2026-08-27",
+      "image": "a steep climb"
+    }
+  ],
+  "zodiac-sign|aquarius": [
+    {
+      "date": "2026-08-27",
+      "image": "a glass wall"
+    }
+  ],
+  "zodiac-sign|pisces": [
+    {
+      "date": "2026-08-27",
+      "image": "deep water"
     }
   ]
 }
