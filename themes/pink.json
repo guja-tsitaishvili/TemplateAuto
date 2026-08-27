@@ -1,7 +1,7 @@
 {
   "label": "Pink / black",
   "moods": ["love", "positive", "negative"],
-  "allowArt": true,
+  "allowArt": false,
 
   "googleFonts": [
     "Poppins:wght@700;800;900",

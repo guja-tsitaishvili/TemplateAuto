@@ -1,7 +1,7 @@
 {
   "label": "Sage / olive (vintage, framed covers)",
   "moods": ["positive", "love"],
-  "allowArt": true,
+  "allowArt": false,
 
   "googleFonts": [
     "Playfair Display:wght@600;700;800",

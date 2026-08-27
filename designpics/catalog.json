@@ -52,7 +52,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -114,7 +115,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -206,7 +208,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 20,
@@ -236,7 +239,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -267,7 +271,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 18,
@@ -298,7 +303,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -359,7 +365,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -390,7 +397,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -421,7 +429,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -452,7 +461,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -482,7 +492,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -513,7 +524,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -543,7 +555,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -574,7 +587,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -605,7 +619,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -635,7 +650,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 10,
@@ -666,7 +682,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -727,7 +744,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 14,
@@ -758,7 +776,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 16,
@@ -789,7 +808,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 11,
@@ -851,7 +871,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -881,7 +902,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -911,7 +933,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -941,7 +964,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1002,7 +1026,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1064,7 +1089,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 10,
@@ -1094,7 +1120,8 @@
     ],
     "zones": [
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 10,
@@ -1124,7 +1151,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1155,7 +1183,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1185,7 +1214,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1216,7 +1246,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 21,
@@ -1247,7 +1278,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 16,
@@ -1307,7 +1339,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 14,
@@ -1338,7 +1371,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 19,
@@ -1368,7 +1402,8 @@
       "top-left",
       "top-right",
       "bottom-left",
-      "bottom-right"
+      "bottom-right",
+      "bottom"
     ],
     "sizes": {
       "small": 13,
