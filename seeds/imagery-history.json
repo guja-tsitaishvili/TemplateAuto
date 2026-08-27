@@ -2,15 +2,19 @@
   "zodiac-sign|aries": [
     {
       "date": "2026-08-27",
-      "image": "fire"
-    },
-    {
-      "date": "2026-08-27",
-      "image": "battle"
-    },
-    {
-      "date": "2026-08-27",
       "image": "a closed door"
+    },
+    {
+      "date": "2026-08-27",
+      "image": "a race"
+    },
+    {
+      "date": "2026-08-27",
+      "image": "a heavy weight"
+    },
+    {
+      "date": "2026-08-27",
+      "image": "cold water"
     }
   ]
 }

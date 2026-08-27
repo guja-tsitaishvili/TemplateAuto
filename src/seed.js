@@ -301,6 +301,11 @@ function roll(opts = {}) {
       // run of i-dont-care-but came back as never-say-out-loud wearing an
       // anaphora. Checked in code because the model ignores it silently.
       secondPerson: angle.secondPerson || null,
+      // Whether this angle's content is genuinely "a trait the sign has" —
+      // some angles are about someone ELSE (red-flag-you-fall-for is about
+      // the type Aries is drawn to, not an Aries trait) and have nowhere for
+      // a personality facet to land. Opt-in only, defaults off.
+      usesFacet: angle.usesFacet === true,
       // Index into cta.json. The reference set inflects the promo line per
       // format — "Secret Love Match:" on the secret-desire carousels, "Her
       // Best Matches:" on the her-voice ones — so an angle can pin its own.

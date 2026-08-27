@@ -25,6 +25,7 @@ const path = require('path');
 const { roll, record, subjects } = require('./seed');
 const { priorIdeas, priorVectors, recordIdeas } = require('./history');
 const { priorImages: loadPriorImages, recordImages } = require('./imagery');
+const { pickFacet, recordFacet } = require('./facets');
 const { embedMany, closestPrior } = require('./embed');
 const { hashtagsFor } = require('./hashtags');
 const { generate } = require('./gemini');
@@ -420,7 +421,7 @@ async function rewriteHook(seed, items, axis, problem) {
  * @param {string[]} [only] rewrite just these item names. A full rewrite to fix
  *   one bad sign cost as much as the original generation; this targets it.
  */
-async function writeBodies(seed, hook, note, prior, only, keptLines, priorImages) {
+async function writeBodies(seed, hook, note, prior, only, keptLines, priorImages, facetByItem) {
   const isBullets = seed.format === 'bullets';
   const targets = only && only.length ? only : seed.items;
 
@@ -617,6 +618,19 @@ async function writeBodies(seed, hook, note, prior, only, keptLines, priorImages
         ' can repeat, but do not reach for the same concrete image again:\n' +
         Object.entries(priorImages)
           .map(([name, imgs]) => `  ${name}: ${imgs.map((g) => `"${g}"`).join('  /  ')}`)
+          .join('\n')
+      : '',
+    // Chosen in CODE before this call, not left to the model — imagery.js
+    // suppresses a repeat after the model already wrote into the trap;
+    // this hands it different material up front so it never free-associates
+    // into the trap in the first place. Only set for angles whose content is
+    // genuinely "a trait the sign has" (seed.usesFacet) and only for signs
+    // with an entry in facets.json.
+    facetByItem && Object.keys(facetByItem).length
+      ? '\nTHE CONCRETE TRAIT EACH ITEM IS BUILT AROUND — express it in your own' +
+        ' words and your own scene, never name the trait literally:\n' +
+        Object.entries(facetByItem)
+          .map(([name, f]) => `  ${name}: ${f}`)
           .join('\n')
       : '',
     note ? `\nPREVIOUS ATTEMPT FAILED: ${note}\nFix exactly these problems.` : ''
@@ -941,7 +955,20 @@ async function generatePost(opts = {}) {
   const priorImgs = opts.fresh ? {} : loadPriorImages(seed.subject, seed.items);
   if (Object.keys(priorImgs).length) log(`memory  : forbidding ${Object.keys(priorImgs).length} prior image(s)`);
 
-  let items = await writeBodies(seed, chosen.hook, undefined, prior, undefined, undefined, priorImgs);
+  // Chosen once, up front — not per attempt, so a rewrite stays consistent
+  // with the trait the first attempt was already told to build around.
+  const facetByItem = {};
+  if (seed.usesFacet) {
+    for (const name of seed.items) {
+      const picked = pickFacet(name, seed.mood);
+      if (picked) facetByItem[name] = picked.facet;
+    }
+    if (Object.keys(facetByItem).length) {
+      log(`facet   : ${Object.entries(facetByItem).map(([n, f]) => `${n}="${f}"`).join(', ')}`);
+    }
+  }
+
+  let items = await writeBodies(seed, chosen.hook, undefined, prior, undefined, undefined, priorImgs, facetByItem);
   let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples, secondPerson: seed.secondPerson });
   let semantic = await checkSemantic(seed, items, priorVecs, log);
   // Deterministic, unlike the instruction it backs up. Everything else in
@@ -987,7 +1014,8 @@ async function generatePost(opts = {}) {
       prior,
       partial ? broken : undefined,
       keptLines,
-      priorImgs
+      priorImgs,
+      facetByItem
     );
 
     if (partial) {
@@ -1055,6 +1083,9 @@ async function generatePost(opts = {}) {
   // A throwaway test should not pollute the memory a real schedule relies on.
   if (!opts.fresh) recordIdeas(seed, items, semantic.vectors);
   if (!opts.fresh) recordImages(seed, items);
+  if (!opts.fresh) {
+    for (const [name, facet] of Object.entries(facetByItem)) recordFacet(name, facet, seed.date);
+  }
 
   // 5 — caption
   const { caption, hashtags, via: captionVia } = await writeCaption(seed, chosen.hook, items);
