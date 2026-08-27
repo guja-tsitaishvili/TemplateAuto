@@ -24,6 +24,7 @@ const fs = require('fs');
 const path = require('path');
 const { roll, record, subjects } = require('./seed');
 const { priorIdeas, priorVectors, recordIdeas } = require('./history');
+const { priorImages: loadPriorImages, recordImages } = require('./imagery');
 const { embedMany, closestPrior } = require('./embed');
 const { hashtagsFor } = require('./hashtags');
 const { generate } = require('./gemini');
@@ -419,7 +420,7 @@ async function rewriteHook(seed, items, axis, problem) {
  * @param {string[]} [only] rewrite just these item names. A full rewrite to fix
  *   one bad sign cost as much as the original generation; this targets it.
  */
-async function writeBodies(seed, hook, note, prior, only, keptLines) {
+async function writeBodies(seed, hook, note, prior, only, keptLines, priorImages) {
   const isBullets = seed.format === 'bullets';
   const targets = only && only.length ? only : seed.items;
 
@@ -573,6 +574,11 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
     '- For each item also return "idea": a 3-6 word label of that item\'s core' +
       ' thought, e.g. "pre-empts abandonment by leaving first". It is never shown' +
       ' to readers — it is how future posts avoid repeating this idea.',
+    '- For each item also return "image": 1-3 words for the concrete image or' +
+      ' metaphor the item is actually built on — "fire", "battle", "a locked' +
+      ' door", "a mask". Never shown to readers. Two items can have different' +
+      ' ideas and still lean on the same image; this is how future posts on a' +
+      ' DIFFERENT angle avoid reaching for the same one for this sign.',
     seed.quote
       ? [
           '- For each item also return "quote": one short punchy line in first' +
@@ -596,6 +602,23 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
           .map(([name, ideas]) => `  ${name}: ${ideas.map((g) => `"${g}"`).join('  /  ')}`)
           .join('\n')
       : '',
+    // Different bug from `prior` above, and it needs a different fix. Two
+    // real generations for Aries had DIFFERENT ideas by the model's own label
+    // ("destroys peace to force movement" vs "creates emergencies to feel
+    // necessary") and STILL both reached for fire and battle — the idea-level
+    // memory above would not have caught this pair. "Do not mention the sign
+    // name" removes the one anchor that would let the model differentiate
+    // without effort, so it falls back to the single strongest trained
+    // association for that sign instead, and that association is the same
+    // regardless of which angle is asking. priorImages is loaded WITHOUT the
+    // angle in its key for exactly that reason — see imagery.js.
+    priorImages && Object.keys(priorImages).length
+      ? '\nIMAGERY ALREADY USED FOR THESE SIGNS ON OTHER POSTS — the psychology' +
+        ' can repeat, but do not reach for the same concrete image again:\n' +
+        Object.entries(priorImages)
+          .map(([name, imgs]) => `  ${name}: ${imgs.map((g) => `"${g}"`).join('  /  ')}`)
+          .join('\n')
+      : '',
     note ? `\nPREVIOUS ATTEMPT FAILED: ${note}\nFix exactly these problems.` : ''
   ]
     .filter(Boolean)
@@ -606,6 +629,11 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
   // precise (it targets the IDEA, not one sentence) and cheaper to feed back
   // in than storing whole lines.
   const ideaField = { idea: { type: 'string' } };
+  // The CONCRETE image/metaphor the item is built on — "fire", "battle",
+  // "a locked door" — as distinct from `idea`, which is the psychological
+  // content. Two items can have different ideas and the same image; this is
+  // what imagery.js needs to catch that case on the next post.
+  const imageField = { image: { type: 'string' } };
   // Only requested by angles that use it (angle.quote === true) — an italic
   // first-person line under the title, between the sign name and the
   // third-person bullets. Optional so every other angle stays at the same
@@ -618,16 +646,18 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
         properties: {
           title: { type: 'string' },
           ...ideaField,
+          ...imageField,
           ...quoteField,
           bullets: { type: 'array', items: { type: 'string' } }
         },
-        required: ['title', 'idea', ...(seed.quote ? ['quote'] : []), 'bullets']
+        required: ['title', 'idea', 'image', ...(seed.quote ? ['quote'] : []), 'bullets']
       }
     : {
         type: 'object',
         properties: {
           title: { type: 'string' },
           ...ideaField,
+          ...imageField,
           sections: {
             type: 'array',
             items: {
@@ -637,7 +667,7 @@ async function writeBodies(seed, hook, note, prior, only, keptLines) {
             }
           }
         },
-        required: ['title', 'idea', 'sections']
+        required: ['title', 'idea', 'image', 'sections']
       };
 
   const result = await generate({
@@ -782,6 +812,45 @@ async function writeCaption(seed, hook, items) {
   return { caption, hashtags: hashtagsFor(seed), via };
 }
 
+/**
+ * Deterministic backstop for the imagery instruction above — checks the
+ * literal generated text, not just the self-reported `image` field, because
+ * the model could report an honest new label while the paragraph itself
+ * still contains the forbidden word. Word-boundary matched like findBanned,
+ * for the same reason: substring matching flags "fire" inside "firearm" or
+ * "fireplace" and costs a needless rewrite on copy that never repeated
+ * anything.
+ */
+function checkImageRepeats(items, priorImgs) {
+  const problems = [];
+  const failed = [];
+  if (!priorImgs || !Object.keys(priorImgs).length) return { problems, failed };
+
+  for (const item of items) {
+    const name = Object.keys(priorImgs).find((n) =>
+      (item.title || '').toLowerCase().includes(n.toLowerCase())
+    );
+    if (!name) continue;
+
+    const text = (
+      (item.bullets || []).join(' ') +
+      ' ' +
+      (item.sections || []).map((s) => s.text || '').join(' ')
+    ).toLowerCase();
+
+    for (const image of priorImgs[name]) {
+      const words = image.toLowerCase().split(/\s+/).filter((w) => w.length >= 4);
+      const hit = words.find((w) => new RegExp(`(^|[^a-z])${w}([^a-z]|$)`).test(text));
+      if (hit) {
+        problems.push(`"${item.title}": reuses the image "${image}" (contains "${hit}") already used for this sign on a different angle`);
+        failed.push(item.title);
+        break;
+      }
+    }
+  }
+  return { problems, failed };
+}
+
 /* ------------------------------------------------------------------ chain */
 
 /**
@@ -865,12 +934,24 @@ async function generatePost(opts = {}) {
   if (Object.keys(prior).length) log(`memory  : forbidding ${Object.keys(prior).length} prior idea(s)`);
 
   const priorVecs = opts.fresh ? {} : priorVectors(seed.angle, seed.subject, seed.items);
+  // Cross-angle, unlike `prior` above — see imagery.js. Aries reaching for
+  // fire under one angle and battle under another are different IDEAS by the
+  // model's own label, so this needs its own memory, not a wider scope on
+  // the existing one.
+  const priorImgs = opts.fresh ? {} : loadPriorImages(seed.subject, seed.items);
+  if (Object.keys(priorImgs).length) log(`memory  : forbidding ${Object.keys(priorImgs).length} prior image(s)`);
 
-  let items = await writeBodies(seed, chosen.hook, undefined, prior);
+  let items = await writeBodies(seed, chosen.hook, undefined, prior, undefined, undefined, priorImgs);
   let check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples, secondPerson: seed.secondPerson });
   let semantic = await checkSemantic(seed, items, priorVecs, log);
+  // Deterministic, unlike the instruction it backs up. Everything else in
+  // this file that started as "tell the model not to" and nothing else ended
+  // up failing silently at least once this session — the hook step, the
+  // second-person register, the templating check on n=1. This one checks the
+  // literal word rather than trusting the prompt held.
+  let imageCheck = checkImageRepeats(items, priorImgs);
 
-  const allProblems = () => [...check.problems, ...semantic.problems];
+  const allProblems = () => [...check.problems, ...semantic.problems, ...imageCheck.problems];
 
   if (allProblems().length) {
     const problems = allProblems();
@@ -878,7 +959,7 @@ async function generatePost(opts = {}) {
     // Rewrite only the broken items when the fault is item-level. Regenerating
     // all twelve to fix one sign cost as much as the original generation — the
     // retry was ~35% of a post's total tokens.
-    const broken = [...new Set([...check.failed, ...semantic.failed])];
+    const broken = [...new Set([...check.failed, ...semantic.failed, ...imageCheck.failed])];
     const partial = !check.globalProblem && broken.length && broken.length < seed.items.length;
 
     log(
@@ -905,7 +986,8 @@ async function generatePost(opts = {}) {
       problems.join('; '),
       prior,
       partial ? broken : undefined,
-      keptLines
+      keptLines,
+      priorImgs
     );
 
     if (partial) {
@@ -928,6 +1010,7 @@ async function generatePost(opts = {}) {
 
     check = checkItems(items, { expectedCount: seed.items.length, anaphora: seed.anaphora, bulletLabels: seed.bulletLabels, examples: seed.examples, secondPerson: seed.secondPerson });
     semantic = await checkSemantic(seed, items, priorVecs, log);
+    imageCheck = checkImageRepeats(items, priorImgs);
   }
   log(
     allProblems().length === 0
@@ -971,6 +1054,7 @@ async function generatePost(opts = {}) {
   // failure mode of its own, independent of length/banned-phrase checks.
   // A throwaway test should not pollute the memory a real schedule relies on.
   if (!opts.fresh) recordIdeas(seed, items, semantic.vectors);
+  if (!opts.fresh) recordImages(seed, items);
 
   // 5 — caption
   const { caption, hashtags, via: captionVia } = await writeCaption(seed, chosen.hook, items);
@@ -1008,7 +1092,7 @@ async function generatePost(opts = {}) {
 // generateHooks/scoreHooks are exported for diagnostics — comparing the local
 // judge against the API judge on an IDENTICAL hook list is the only way to tell
 // whether the 3B model is picking well or just rubber-stamping.
-module.exports = { generatePost, generateHooks, scoreHooks, writeCaption };
+module.exports = { generatePost, generateHooks, scoreHooks, writeCaption, checkImageRepeats };
 
 if (require.main === module) {
   const argv = process.argv.slice(2);
