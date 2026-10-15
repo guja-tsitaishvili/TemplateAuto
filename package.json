@@ -2,6 +2,7 @@
   "name": "poster-renderer",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "commonjs",
   "description": "HTML/CSS -> PNG Instagram carousel poster renderer",
   "main": "src/renderer.js",

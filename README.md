@@ -1,7 +1,59 @@
-# Poster Renderer
+# TemplateAuto — AI Instagram carousel generator
 
-HTML/CSS templates → PNG carousel slides, rendered by headless Chromium. No design
-tool, no per-image fee — it's CPU time on a box you already run.
+An end-to-end pipeline that writes and renders social-media carousels on its own:
+a **seed bank** rolls the brief, a **Gemini prompt chain** writes the copy,
+**deterministic QA** checks it in code, and a **headless-Chromium renderer**
+turns HTML/CSS templates into 1080×1350 PNG slides. No design tool, no per-image
+fee: rendering is CPU time on a box you already run.
+
+It was built to run the Instagram and TikTok content for an astrology brand
+(see the [Astraten AI showcase](https://github.com/guja-tsitaishvili/astraten_AIAPP_showcase)),
+where posts of this kind reached 50K–250K views.
+
+## Examples
+
+Real output, downscaled. Same engine, five themes, three slide layouts (cover,
+prose, bullets).
+
+| | | | | |
+|---|---|---|---|---|
+| ![](examples/01-cover-crimson.jpg) | ![](examples/02-prose-crimson.jpg) | ![](examples/03-cover-pink.jpg) | ![](examples/04-bullets-pink.jpg) | ![](examples/05-prose-blush.jpg) |
+| Cover, crimson | Prose slide, crimson | Cover, pink | Bullets, pink | Prose, blush |
+| ![](examples/06-cover-split-title.jpg) | ![](examples/07-prose-mustard.jpg) | ![](examples/08-bullets-mustard.jpg) | ![](examples/09-cover-with-artwork.jpg) | ![](examples/10-bullets-alternate-voice.jpg) |
+| Split-title cover | Prose, mustard | Bullets, mustard | Cover with cut-out artwork | Bullets, alternate voice |
+
+## How it works
+
+```
+seed bank → prompt chain (Gemini) → QA in code → compose → render → PNG slides
+```
+
+1. **Seed.** Before any AI writes a word, a brief is rolled from angle × voice × subject × format. The model never chooses *what* to write about, only how. See [seeds/README.md](seeds/README.md).
+2. **Prompt chain** ([src/generate.js](src/generate.js)). Hooks (about 20, high temperature, forced structural variety) → a judge scores them against a rubric and picks the winner → every slide body is written to that hook → caption and hashtags. Each step is its own call, so a failure retries in isolation. All calls are schema-constrained JSON.
+3. **Deterministic QA** ([src/quality.js](src/quality.js)). Length limits, banned phrases and a repeated-opening check run in plain code. They are free, instant and cannot be talked out of a verdict. A failed body step is retried.
+4. **Anti-repetition memory.** Idea memory forbids a thought used recently, imagery memory stops the model reaching for the same trope again (Aries always becomes fire and battle), and facet picking hands the model a specific trait *before* writing, so it does not free-associate into the default.
+5. **Compose and render** ([src/compose.js](src/compose.js), [src/renderer.js](src/renderer.js)). Themes are JSON files. Text is fitted by binary-searching a scale factor so copy of any length fills the slide.
+6. **Service mode** ([src/server.js](src/server.js)). An Express API (`/render`, `/carousel`, `/themes`) designed to be called from an n8n workflow that posts the finished slides.
+
+Other engineering details:
+
+- **Cost visibility.** Every Gemini call appends model and token counts to a usage log.
+- **Retries.** The adapter absorbs transient 429/503 overloads so a scheduled post does not fail on a blip.
+- **Optional local model.** An Ollama adapter can take the cheap steps. It is off by default because it was measured and lost: about 12% token saving, and on an identical hook list it picked a 5/10 hook over an 8.5/10 one. See [TODO.md](TODO.md).
+- **Batch mode** ([src/batch.js](src/batch.js)) fills a review buffer ahead of time, so a bad batch or a provider outage never reaches the feed.
+
+## Artwork is not included
+
+The renderer can place background-removed PNG cut-outs on cover slides (see
+[Decorations](#decorations-hook-artwork)). The `designpics/` image library is
+deliberately **not** in this repository: it is large and may include third-party
+material. Art-free designs such as the `blush` theme render without it, and
+`09-cover-with-artwork.jpg` above shows what an art cover looks like. To use your
+own, drop background-removed PNGs into `designpics/`. The catalog and generation
+notes are kept in that folder.
+
+You need a `GEMINI_API_KEY` in `.env` (see [.env.example](.env.example)) to generate copy.
+Rendering from JSON does not need one.
 
 ## Setup
 

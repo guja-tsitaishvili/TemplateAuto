@@ -6,3 +6,12 @@ out/
 # re-run them any time; tools/catalog-authored.json is the permanent record.
 tools/geometry.json
 tools/contact-sheet-*.png
+
+# Image library is not published (large, may contain third-party material).
+# Docs and JSON catalogs in designpics/ stay tracked.
+designpics/*
+!designpics/*.md
+!designpics/*.json
+
+# Local-only
+Ollama.lnk*
